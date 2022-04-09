@@ -163,3 +163,13 @@ body {
 .plan-box__checked {
     margin-left: auto;
 }
+
+
+
+/* SECTION TOOLS */
+.tools__img {
+    text-align: center;
+}
+.tools__img img {
+    box-shadow: -1.66px 3.33px 10.83px 0px rgba(80, 136, 247, 1);
+}

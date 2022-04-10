@@ -24,7 +24,6 @@ body {
     font-family: 'Gilroy-Bald', sans-serif;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 
@@ -167,9 +166,106 @@ body {
 
 
 /* SECTION TOOLS */
-.tools__img {
+.section-tools {
+    padding-bottom: 80px;
     text-align: center;
 }
-.tools__img img {
-    box-shadow: -1.66px 3.33px 10.83px 0px rgba(80, 136, 247, 1);
+.section-tools__subtitle {
+    background: linear-gradient(112.58deg, #0585E1 0%, #374EC6 123.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 22px;
 }
+.tools__img {
+    position: relative;
+    margin-bottom: 33px;
+}
+.tools__img img {
+    box-shadow: 8px 46px 100px 71px rgba(80, 136, 247, 0.25);
+}
+.tools {
+    margin: 20px auto 0 auto;
+    max-width: 350px;
+  
+}
+
+
+.opinion-box {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+.opinion-box--1 {
+    top: 20%;
+    left: 8%;
+}
+.opinion-box--2 {
+    flex-direction: row-reverse;
+    top: 50%;
+    right: 10%;
+}
+.opinion-subbox {
+    position: absolute;
+    top: 93%;
+    right: 14%;
+}
+.opinion-box__img {
+    background-color: #CDECFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
+}
+.opinion-box__img img {
+    max-width: 28px;
+    border-radius: 50%;
+}
+
+
+.opinion-box__text {
+    max-width: 255px;
+    padding: 12px;
+    background-color: #CDECFA;
+    border-radius: 8.67px;
+    font-size: 12px;
+    text-align: left;
+    box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
+}
+.opinion-box__text--dark {
+    max-width: 267px;
+    background-color: #B9D9F8;
+}
+.opinion-box__text--darken {
+    background-color: #538DFF;
+}
+
+.btn {
+    display: inline-block;
+    color: #2F3C7E;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 11px;
+    border: 2px solid rgba(47, 60, 126, 1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }

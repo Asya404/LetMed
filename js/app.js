@@ -39,14 +39,4 @@ $(window).on('scroll', function () {
         document.querySelectorAll('.tools-btn')[2].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
     }
 
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll <= 500) {
-            $(".section-tools").addClass("sticky");
-        } else {
-            $(".section-tools").removeClass("sticky");
-        }
-    });
-
 })

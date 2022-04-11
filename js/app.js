@@ -10,33 +10,27 @@ $(window).on('scroll', function () {
         el.style.background = '#fff';
     })
 
-    if (scrollPercent < 50) {
-        document.querySelector('.discussion-box-wrapper').style.display = "block";
-        document.querySelector('.health-box-wrapper').style.display = "none";
+    $('.discussion-box-wrapper')[0].style.display = "none";
+    $('.health-box-wrapper')[0].style.display = "none";
+    $('.follow-box-wrapper')[0].style.display = "none";
+    
+    $('.discussion__text')[0].style.display = "none";
+    $('.health__text')[0].style.display = "none";
+    $('.follow__text')[0].style.display = "none";
 
-        document.querySelector('.discussion__text').style.display = "block";
-        document.querySelector('.health__text').style.display = "none";
-
-        document.querySelectorAll('.tools-btn')[0].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
-        
+    if (scrollPercent < 60) {
+        $('.discussion-box-wrapper')[0].style.display = "block";
+        $('.discussion__text')[0].style.display = "block";
+        $('.tools-btn')[0].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
     }
-    else if (scrollPercent < 60 && scrollPercent > 50) {
-        document.querySelector('.discussion-box-wrapper').style.display = "none";
-        document.querySelector('.health-box-wrapper').style.display = "block";
-
-        document.querySelector('.discussion__text').style.display = "none";
-        document.querySelector('.health__text').style.display = "block";
-
-        document.querySelectorAll('.tools-btn')[1].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
+    else if (scrollPercent < 70 && scrollPercent > 60) {
+        $('.health-box-wrapper')[0].style.display = "block";
+        $('.health__text')[0].style.display = "block";
+        $('.tools-btn')[1].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
     }
-    else if (scrollPercent > 60) {
-        // document.querySelector('.discussion-box-wrapper').style.display = "none";
-        // document.querySelector('.health-box-wrapper').style.display = "block";
-
-        document.querySelector('.health__text').style.display = "none";
-        document.querySelector('.follow__text').style.display = "block";
-
-        document.querySelectorAll('.tools-btn')[2].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
+    else if (scrollPercent > 70) {
+        $('.follow-box-wrapper')[0].style.display = "block";
+        $('.follow__text')[0].style.display = "block";
+        $('.tools-btn')[2].style.background= "linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%)";
     }
-
 })

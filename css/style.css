@@ -18,6 +18,12 @@
     src: url('./gillroy/gilroy-bold.ttf') format("truetype");
     font-weight: 700;
 }
+html{
+    height:200%;
+}
+body{
+    height:150%;
+}
 body {
     font-family: 'GilroyRegular';
     font-size: 14px;
@@ -49,6 +55,8 @@ a {
     font-size: 25px;
     text-align: center;
 }
+
+
 
 /* BUTTONS */
 .cta-btn {
@@ -89,6 +97,7 @@ a {
 }
 
 
+
 /* LOG IN */
 .header__login {
     display: none;
@@ -96,6 +105,7 @@ a {
 .header__login a {
     color: #fff;
 }
+
 
 
 /* HERO */
@@ -173,243 +183,11 @@ a {
     color: #fff;
 }
 
-
-
-/* SECTION PLANS */
-.section-plans {
-    padding: 40px 0 77px;
-}
-.section-plans h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.plans {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.plan-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 270px;
-    padding: 15px 15px 10px 15px;
-    border-radius: 9px;
-    border: 1px solid rgba(116, 127, 182, 1);
-    box-shadow: -2.258704423904419px 4.517408847808838px 14.681578636169434px 0px rgba(0, 0, 0, 0.07);
-}
-.plan-box__textcontent {
-    font-family: 'GilroyLight';
-    font-size: 12px;
-}
-.plan-box__title {
-    font-size: 16px;
-}
-
-
-
-/* SECTION TOOLS */
-.section-tools {
-    padding-bottom: 80px;
-    text-align: center;
-}
-.section-tools__subtitle {
-    display: inline-block;
-    background: linear-gradient(112.58deg, #0585E1 0%, #374EC6 123.69%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    font-size: 22px;
-    margin: 15px 0 20px 0;
-}
-.discussion__phone {
-    position: relative;
-    margin-bottom: 33px;
-}
-.tools-btns {
-    display: none;
-}
-.tools-btn {
-    background-color: #fff;
-    display: inline-block;
-    width: 100%;
-    max-width: 410px;
-    padding: 25px 0;
-    border: 1px solid rgba(239, 244, 253, 1);
-    box-shadow: 0px 4px 24px 0px rgba(47, 60, 126, 0.2);
-    border-radius: 11px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.tools-btn a {
-    font-size: 26px;
-    color:#2F3C7E;
-}
-
-
-/*PHONE SHADOW AND MAX-WIDTH*/
-.discussion__img, .health__img img {
-    box-shadow: 8px 46px 100px 71px rgba(80, 136, 247, 0.18);
-    border-radius: 20px;
-}
-.discussion, .health {
-    margin: 0 auto 50px auto;
-    max-width: 350px; 
-}
-
-
-/* OPINION BOX */
-.discussion-box {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-}
-.discussion-box--1 {
-    top: 20%;
-    left: 8%;
-}
-.discussion-box--2 {
-    flex-direction: row-reverse;
-    top: 50%;
-    right: 10%;
-}
-.discussion-subbox {
-    position: absolute;
-    top: 93%;
-    right: 14%;
-    max-width: 267px;
-    width: 100%;
-}
-.discussion-box__img {
-    background-color: #CDECFA;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
-}
-.discussion-box__img img {
-    border-radius: 50%;
-}
-.discussion-box__text {
-    padding: 12px;
-    border-radius: 8.67px;
-    font-size: 12px;
-    text-align: left;
-    box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
-}
-.discussion-box__text--1 {
-    max-width: 255px;
-    background-color: #CDECFA;
-}
-.discussion-box__text--2 {
-    max-width: 267px;
-    background-color: #B9D9F8;
-}
-.discussion-box__text--3 {
-    color: #fff;
-    max-width: 267px;
-    background-color: #538DFF;
-}
-
-
-/* HEALTH BOX */
-.health__img {
-    position: relative;
-}
-.health__text {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-.health__text ul {
-    list-style: inside;
-    margin-top: 10px;
-}
-.health__text ul li {
-    margin-bottom: 10px;
-    font-size: 30px;
-    line-height: 10px;
-}
-/* .health__text ul li::marker {
-    line-height: 10px;
-    vertical-align: middle;
-} */
-.health__text ul li span {
-    font-size: 14px;
-}
-.health-box {
-    text-align: left;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 270px;
-    row-gap: 5px;
-}
-.health-box--1 {
-    top: 17%;
-}
-.health-box--2 {
-    top: 46%;
-    right: 0;
-}
-.health-box--3 {
-    top: 73%;
-}
-.health-box__img {
-    margin-right: 10px;
-}
-.health-box__title {
-    font-size: 18px;
-    font-weight: 600;
-}
-.health-box__text {
-    width: 100%;
-    color: #000;
-    line-height: 16.86px;
-    font-size: 12.49px;
-    background-color: #fff;
-    padding: 12px 17px;
-    border-radius: 8.46px;
-    border: 0.77px solid rgba(196, 208, 230, 1);
-    box-shadow: 0px 5.00px 15.91px 0px rgba(47, 60, 126, 0.25);
-}
-.health-box__text--2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 8px;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgba(47, 60, 126, 1);
-}
-.health-box__span {
-    color: rgba(221, 118, 95, 1);
-    font-size: 12.61px;
-}
-.health-box__med {
-    color: rgba(47, 60, 126, 1);
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-.health-box__med span {
-    display: inline-block;
-    font-size: 11px;
-    margin-left: 10px;
-    font-weight: 400;
-}
-.health-box__descr {
-    font-size: 10px;
-    line-height: 14.79px;
-}
-
-
 .mb10 { margin-bottom: 10px; }
 .mb15 { margin-bottom: 15px; }
 .mb20 { margin-bottom: 20px; }
 .mb30 { margin-bottom: 30px; }
+
 
 
 @media screen and (min-width: 768px) {
@@ -452,53 +230,9 @@ a {
     .feature-box__text {
         color: #fff;
     }
-
-    /* SECTION PLANS */
-    .section-plans {
-        padding: 80px 0;
-    }
-    .section-plans h2 {
-        margin-bottom: 50px;
-    }
-    .plan-box__textcontent {
-        font-size: 15px;
-    }
-    .plan-box__title {
-        font-size: 18px;
-    }
-
-    /* DISCUSSION */
-    .discussion {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        max-width: 100%;
-    }
-    .section-tools__subtitle {
-        display: none;
-    }
-    .discussion__phone {
-        width: 48%;
-        margin-bottom: 0;
-    }
-    .discussion__img {
-        width: 276px;
-    }
-    .discussion__text {
-        width: 48%;
-        font-size: 14px;
-        text-align: left;
-        z-index: 100000;
-    }
-    .discussion__text p {
-        max-width: 476px;
-    }
-    .tools-btns {
-        display: block;
-    }
-
-    
 }
+
+
 
 @media screen and (min-width: 965px) {
     .btn-mobile-nav {
@@ -518,10 +252,5 @@ a {
         justify-content: center;
         align-items: center;
         gap: 10px;
-    }
-
-      /* SECTION PLANS */
-      .section-plans {
-        padding: 120px 0;
     }
 }

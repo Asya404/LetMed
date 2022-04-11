@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/section-plans.css">
+    <link rel="stylesheet" href="./css/section-tools.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -100,99 +102,105 @@
 
     <section class="section-tools">
         <div class="row-small">
-
-            <!-- TOOLS -->
             <h2 class="heading-secondary">All-in-one digital health tools</h2>
             <span class="section-tools__subtitle">Discussion</span>
 
             <!-- DISCUSSION -->
-            <div class="discussion">
-                <div class="discussion__phone">
-                    <img  class="discussion__img" src="./img/phone.svg" width="180" alt="Phone">
-                    <div class="discussion-box discussion-box--1">
-                        <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
-                                alt="Customer photo"></div>
-                        <div class="discussion-box__text discussion-box__text--1">
-                            <p>I would also like to add that I am constantly thirsty and feeling
-                                tired</p>
+            <div class="tools">
+                <div class="tools__phone">
+                    <img class="tools__img" src="./img/phone.svg" width="180" alt="Phone">
+
+                    <!-- DISCUSSION BOX WRAPPER -->
+                    <div class="discussion-box-wrapper">
+                        <div class="discussion-box discussion-box--1">
+                            <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
+                                    alt="Customer photo"></div>
+                            <div class="discussion-box__text discussion-box__text--1">
+                                <p>I would also like to add that I am constantly thirsty and feeling
+                                    tired</p>
+                            </div>
+                        </div>
+                        <div class="discussion-box discussion-box--2">
+                            <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
+                                    alt="Customer photo"></div>
+                            <div class="discussion-box__text discussion-box__text--2">
+                                <p>Based on the information you have provided,
+                                    you will likely benefit from a following prescription-based treatment plan</p>
+                                <p class="discussion-subbox discussion-box__text discussion-box__text--3">Therapy plan:
+                                    Diabetic
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="discussion-box discussion-box--2">
-                        <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
-                                alt="Customer photo"></div>
-                        <div class="discussion-box__text discussion-box__text--2">
-                            <p>Based on the information you have provided,
-                                you will likely benefit from a following prescription-based treatment plan</p>
-                            <p class="discussion-subbox discussion-box__text discussion-box__text--3">Therapy plan:
-                                Diabetic
-                            </p>
-                        </div>
 
+                    <!-- HEALTH BOX WRAPPER -->
+                    <div class="health-box-wrapper">
+                        <div class="health-box health-box--1">
+                            <div class="health-box__img"><img src="./img/health1.svg" alt=""></div>
+                            <div class="health-box__title">Health tasks</div>
+                            <p class="health-box__text">Check your blood sugar levels. Reduce the amount of fatty foods
+                                in
+                                your diet.</p>
+                        </div>
+                        <div class="health-box health-box--2">
+                            <div class="health-box__img"><img src="./img/health2.svg" alt=""></div>
+                            <div class="health-box__title">Labs and imaging</div>
+                            <div class="health-box__text health-box__text--2">
+                                <p>Blood test</p>
+                                <p class="health-box__span">Some issues</p>
+                            </div>
+                        </div>
+                        <div class="health-box health-box--3">
+                            <div class="health-box__img"><img src="./img/health3.svg" alt=""></div>
+                            <div class="health-box__title">Medications</div>
+                            <div class="health-box__text">
+                                <p class="health-box__med">Metformin <span>20 tabs 50mg</span></p>
+                                <p class="health-box__descr">Take 1 tablet by mouth daily for days 1-10, then take 1
+                                    tablet
+                                    by mouth twice daily for
+                                    the rest of treatment , after a meal.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="discussion__text">
+
+                <div class="tools__content">
                     <div class="tools-btns">
                         <div class="tools-btn"><a href="#">Discussion</a></div>
                         <div class="tools-btn"><a href="#">Health plan</a></div>
                         <div class="tools-btn"><a href="#">Follow-up</a></div>
                     </div>
-                    <p class="mb10">High quality health care available 24/7 , no appointment, waiting rooms or
-                        insurance
-                        needed</p>
-                    <p class="mb20">Answer a few questions about your health, lifestyle, and family history. So that
-                        the
-                        doctor can understand your needs and create an appropriate treatment plan for you.</p>
+
+                    <!-- DISCUSSION TEXT -->
+                    <div class="discussion__text">
+                        <p class="mb10">High quality health care available 24/7 , no appointment, waiting rooms or
+                            insurance
+                            needed</p>
+                        <p class="mb20">Answer a few questions about your health, lifestyle, and family history. So that
+                            the
+                            doctor can understand your needs and create an appropriate treatment plan for you.</p>
+                    </div>
+
+                    <!-- HEALTH TEXT -->
+                    <div class="health__text">
+                        <p>The medical specialist will assess your symptoms, discuss your treatment plan with you,
+                            prescribe
+                            medication if needed, and can refer you to a specialist or lab.</p>
+                        <ul>
+                            <li><span>E-prescriptions</span></li>
+                            <li><span>Recommendations</span></li>
+                            <li><span>E-refferrals</span></li>
+                        </ul>
+                    </div>
+
                     <a class="btn" href="#">Get therapy</a>
-                </div>
-            </div>
 
-            <!-- HEALTH -->
-            <span class="section-tools__subtitle">Health plan</span>
-            <div class="health">
-                <div class="health__img">
-                    <img src="./img/phone.svg" width="180" alt="Phone">
-                    <div class="health-box health-box--1">
-                        <div class="health-box__img"><img src="./img/health1.svg" alt=""></div>
-                        <div class="health-box__title">Health tasks</div>
-                        <p class="health-box__text">Check your blood sugar levels. Reduce the amount of fatty foods
-                            in
-                            your diet.</p>
-                    </div>
-                    <div class="health-box health-box--2">
-                        <div class="health-box__img"><img src="./img/health2.svg" alt=""></div>
-                        <div class="health-box__title">Labs and imaging</div>
-                        <div class="health-box__text health-box__text--2">
-                            <p>Blood test</p>
-                            <p class="health-box__span">Some issues</p>
-                        </div>
-                    </div>
-                    <div class="health-box health-box--3">
-                        <div class="health-box__img"><img src="./img/health3.svg" alt=""></div>
-                        <div class="health-box__title">Medications</div>
-                        <div class="health-box__text">
-                            <p class="health-box__med">Metformin <span>20 tabs 50mg</span></p>
-                            <p class="health-box__descr">Take 1 tablet by mouth daily for days 1-10, then take 1
-                                tablet
-                                by mouth twice daily for
-                                the rest of treatment , after a meal.</p>
-                        </div>
-                    </div>
                 </div>
-                <div class="health__text">
-                    <p>The medical specialist will assess your symptoms, discuss your treatment plan with you,
-                        prescribe
-                        medication if needed, and can refer you to a specialist or lab.</p>
-                    <ul>
-                        <li><span>E-prescriptions</span></li>
-                        <li><span>Recommendations</span></li>
-                        <li><span>E-refferrals</span></li>
-                    </ul>
-                </div>
-
-                <a class="btn" href="#">Get therapy</a>
             </div>
     </section>
     </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

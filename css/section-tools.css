@@ -42,7 +42,7 @@
     border-radius: 20px;
 }
 .tools, .health {
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
     max-width: 350px; 
 }
 
@@ -104,10 +104,7 @@
 }
 
 
-/* HEALTH BOX */
-.health-box-wrapper {
-    display: none;
-}
+/* HEALTH */
 .health__img {
     position: relative;
 }
@@ -125,6 +122,12 @@
 }
 .health__text ul li span {
     font-size: 14px;
+}
+
+
+/* HEALTH BOX */
+.health-box-wrapper {
+    display: none;
 }
 .health-box {
     text-align: left;
@@ -191,12 +194,19 @@
     line-height: 14.79px;
 }
 
+ /* FOLLOW */
+ .follow__text {
+     display: none;
+ }
+
+ .sticky {
+     position: sticky;
+ }
 
 
 @media screen and (min-width: 768px) {
     /* TOOLS */
     .section-tools {
-        position: sticky;
         top: 0;
     }
     .tools {

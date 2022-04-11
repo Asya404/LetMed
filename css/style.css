@@ -183,6 +183,12 @@ a {
     color: #fff;
 }
 
+/* SECTION GOALS */
+.section-goals img {
+    display: none;
+    padding-bottom: 120px;
+}
+
 .mb10 { margin-bottom: 10px; }
 .mb15 { margin-bottom: 15px; }
 .mb20 { margin-bottom: 20px; }
@@ -229,6 +235,12 @@ a {
     }
     .feature-box__text {
         color: #fff;
+    }
+
+    .section-goals img {
+        display: block;
+        width: 100%;
+        max-width: 1340px;
     }
 }
 

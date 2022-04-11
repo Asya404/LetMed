@@ -31,6 +31,11 @@ a {
     margin: 0 auto;
     padding: 0 10px;
 }
+.row-small {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
 .heading-primary {
     font-family: 'GilroyBold';
     font-weight: 700;
@@ -64,6 +69,7 @@ a {
     border-radius: 11px;
     border: 2px solid rgba(47, 60, 126, 1);
     font-weight: 600;
+    font-size: 16px;
 }
 
 
@@ -80,9 +86,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header__logo img {
-    max-width: 80px;
 }
 
 
@@ -176,8 +179,14 @@ a {
 .section-plans {
     padding: 40px 0 77px;
 }
+.section-plans h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 .plans {
     display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .plan-box {
@@ -188,7 +197,6 @@ a {
     padding: 15px 15px 10px 15px;
     border-radius: 9px;
     border: 1px solid rgba(116, 127, 182, 1);
-    margin: 0 auto 15px auto;
     box-shadow: -2.258704423904419px 4.517408847808838px 14.681578636169434px 0px rgba(0, 0, 0, 0.07);
 }
 .plan-box__textcontent {
@@ -197,9 +205,6 @@ a {
 }
 .plan-box__title {
     font-size: 16px;
-}
-.plan-box__checked img {
-    width: 36px;
 }
 
 
@@ -218,49 +223,66 @@ a {
     font-size: 22px;
     margin: 15px 0 20px 0;
 }
-.tools__img {
+.discussion__phone {
     position: relative;
     margin-bottom: 33px;
 }
-.tools--text {
-    font-weight: 600;
+.tools-btns {
+    display: none;
+}
+.tools-btn {
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    max-width: 410px;
+    padding: 25px 0;
+    border: 1px solid rgba(239, 244, 253, 1);
+    box-shadow: 0px 4px 24px 0px rgba(47, 60, 126, 0.2);
+    border-radius: 11px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tools-btn a {
+    font-size: 26px;
+    color:#2F3C7E;
 }
 
 
 /*PHONE SHADOW AND MAX-WIDTH*/
-.tools__img img, .health__img img {
+.discussion__img, .health__img img {
     box-shadow: 8px 46px 100px 71px rgba(80, 136, 247, 0.18);
+    border-radius: 20px;
 }
-.tools, .health {
+.discussion, .health {
     margin: 0 auto 50px auto;
     max-width: 350px; 
 }
 
 
 /* OPINION BOX */
-.opinion-box {
+.discussion-box {
     position: absolute;
     display: flex;
     align-items: flex-end;
     gap: 10px;
 }
-.opinion-box--1 {
+.discussion-box--1 {
     top: 20%;
     left: 8%;
 }
-.opinion-box--2 {
+.discussion-box--2 {
     flex-direction: row-reverse;
     top: 50%;
     right: 10%;
 }
-.opinion-subbox {
+.discussion-subbox {
     position: absolute;
     top: 93%;
     right: 14%;
     max-width: 267px;
     width: 100%;
 }
-.opinion-box__img {
+.discussion-box__img {
     background-color: #CDECFA;
     border-radius: 50%;
     display: flex;
@@ -269,26 +291,25 @@ a {
     padding: 2px;
     box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
 }
-.opinion-box__img img {
-    max-width: 28px;
+.discussion-box__img img {
     border-radius: 50%;
 }
-.opinion-box__text {
+.discussion-box__text {
     padding: 12px;
     border-radius: 8.67px;
     font-size: 12px;
     text-align: left;
     box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
 }
-.opinion-box__text--1 {
+.discussion-box__text--1 {
     max-width: 255px;
     background-color: #CDECFA;
 }
-.opinion-box__text--2 {
+.discussion-box__text--2 {
     max-width: 267px;
     background-color: #B9D9F8;
 }
-.opinion-box__text--3 {
+.discussion-box__text--3 {
     color: #fff;
     max-width: 267px;
     background-color: #538DFF;
@@ -401,6 +422,16 @@ a {
         max-width: 666px;
         margin: 132px 0 30px 0;
     }
+    .heading-secondary {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .btn {
+        font-size: 20px;
+        padding: 14px 46px;
+    }
+
     .section-header {
         padding: 77px 70px 52px 70px;
     }
@@ -426,12 +457,46 @@ a {
     .section-plans {
         padding: 80px 0;
     }
+    .section-plans h2 {
+        margin-bottom: 50px;
+    }
     .plan-box__textcontent {
         font-size: 15px;
     }
     .plan-box__title {
         font-size: 18px;
     }
+
+    /* DISCUSSION */
+    .discussion {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        max-width: 100%;
+    }
+    .section-tools__subtitle {
+        display: none;
+    }
+    .discussion__phone {
+        width: 48%;
+        margin-bottom: 0;
+    }
+    .discussion__img {
+        width: 276px;
+    }
+    .discussion__text {
+        width: 48%;
+        font-size: 14px;
+        text-align: left;
+        z-index: 100000;
+    }
+    .discussion__text p {
+        max-width: 476px;
+    }
+    .tools-btns {
+        display: block;
+    }
+
     
 }
 

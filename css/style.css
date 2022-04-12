@@ -10,7 +10,7 @@
 }
 @font-face {
     font-family: 'GilroyRegular';
-    src: url('./gillroy/gilroy-medium.ttf');
+    src: url('./gillroy/gilroy-regular.ttf');
     font-weight: 400;
 }
 @font-face {
@@ -53,7 +53,6 @@ a {
     font-family: 'GilroyBold';
     font-weight: 700;
     font-size: 25px;
-    text-align: center;
 }
 
 
@@ -188,6 +187,63 @@ a {
     display: none;
     padding-bottom: 120px;
 }
+
+.section-form {
+    padding-bottom: 83px;
+}
+.form {
+    color: #fff;
+    padding: 15px;
+    border-radius: 22px;
+    background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
+}
+.form__heading {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.form__text {
+    line-height: 18px;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.form-group label {
+    width: 100%;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    border: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+.form-group input::placeholder {
+    font-size: 12px;
+    color: #C7CFF7;
+}
+.form__consent {
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form__btn {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+.btn-wrapper {
+    text-align: center;
+}
+
+
 
 .mb10 { margin-bottom: 10px; }
 .mb15 { margin-bottom: 15px; }

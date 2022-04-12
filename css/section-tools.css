@@ -13,7 +13,7 @@
 }
 .tools__phone {
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 70px;
 }
 .tools-btns {
     display: none;
@@ -139,19 +139,17 @@
     row-gap: 5px;
 }
 .health-box--1 {
-    top: 17%;
-    left: 10%;
-    max-width: 286px;
+    top: 11%;
+    left: 0;
 }
 .health-box--2 {
-    top: 38%;
-    right: 0;
-    max-width: 326px;
+    top: 76%;
+    right: 21%;
 }
 .health-box--3 {
-    top: 62%;
-    max-width: 317px;
+    top: 43%;
     width: 100%;
+    right: 0;
 }
 .health-box__img {
     margin-right: 10px;
@@ -159,10 +157,19 @@
 .health-box__title {
     font-size: 18px;
 }
+.health-box__title--1 {
+    font-size: 18px;
+}
+.health-box__title--2 {
+    font-size: 17px;
+}
+.health-box__title--2 {
+    font-size: 16px;
+}
 .health-box__text {
     width: 100%;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     background-color: #fff;
     padding: 12px 17px;
     border-radius: 8.46px;
@@ -192,8 +199,8 @@
     margin-left: 13px;
 }
 .health-box__descr {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 10px;
+    line-height: 14px;
 }
 
  /* FOLLOW */
@@ -207,7 +214,7 @@
     position: absolute;
     top: 18%;
     width: 100%;
-    max-width: 370px;
+    max-width: 270px;
     font-size: 14px;
     background-color: #fff;
     padding: 12px 17px;
@@ -224,6 +231,7 @@
     border-radius: 9px;
     padding: 10px;
     margin-bottom: 8px;
+    font-size: 10px;
  }
  .follow-box__answers {
      display: flex;
@@ -231,24 +239,31 @@
      gap: 8px;
  }
  .follow-box__answer {
-    width: 104px;
+    width: 76px;
     padding: 4px;
     border-radius: 20px;
-    border: 0.95px solid rgba(47, 60, 126, 1)
+    border: 0.95px solid rgba(47, 60, 126, 1);
+    font-size: 11px;
+    white-space: nowrap;
  }
- .show{
+
+ /* ANIMATIONS ON SCROLL */
+.show{
     opacity: 1 !important;
     transition: all 0.3s ease;
-  }
-  .hide {
+}
+.hide {
     display: none;
-  }
-  .show-block {
-      display: block;
-  }
+    transition: all 0.3s ease;
+}
+.show-block {
+    display: block;
+    transition: all 0.3s ease;
+}
   .blue-btn {
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
-  }
+    transition: all 0.3s ease;
+}
 
 
   
@@ -298,19 +313,56 @@
         right: 34%;
     }
 
+    .discussion-box__text {
+        font-size: 14px;
+    }
     .discussion-box__text--1 {
         max-width: initial;
         width: 283px;
     }
     .discussion-box__text--2 {
         max-width: initial;
-        width: 270px;
+        width: 312px;
     }
     .discussion-box__text--3 {
         max-width: initial;
-        width: 270px;
+        width: 312px;
     }
     .discussion-box__text--2 p {
         padding: 12px;
+    }
+
+    .health-box--1 {
+        top: 17%;
+        left: 10%;
+        max-width: 286px;
+    }
+    .health-box--2 {
+        top: 38%;
+        right: 0;
+        max-width: 326px;
+    }
+    .health-box--3 {
+        top: 62%;
+        max-width: 317px;
+        width: 100%;
+        right: initial;
+    }
+    .health-box__text {
+        font-size: 14px;
+    }
+    .health-box__descr {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .follow-box {
+        max-width: 370px;
+    }
+    .follow-box__text {
+        font-size: 14px;
+    }
+    .follow-box__answer {
+        width: 104px;
+        font-size: 15px;
     }
 }

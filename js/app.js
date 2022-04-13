@@ -63,9 +63,21 @@ const scene3a = new ScrollMagic.Scene({
 })
 .setClassToggle('.tools-btn--3', 'blue-btn');
 
+const scene3b = new ScrollMagic.Scene({
+    triggerElement: '.tools',
+    offset: 200
+})
+.setClassToggle('.health__text', 'hide');
+
+const scene3c = new ScrollMagic.Scene({
+    triggerElement: '.tools',
+    offset: 200
+})
+.setClassToggle('.follow__text', 'show-block');
+
 
 
 // .addTo(controller);
 controller.addScene([
-    scene1, scene1a, scene2, scene2a, scene2b, scene2c, scene3, scene3a
+    scene1, scene1a, scene2, scene2a, scene2b, scene2c, scene3, scene3a, scene3b, scene3c
 ]);

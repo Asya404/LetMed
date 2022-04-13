@@ -11,6 +11,15 @@
     font-size: 22px;
     margin: 15px 0 20px 0;
 }
+.tools {
+    margin: 0 auto;
+    max-width: 350px; 
+}
+.tools__img {
+    box-shadow: 8px 46px 100px 71px rgba(80, 136, 247, 0.18);
+    border-radius: 20px;
+    background-color: rgb(80 136 247 /18%);
+}
 .tools__phone {
     position: relative;
     margin-bottom: 70px;
@@ -19,6 +28,8 @@
     display: none;
 }
 .tools-btn {
+    color: #2F3C7E;
+    font-family: "Gilroy600";
     background-color: #fff;
     display: inline-block;
     width: 100%;
@@ -27,23 +38,11 @@
     border: 1px solid rgba(239, 244, 253, 1);
     box-shadow: 0px 4px 24px 0px rgba(47, 60, 126, 0.2);
     border-radius: 11px;
-    margin-bottom: 20px;
     text-align: center;
-}
-.tools-btn a {
     font-size: 26px;
-    color:#2F3C7E;
 }
-
-
-/*PHONE SHADOW AND MAX-WIDTH*/
-.tools__img, .health__img img {
-    box-shadow: 8px 46px 100px 71px rgba(80, 136, 247, 0.18);
-    border-radius: 20px;
-}
-.tools, .health {
-    margin: 0 auto;
-    max-width: 350px; 
+.tools-btn:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 
@@ -55,7 +54,7 @@
     position: absolute;
     display: flex;
     align-items: flex-end;
-    gap: 10px;
+    gap: 15px;
 }
 .discussion-box--1 {
     top: 17%;
@@ -111,9 +110,13 @@
 .health__text {
     display: none;
 }
+.health__text p {
+    margin-bottom: 20px;
+}
 .health__text ul {
     list-style: inside;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .health__text ul li {
     margin-bottom: 10px;
@@ -208,7 +211,7 @@
     opacity: 0;
  }
  .follow__text {
-     display: none;
+    display: none;
  }
  .follow-box {
     position: absolute;
@@ -261,6 +264,7 @@
     transition: all 0.3s ease;
 }
   .blue-btn {
+    color: #fff;
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
     transition: all 0.3s ease;
 }
@@ -287,9 +291,10 @@
     .tools__phone {
         width: 48%;
         margin-bottom: 0;
+        top: -60px;
     }
     .tools__img {
-        width: 276px;
+        width: 320px;
     }
     .tools__content {
         width: 48%;
@@ -302,14 +307,15 @@
     }
     .tools-btns {
         display: block;
+        margin-bottom: 40px;
     }   
     
     .discussion-box--1 {
-        top: 19%;
+        top: 16%;
         transform: translateX(0);
     }
     .discussion-box--2 {
-        top: 42%;
+        top: 40%;
         right: 34%;
     }
 
@@ -338,15 +344,15 @@
         max-width: 286px;
     }
     .health-box--2 {
-        top: 38%;
-        right: 0;
+        top: 37%;
+        right: -10%;
         max-width: 326px;
     }
     .health-box--3 {
-        top: 62%;
+        top: 57%;
         max-width: 317px;
         width: 100%;
-        right: initial;
+        right: 43%;
     }
     .health-box__text {
         font-size: 14px;

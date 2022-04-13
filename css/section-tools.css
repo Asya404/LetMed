@@ -345,7 +345,7 @@
     }
     .health-box--2 {
         top: 37%;
-        right: -10%;
+        right: 0;
         max-width: 326px;
     }
     .health-box--3 {

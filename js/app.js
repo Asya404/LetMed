@@ -81,3 +81,22 @@ const scene3c = new ScrollMagic.Scene({
 controller.addScene([
     scene1, scene1a, scene2, scene2a, scene2b, scene2c, scene3, scene3a, scene3b, scene3c
 ]);
+
+
+
+
+const questions = document.querySelector('.questions');
+
+questions.addEventListener('click', function (e) {
+    const active = document.querySelector('.question-active');
+
+    if (active && active != e.target.closest('.question')) {
+        console.log(active)
+        active.classList.remove('question-active');
+    }
+    if (e.target.closest('.question')) {
+        e.target.closest('.question').classList.toggle('question-active');
+    }
+})
+
+

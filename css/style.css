@@ -282,6 +282,37 @@ a {
     margin-top: 30px;
 }
 
+/* SECTION QUESTION */
+.question {
+    gap: 15px;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.question__img--active {
+    display: none;
+}
+.question__answer {
+    width: 100%;
+    display: none;
+}
+.question-active {
+    color: #fff;
+    padding: 23px 15px;
+    border-radius: 22px;
+    background-color: #0F7ADC;
+}
+.question.question-active>.question__answer {
+    display: block;
+}
+.question.question-active>.question__img {
+    display: none;
+}
+.question.question-active>.question__img--active {
+    display: block;
+}
+
 
 
 .mb10 { margin-bottom: 10px; }

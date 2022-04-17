@@ -84,7 +84,7 @@ controller.addScene([
 
 
 
-
+/* SECTION QUESTIONS */
 const questions = document.querySelector('.questions');
 
 questions.addEventListener('click', function (e) {
@@ -97,6 +97,16 @@ questions.addEventListener('click', function (e) {
     if (e.target.closest('.question')) {
         e.target.closest('.question').classList.toggle('question-active');
     }
+})
+
+/* MOBILE NAV */
+const btn = document.querySelector('.nav-icon3');
+const menu = document.querySelector('.nav-mobile');
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('active');
+    document.querySelector('.overlay').classList.toggle('active-overlay');
 })
 
 

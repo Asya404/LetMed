@@ -22,11 +22,11 @@
                 </div>
                 <div class="nav">
                     <ul class="nav-list">
-                        <li><a class="nav-link" href="#">Servises</a></li>
-                        <li><a class="nav-link" href="#">Feedback</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                        <li><a class="nav-link" href="#">FAQ</a></li>
-                        <li><a class="nav-link" href="#">Cooperation</a></li>
+                        <li><a class="nav-link" href="#services">Servises</a></li>
+                        <li><a class="nav-link" href="#feedback">Feedback</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#FAQ">FAQ</a></li>
+                        <li><a class="nav-link" href="#cooperation">Cooperation</a></li>
                     </ul>
                 </div>
                 <div class="header__login">
@@ -48,10 +48,8 @@
                         <li class="nav-mobile-link"><a href="">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="overlay"></div>
-
-                <div class="nav-icon3"></div>
+                <div class="nav-btn"></div>
             </div>
 
             <!-- HERO -->
@@ -84,7 +82,7 @@
     </div>
 
 
-    <section class="section-plans">
+    <section class="section-plans" id="services">
         <div class="row">
             <h2 class="heading-secondary">Get access to various treatment plans</h2>
             <div class="plans">
@@ -93,21 +91,21 @@
                         <h3 class="plan-box__title">Treatment plan</h3>
                         <p class="plan-box__text">Cough</p>
                     </div>
-                    <div class="plan-box__checked"><img src="./img/checked.svg" width="36" alt="Checked"></div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
                 </div>
                 <div class="plan-box">
                     <div class="plan-box__textcontent">
                         <h3 class="plan-box__title">New prescription</h3>
                         <p class="plan-box__text">Contraception</p>
                     </div>
-                    <div class="plan-box__checked"><img src="./img/checked.svg" width="36" alt="Checked"></div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
                 </div>
                 <div class="plan-box">
                     <div class="plan-box__textcontent">
                         <h3 class="plan-box__title">Prescription refill</h3>
                         <p class="plan-box__text">Hypertension</p>
                     </div>
-                    <div class="plan-box__checked"><img src="./img/checked.svg" width="36" alt="Checked"></div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
                 </div>
             </div>
         </div>
@@ -116,7 +114,7 @@
 
     <section class="section-tools">
         <div class="row-small">
-            <h2 class="heading-secondary">All-in-one digital health tools</h2>
+            <h2 class="heading-secondary mb30">All-in-one digital health tools</h2>
             <span class="section-tools__subtitle">Discussion</span>
             <div class="tools">
                 <div class="tools__phone">
@@ -193,9 +191,8 @@
                                 <div class="follow-box__title">Have you experienced any side effects?</div>
                             </div>
                             <div class="follow-box__answers">
-                                <div class="follow-box__answer">Great</div>
-                                <div class="follow-box__answer">Fine</div>
-                                <div class="follow-box__answer">Doesn't help</div>
+                                <div class="follow-box__answer follow-box__answer--wide">I haven’t had side effects</div>
+                                <div class="follow-box__answer follow-box__answer--wide">I have had side effects.</div>
                             </div>
                         </div>
                     </div>
@@ -238,13 +235,13 @@
                             any time to discuss your issues</p>
                     </div>
 
-                    <a class="btn" href="#">Get therapy</a>
+                    <a class="btn mt35" href="#">Get therapy</a>
 
                 </div>
             </div>
     </section>
 
-    <section class="section-goals-desk">
+    <section class="section-goals-desk" id="feedback">
         <div class="row">
             <img src="./img/goals.jpg" alt="">
         </div>
@@ -318,7 +315,7 @@
         </div>
     </section>
 
-    <div class="section-form">
+    <div class="section-form" id="contact">
         <div class="row-small">
             <div class="form">
                 <h2 class="heading-secondary form__heading">Any more questions?</h2>
@@ -344,7 +341,7 @@
                         <input type="checkbox">
                         <p>I consent to the processing of my personal data</p>
                     </div>
-                    <div class="btn-wrapper"><a href="#" class="cta-btn form__btn">Get therapy</a></div>
+                    <div class="btn-wrapper"><a href="#" class="cta-btn form__btn">Contact</a></div>
                 </form>
             </div>
         </div>
@@ -378,50 +375,45 @@
         </div>
     </div>
 
-    <div class="section-questions">
+    <div class="section-questions" id="FAQ">
         <div class="row-small">
             <div class="questions">
                 <h2 class="heading-secondary mb20">Frequently asked questions</h2>
                 <div class="question">
-                    <div class="question__img"><img class="question__img1" src="./img/plus.svg" alt=""></div>
-                    <div class="question__img--active"><img class="question__img1" src="./img/minus.svg" alt=""></div>
-                    <p>How long does it take to hear back from your doctor?</p>
+                    <div class="question__img"></div>
+                    <p class="question__title">How long does it take to hear back from your doctor?</p>
                     <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
                         healthcare professionals. Every doctor goes through a licensing and background check and
                         verification process. When you message or chat with a doctor on the Letmed platform, you can see
                         their resume and medical license.</p>
                 </div>
                 <div class="question">
-                    <div class="question__img"><img class="question__img1" src="./img/plus.svg" alt=""></div>
-                    <div class="question__img--active"><img class="question__img1" src="./img/minus.svg" alt=""></div>
-                    <p>Who is Letmed for?</p>
+                    <div class="question__img"></div>
+                    <p class="question__title">Who is Letmed for?</p>
                     <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
                         healthcare professionals. Every doctor goes through a licensing and background check and
                         verification process. When you message or chat with a doctor on the Letmed platform, you can see
                         their resume and medical license.</p>
                 </div>
                 <div class="question">
-                    <div class="question__img"><img class="question__img1" src="./img/plus.svg" alt=""></div>
-                    <div class="question__img--active"><img class="question__img1" src="./img/minus.svg" alt=""></div>
-                    <p>Who are the health care professionals at Letmed?</p>
+                    <div class="question__img"></div>
+                    <p class="question__title">Who are the health care professionals at Letmed?</p>
                     <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
                         healthcare professionals. Every doctor goes through a licensing and background check and
                         verification process. When you message or chat with a doctor on the Letmed platform, you can see
                         their resume and medical license.</p>
                 </div>
                 <div class="question">
-                    <div class="question__img"><img class="question__img1" src="./img/plus.svg" alt=""></div>
-                    <div class="question__img--active"><img class="question__img1" src="./img/minus.svg" alt=""></div>
-                    <p>Can I use any pharmacy?</p>
+                    <div class="question__img"></div>
+                    <p class="question__title">Can I use any pharmacy?</p>
                     <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
                         healthcare professionals. Every doctor goes through a licensing and background check and
                         verification process. When you message or chat with a doctor on the Letmed platform, you can see
                         their resume and medical license.</p>
                 </div>
                 <div class="question">
-                    <div class="question__img"><img class="question__img1" src="./img/plus.svg" alt=""></div>
-                    <div class="question__img--active"><img class="question__img1" src="./img/minus.svg" alt=""></div>
-                    <p>Is my personal information secure?</p>
+                    <div class="question__img"></div>
+                    <p class="question__title">Is my personal information secure?</p>
                     <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
                         healthcare professionals. Every doctor goes through a licensing and background check and
                         verification process. When you message or chat with a doctor on the Letmed platform, you can see
@@ -431,7 +423,7 @@
         </div>
     </div>
 
-    <section class="section-footer">
+    <section class="section-footer" id="cooperation">
         <div class="row">
             <div class="footer">
                 <div class="footer__img footer__img--small"><img src="./img/logo.svg" width="80" alt=""></div>

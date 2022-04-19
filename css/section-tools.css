@@ -1,5 +1,5 @@
 .section-tools {
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     text-align: center;
 }
 .section-tools__subtitle {
@@ -238,16 +238,26 @@
  }
  .follow-box__answers {
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      gap: 8px;
  }
  .follow-box__answer {
+     opacity: 0.3;
     width: 76px;
     padding: 4px;
     border-radius: 20px;
     border: 0.95px solid rgba(47, 60, 126, 1);
     font-size: 11px;
     white-space: nowrap;
+    cursor: pointer;
+ }
+ .follow-box__answer:hover {
+     opacity: 1;
+     transition: all 0.3s ease;
+ }
+ .follow-box__answer--wide {
+     width: 100% !important;
  }
 
  /* ANIMATIONS ON SCROLL */
@@ -281,7 +291,7 @@
     }
     .tools {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-direction: row-reverse;
         max-width: 100%;
     }
@@ -289,15 +299,15 @@
         display: none;
     }
     .tools__phone {
-        width: 48%;
+        width: 42%;
         margin-bottom: 0;
-        top: -60px;
+        top: -40px;
     }
     .tools__img {
         width: 320px;
     }
     .tools__content {
-        width: 48%;
+        width: 50%;
         font-size: 14px;
         text-align: left;
         z-index: 100000;
@@ -311,11 +321,11 @@
     }   
     
     .discussion-box--1 {
-        top: 16%;
+        top: 26%;
         transform: translateX(0);
     }
     .discussion-box--2 {
-        top: 40%;
+        top: 47%;
         right: 34%;
     }
 
@@ -339,17 +349,17 @@
     }
 
     .health-box--1 {
-        top: 17%;
-        left: 10%;
+        top: 23%;
+        left: 6%;
         max-width: 286px;
     }
     .health-box--2 {
-        top: 37%;
-        right: 0;
+        top: 42%;
+        right: -14%;
         max-width: 326px;
     }
     .health-box--3 {
-        top: 57%;
+        top: 62%;
         max-width: 317px;
         width: 100%;
         right: 43%;

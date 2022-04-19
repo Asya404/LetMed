@@ -114,6 +114,7 @@ a {
 }
 .header__login a {
     color: #fff;
+    white-space: nowrap;
 }
 
 
@@ -210,7 +211,7 @@ a {
 
 
 /* NAV BUTTON AND OVERLAY */
-.nav-icon3 {
+.nav-btn {
     z-index: 100000000;
     width: 25px;
     position: relative;
@@ -220,7 +221,7 @@ a {
     border-radius: 9px;
     transition: .25s ease-in-out;
 }
-.nav-icon3::before, .nav-icon3::after {
+.nav-btn::before, .nav-btn::after {
     content: "";
     display: block;
     position: absolute;
@@ -231,20 +232,20 @@ a {
     border-radius: 9px;
     transition: .25s ease-in-out;
 }
-.nav-icon3::before {
+.nav-btn::before {
     bottom: 9px;
 }
-.nav-icon3::after {
+.nav-btn::after {
     top: 9px;
 }
-.open.nav-icon3 {
+.open.nav-btn {
     width: 0;
 }
-.open.nav-icon3::after {
+.open.nav-btn::after {
     top: initial;
     transform: rotate(45deg); 
 }
-.open.nav-icon3::before{ 
+.open.nav-btn::before{ 
     bottom: initial;
     transform: rotate(-45deg); 
 }
@@ -270,17 +271,6 @@ a {
 /* DESKTOP NAVIGATION */
 .nav {
     display: none;
-    width: 100%;
-    max-width: 589px;
-    font-size: 18px;
-}
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-link {
-    color: #fff;
 }
 
 /* SECTION GOALS */
@@ -335,7 +325,7 @@ a {
 
 
 .section-form {
-    padding-bottom: 83px;
+    padding-bottom: 120px;
 }
 .form {
     color: #fff;
@@ -353,7 +343,7 @@ a {
 .form-group {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 .form-group label {
     width: 100%;
@@ -379,13 +369,10 @@ a {
     justify-content: center;
     font-size: 10px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .form__btn {
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin: 0 auto;
+    padding: 14px 60px;
 }
 .btn-wrapper {
     text-align: center;
@@ -429,16 +416,35 @@ a {
 }
 .question {
     gap: 15px;
-    font-size: 22px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
-.question__img--active {
-    display: none;
+.question__img {
+    content: "";
+    height: 7px;
+    width: 25px;
+    border-radius: 9px;
+    background: #2F3C7E;
+    position: relative;
+}
+.question__img::after {
+    content: "";
+    width: 7px;
+    height: 25px;
+    border-radius: 9px;
+    background: #2F3C7E;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.question__title {
+    width: 90%;
+    font-size: 22px;
 }
 .question__answer {
-    width: 100%;
     display: none;
 }
 .question-active {
@@ -446,18 +452,17 @@ a {
     padding: 23px 15px;
     border-radius: 22px;
     background-color: #0F7ADC;
+    flex-wrap: wrap;
 }
 .question.question-active>.question__answer {
     display: block;
     transition: all 0.3s ease;
 }
-.question.question-active>.question__img {
-    display: none;
-    transition: all 0.3s ease;
+.question.question-active>.question__img::after {
+    width: 0;
 }
-.question.question-active>.question__img--active {
-    display: block;
-    transition: all 0.3s ease;
+.question.question-active>.question__img {
+    background-color: #fff;
 }
 
 
@@ -510,6 +515,7 @@ a {
 .mb15 { margin-bottom: 15px; }
 .mb20 { margin-bottom: 20px; }
 .mb30 { margin-bottom: 30px; }
+.mt35 { margin-top: 35px; }
 
 
 
@@ -625,8 +631,12 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 131px;
+        height: 220px;
         margin-bottom: 15px;
+        font-size: 26px;
+    }
+    .treat-list li:not(:last-child) {
+        margin-bottom: 20px;
     }
     .treat__p {
         display: block;
@@ -669,8 +679,12 @@ a {
     .question__img {
         display: none;
     }
+    .question-active .question__img {
+        display: block;
+    }
     .question__answer {
-        margin-left: 68px;
+        width: 90%;
+        margin: 0 0 0 auto;
         font-size: 14px;
     }
 
@@ -679,17 +693,27 @@ a {
 
 
 @media screen and (min-width: 965px) {
-    .btn-mobile-nav {
-        display: none;
-    }
     .nav {
         display: block;
+        width: 50%;
+        font-size: 18px;
+    }
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link {
+        color: #fff;
+    }
+    .nav-btn {
+        display: none;
     }
     .header__login {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 50px;
+        width: 15%;
     }
     .header__lang {
         display: flex;
@@ -697,6 +721,8 @@ a {
         align-items: center;
         gap: 10px;
     }
+
+  
 
     
     /* FOOTER */

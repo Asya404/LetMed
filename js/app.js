@@ -67,9 +67,15 @@ const scene3b = new ScrollMagic.Scene({
     triggerElement: '.tools',
     offset: 200
 })
-.setClassToggle('.health__text', 'hide');
+.setClassToggle('.discussion__text', 'hide');
 
 const scene3c = new ScrollMagic.Scene({
+    triggerElement: '.tools',
+    offset: 200
+})
+.setClassToggle('.health__text', 'hide');
+
+const scene3d = new ScrollMagic.Scene({
     triggerElement: '.tools',
     offset: 200
 })
@@ -79,7 +85,7 @@ const scene3c = new ScrollMagic.Scene({
 
 // .addTo(controller);
 controller.addScene([
-    scene1, scene1a, scene2, scene2a, scene2b, scene2c, scene3, scene3a, scene3b, scene3c
+    scene1, scene1a, scene2, scene2a, scene2b, scene2c, scene3, scene3a, scene3b, scene3c, scene3d
 ]);
 
 
@@ -100,7 +106,7 @@ questions.addEventListener('click', function (e) {
 })
 
 /* MOBILE NAV */
-const btn = document.querySelector('.nav-icon3');
+const btn = document.querySelector('.nav-btn');
 const menu = document.querySelector('.nav-mobile');
 
 btn.addEventListener('click', () => {
@@ -108,5 +114,12 @@ btn.addEventListener('click', () => {
     menu.classList.toggle('active');
     document.querySelector('.overlay').classList.toggle('active-overlay');
 })
+
+$("#menu, #logo, #services").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+       top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+ });
 
 

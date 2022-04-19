@@ -65,6 +65,16 @@
     top: 42%;
     right: 10%;
 }
+.discussion-box__heading, .health-box__heading, .follow-box__heading {
+    position: absolute;
+    top: 53px;
+    left: 145px;
+    font-family: 'Gilroy600';
+}
+.discussion-box__heading:before, .health-box__heading:before, .follow-box__heading:before {
+    content: '\003C';
+    margin-right: 10px;
+}
 .discussion-box__img {
     background-color: #CDECFA;
     border-radius: 50%;
@@ -73,6 +83,11 @@
     align-items: center;
     padding: 2px;
     box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
+    position: relative;
+    bottom: -10px;
+}
+.discussion-box__img--2 {
+    bottom: -25px;
 }
 .discussion-box__img img {
     border-radius: 50%;
@@ -84,7 +99,7 @@
     box-shadow: 0px 3.39px 12.5px 0px rgba(47, 60, 126, 0.24);
 }
 .discussion-box__text--1 {
-    padding: 12px;
+    padding: 10px 12px 12px 18px;
     max-width: 255px;
     background-color: #CDECFA;
 }
@@ -116,7 +131,6 @@
 .health__text ul {
     list-style: inside;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 .health__text ul li {
     margin-bottom: 10px;
@@ -182,7 +196,7 @@
 .health-box__text--3 {
     display: flex;
     justify-content: space-between;
-    padding: 20px 14px;
+    padding: 25px 14px;
     font-size: 14px;
     font-weight: 600;
     color: #2F3C7E;;
@@ -284,7 +298,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 965px) {
     /* TOOLS */
     .section-tools {
         top: 0;
@@ -317,16 +331,17 @@
     }
     .tools-btns {
         display: block;
-        margin-bottom: 40px;
+        margin-bottom: 37px;
     }   
     
     .discussion-box--1 {
-        top: 26%;
+        top: 24%;
+        right: 8%;
         transform: translateX(0);
     }
     .discussion-box--2 {
         top: 47%;
-        right: 34%;
+        right: 32%;
     }
 
     .discussion-box__text {
@@ -338,7 +353,7 @@
     }
     .discussion-box__text--2 {
         max-width: initial;
-        width: 312px;
+        width: 310px;
     }
     .discussion-box__text--3 {
         max-width: initial;
@@ -354,12 +369,12 @@
         max-width: 286px;
     }
     .health-box--2 {
-        top: 42%;
+        top: 43%;
         right: -14%;
         max-width: 326px;
     }
     .health-box--3 {
-        top: 62%;
+        top: 63%;
         max-width: 317px;
         width: 100%;
         right: 43%;
@@ -368,7 +383,7 @@
         font-size: 14px;
     }
     .health-box__descr {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 17px;
     }
     .follow-box {

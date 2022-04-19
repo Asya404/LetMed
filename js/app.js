@@ -4,14 +4,14 @@ const controller = new ScrollMagic.Controller();
 const scene1 = new ScrollMagic.Scene({
     triggerElement: '.tools',
     offset: -120,
-    duration: 160
+    duration: 240
 })
 .setClassToggle('.discussion-box-wrapper', 'show')
 
 const scene1a = new ScrollMagic.Scene({
     triggerElement: '.tools',
     offset: -120,
-    duration: 160
+    duration: 240
 })
 .setClassToggle('.tools-btn--1', 'blue-btn');
 
@@ -21,29 +21,29 @@ const scene1a = new ScrollMagic.Scene({
 /* SCENE 2 */
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 60,
-    duration: 140
+    offset: 120,
+    duration: 120
 })
 .setClassToggle('.health-box-wrapper', 'show')
 
 const scene2a = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 60,
-    duration: 140
+    offset: 120,
+    duration: 120
 })
 .setClassToggle('.tools-btn--2', 'blue-btn');
 
 const scene2b = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 60,
-    duration: 140
+    offset: 120,
+    duration: 120
 })
 .setClassToggle('.discussion__text', 'hide');
 
 const scene2c = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 60,
-    duration: 140
+    offset: 120,
+    duration: 120
 })
 .setClassToggle('.health__text', 'show-block');
 
@@ -53,31 +53,31 @@ const scene2c = new ScrollMagic.Scene({
 /* SCENE 3 */
 const scene3 = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 200
+    offset: 240
 })
 .setClassToggle('.follow-box-wrapper', 'show')
 
 const scene3a = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 200
+    offset: 240
 })
 .setClassToggle('.tools-btn--3', 'blue-btn');
 
 const scene3b = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 200
+    offset: 240
 })
 .setClassToggle('.discussion__text', 'hide');
 
 const scene3c = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 200
+    offset: 240
 })
 .setClassToggle('.health__text', 'hide');
 
 const scene3d = new ScrollMagic.Scene({
     triggerElement: '.tools',
-    offset: 200
+    offset: 240
 })
 .setClassToggle('.follow__text', 'show-block');
 

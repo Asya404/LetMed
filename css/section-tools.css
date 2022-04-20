@@ -2,6 +2,9 @@
     padding-bottom: 70px;
     text-align: center;
 }
+.section-tools__heading {
+    margin-bottom: 15px;
+}
 .section-tools__subtitle {
     display: inline-block;
     background: linear-gradient(112.58deg, #0585E1 0%, #374EC6 123.69%);
@@ -9,7 +12,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 22px;
-    margin: 15px 0 20px 0;
+    margin-bottom: 20px;
 }
 .tools {
     margin: 0 auto;
@@ -57,19 +60,19 @@
     gap: 15px;
 }
 .discussion-box--1 {
-    top: 17%;
-    right: 10%;
+    top: 25%;
+    right: 11%;
 }
 .discussion-box--2 {
     flex-direction: row-reverse;
-    top: 42%;
-    right: 10%;
+    top: 54%;
 }
 .discussion-box__heading, .health-box__heading, .follow-box__heading {
     position: absolute;
-    top: 53px;
-    left: 145px;
+    top: 30px;
+    left: 100px;
     font-family: 'Gilroy600';
+    font-size: 11.4px;
 }
 .discussion-box__heading:before, .health-box__heading:before, .follow-box__heading:before {
     content: '\003C';
@@ -133,9 +136,11 @@
     margin-top: 10px;
 }
 .health__text ul li {
-    margin-bottom: 10px;
     font-size: 30px;
     line-height: 10px;
+}
+.health__text ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
 .health__text ul li span {
     font-size: 14px;
@@ -196,14 +201,16 @@
 .health-box__text--3 {
     display: flex;
     justify-content: space-between;
-    padding: 25px 14px;
-    font-size: 14px;
+    padding: 25px 11px;
     font-weight: 600;
     color: #2F3C7E;;
 }
+.health-box__p {
+    font-size: 17px;
+}
 .health-box__span {
     color:  #FA2E39;
-    font-size: 12.61px;
+    font-size: 14px;
 }
 .health-box__med {
     color: rgba(47, 60, 126, 1);
@@ -229,7 +236,6 @@
  }
  .follow-box {
     position: absolute;
-    top: 18%;
     width: 100%;
     max-width: 270px;
     font-size: 14px;
@@ -239,16 +245,25 @@
     border: 0.77px solid rgba(196, 208, 230, 1);
     box-shadow: 0px 5.00px 15.91px 0px rgba(47, 60, 126, 0.25);
  }
+ .follow-box--1 {
+    top: 18%;
+    left: 4%;
+ }
  .follow-box--2 {
-     top: 55%;
-     right: 0;
+    top: 54%;
+    right: 0;
  }
  .follow-box__text {
     background: #EDF3FF;
     border-radius: 9px;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 8px;
     font-size: 10px;
+ }
+ .follow-box__subtitle {
+     color: #94A3C0;
+     font-size: 11.4px;
+     margin-bottom: 7px;
  }
  .follow-box__answers {
      display: flex;
@@ -303,6 +318,9 @@
     .section-tools {
         top: 0;
     }
+    .section-tools__heading {
+        margin-bottom: 30px;
+    }
     .tools {
         display: flex;
         justify-content: flex-end;
@@ -328,6 +346,11 @@
     }
     .discussion__text, .health__text {
         max-width: 476px;
+    }
+    .discussion-box__heading, .health-box__heading, .follow-box__heading {
+        top: 53px;
+        left: 145px;
+        font-size: 15px;
     }
     .tools-btns {
         display: block;
@@ -380,7 +403,7 @@
         right: 43%;
     }
     .health-box__text {
-        font-size: 14px;
+        font-size: 13.32px;
     }
     .health-box__descr {
         font-size: 13px;
@@ -389,6 +412,9 @@
     .follow-box {
         max-width: 370px;
     }
+    .follow-box--2 {
+        right: -18%;
+     }
     .follow-box__text {
         font-size: 14px;
     }

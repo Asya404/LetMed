@@ -115,11 +115,11 @@ btn.addEventListener('click', () => {
     document.querySelector('.overlay').classList.toggle('active-overlay');
 })
 
-$("#menu, #logo, #services").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-       top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1000);
- });
+// $("#menu, #logo, #services").on("click", "a", function (event) {
+//     event.preventDefault();
+//     var id = $(this).attr('href'),
+//        top = $(id).offset().top;
+//     $('body,html').animate({ scrollTop: top }, 1000);
+//  });
 
 

@@ -11,8 +11,9 @@
 </head>
 
 <body>
+    <section class="section-header">
     <div class="row">
-        <section class="section-header">
+        
             <!-- HEADER -->
             <div class="header">
                 <div class="logo">
@@ -30,10 +31,18 @@
                 </div>
                 <div class="header__login">
                     <a href="#">Log in</a>
-                    <div class="header__lang">
-                        <img src="./img/lang-eng.svg" alt="Lang">
-                        <p>Eng</p>
-                        <img src="./img/arrow.svg" alt="Arrow">
+                    <div class="header__select select">
+                        <div class="select__title">
+                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25">
+                            <p>Eng</p>
+                            <span class="select__arrow"></span>
+                        </div>
+                        <div class="select__list">
+                            <div class="select__lang select__lang--pl">
+                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25">
+                                <p>PL</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -114,7 +123,9 @@
     <section class="section-tools">
         <div class="row-small">
             <h2 class="heading-secondary section-tools__heading">All-in-one digital health tools</h2>
-            <span class="section-tools__subtitle">Discussion</span>
+            <span class="section-tools__subtitle section-tools__subtitle--1">Discussion</span>
+            <span class="section-tools__subtitle section-tools__subtitle--2">Health plan</span>
+            <span class="section-tools__subtitle section-tools__subtitle--3">Follow-up</span>
             <div class="tools">
                 <div class="tools__phone">
                     <img class="tools__img" src="./img/phone.svg" width="180" alt="Phone">

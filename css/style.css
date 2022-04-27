@@ -95,6 +95,7 @@ a {
     justify-content: space-between;
     align-items: center;
     font-family: 'Gilroy300';
+    position: relative;
 }
 .header__logo {
     display: none;
@@ -108,11 +109,9 @@ a {
 .header__login {
     display: none;
 }
-.header__login a {
-    color: #fff;
-    white-space: nowrap;
+.select__list {
+    display: none;
 }
-
 
 /* HERO */
 .hero__text {
@@ -176,7 +175,7 @@ a {
 }
 .nav-mobile {
     display: none;
-    position: absolute;
+    position: fixed;
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
     top: 0;
     left: 0;
@@ -185,6 +184,7 @@ a {
     color: #fff;
     padding: 10px 24px;
     border-radius: 22px;
+    margin: 15px;
     z-index: 1000000;
 }
 .nav-mobile__list {
@@ -760,6 +760,12 @@ a {
         width: 50%;
         font-size: 18px;
     }
+    .nav-mobile {
+        display: none;
+    }
+    .overlay {
+        display: none;
+    }
     .nav-list {
         list-style: none;
         display: flex;
@@ -775,13 +781,54 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 15%;
+        width: 20%;
     }
-    .header__lang {
+    .header__login a {
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    .header__select {
+        position: absolute;
+        top: 23%;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .select__title {
+        width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 10px;
+        margin-bottom: 10px;
+    }
+    .select__lang {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .select__lang:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .select__img {
+        border-radius: 50%;
+    }
+    .login-frame {
+        border: 1px solid #fff;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+    }
+    .select__arrow {
+        width: 0;
+        height: 0;
+        border-width: 0 5px 6px 5px;
+        border-color: transparent transparent #fff transparent;
+        border-style: solid;
+        transform: rotate(180deg);
+    }
+    .select-active {
+        transform: rotate(0deg);
+        transition: all 0.3s ease;
     }
 
   

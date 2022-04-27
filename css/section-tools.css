@@ -13,6 +13,10 @@
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 20px;
+    display: none;
+}
+.section-tools__subtitle--1 {
+    display: block;
 }
 .tools {
     margin: 0 auto;
@@ -299,7 +303,7 @@
     transition: all 0.3s ease;
 }
 .show-block {
-    display: block;
+    display: block !important;
     transition: all 0.3s ease;
 }
   .blue-btn {

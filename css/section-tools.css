@@ -109,6 +109,25 @@
     padding: 10px 12px 12px 18px;
     max-width: 255px;
     background-color: #CDECFA;
+    position: relative;
+}
+.discussion-box__text--1:after, .discussion-box__text--2:after {
+    content: "";
+    width: 0;
+	height: 0;
+	border-width: 0 12px 14px 12px;
+	border-style: solid;
+    position: absolute;   
+}
+.discussion-box__text--1:after {
+    border-color: transparent transparent #CDECFA transparent;
+    left: -10px;
+    bottom: 0;
+}
+.discussion-box__text--2:after {
+    border-color: transparent transparent #538DFF transparent;
+    right: -10px;
+    bottom: 0;
 }
 .discussion-box__text--2 p {
     padding: 20px 12px 12px 12px;
@@ -116,6 +135,7 @@
 .discussion-box__text--2 {
     max-width: 267px;
     background-color: #B9D9F8;
+    position: relative;
 }
 .discussion-box__text--3 {
     padding: 12px;

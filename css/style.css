@@ -557,6 +557,14 @@ a {
     font-size: 22px;
 }
 
+.owl-carousel .owl-item img {
+    width: initial !important;
+}
+
+.slider1 {
+    margin-bottom: 20px;
+}
+
 
 
 .mb10 { margin-bottom: 10px; }
@@ -849,9 +857,12 @@ a {
         border-style: solid;
         transform: rotate(180deg);
     }
-    .select-active {
+    .arrow-active {
         transform: rotate(0deg);
         transition: all 0.3s ease;
+    }
+    .select-active {
+        display: block;
     }
 
   

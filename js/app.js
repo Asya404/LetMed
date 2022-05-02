@@ -20,7 +20,7 @@ const scene2c = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, d
 const scene2d = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
     .setClassToggle('.section-tools__subtitle--1', 'hide');
 const scene2e = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
-    .setClassToggle('.section-tools__subtitle--2', 'show-block');
+    .setClassToggle('.section-tools__subtitle--2', 'show-sub');
 
 
 // SCENE 3
@@ -37,7 +37,7 @@ const scene3d = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
 const scene3e = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
     .setClassToggle('.section-tools__subtitle--2', 'hide');
 const scene3f = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
-    .setClassToggle('.section-tools__subtitle--3', 'show-block');
+    .setClassToggle('.section-tools__subtitle--3', 'show-sub');
 const scene3g = new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
     .setClassToggle('.section-tools__subtitle--1', 'hide');
 
@@ -77,10 +77,10 @@ btn.addEventListener('click', () => {
 
 
 // SELECT
-document.querySelector('.header__select').addEventListener('click', () => {
-    document.querySelector('.select__list').classList.toggle('show-block');
-    document.querySelector('.header__select').classList.toggle('login-frame');
-    document.querySelector('.select__arrow').classList.toggle('select-active')
+$('.header__select')[0].addEventListener('click', () => {
+    $('.select__list')[0].classList.toggle('select-active');
+    $('.header__select')[0].classList.toggle('login-frame');
+    $('.select__arrow')[0].classList.toggle('arrow-active')
 })
 
 
@@ -96,3 +96,42 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+
+// CAROUSEL
+$('.slider1').owlCarousel({
+    items: 1,
+    center: true,
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+        480: { items: 1.5 },
+        600: { items: 2 },
+        850: { items: 3 }
+    }
+});
+
+$('.slider2').owlCarousel({
+    items: 1,
+    center: true,
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: true,
+    rtl: true,
+    responsive: {
+        480: { items: 1.5 },
+        600: { items: 2 },
+        850: { items: 3 }
+    }
+});

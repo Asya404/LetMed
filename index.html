@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/section-tools.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
@@ -12,8 +14,8 @@
 
 <body>
     <section class="section-header">
-    <div class="row">
-        
+        <div class="row">
+
             <!-- HEADER -->
             <div class="header">
                 <div class="logo">
@@ -86,14 +88,21 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
     </div>
 
 
     <section class="section-plans" id="services">
         <div class="row">
             <h2 class="heading-secondary">Get access to various treatment plans</h2>
-            <div class="plans">
+            <div class="plans owl-carousel slider1">
+                <div class="plan-box">
+                    <div class="plan-box__textcontent">
+                        <h3 class="plan-box__title">Prescription refill</h3>
+                        <p class="plan-box__text">Hypertension</p>
+                    </div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
+                </div>
                 <div class="plan-box">
                     <div class="plan-box__textcontent">
                         <h3 class="plan-box__title">Treatment plan</h3>
@@ -110,8 +119,38 @@
                 </div>
                 <div class="plan-box">
                     <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Prescription refill</h3>
-                        <p class="plan-box__text">Hypertension</p>
+                        <h3 class="plan-box__title">Ongoing care</h3>
+                        <p class="plan-box__text">Women’s health</p>
+                    </div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
+                </div>
+            </div>
+            <div class="plans owl-carousel slider2">
+                <div class="plan-box">
+                    <div class="plan-box__textcontent">
+                        <h3 class="plan-box__title">Metformin</h3>
+                        <p class="plan-box__text">Medicates</p>
+                    </div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
+                </div>
+                <div class="plan-box">
+                    <div class="plan-box__textcontent">
+                        <h3 class="plan-box__title">Health goal</h3>
+                        <p class="plan-box__text">Diabetes control</p>
+                    </div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
+                </div>
+                <div class="plan-box">
+                    <div class="plan-box__textcontent">
+                        <h3 class="plan-box__title">Treatment plan</h3>
+                        <p class="plan-box__text">COVID</p>
+                    </div>
+                    <img src="./img/checked.svg" width="36" alt="Checked">
+                </div>
+                <div class="plan-box">
+                    <div class="plan-box__textcontent">
+                        <h3 class="plan-box__title">Diagnostic tests</h3>
+                        <p class="plan-box__text">Allergy</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked">
                 </div>
@@ -128,7 +167,7 @@
             <span class="section-tools__subtitle section-tools__subtitle--3">Follow-up</span>
             <div class="tools">
                 <div class="tools__phone">
-                    <img class="tools__img" src="./img/phone.svg" width="180" alt="Phone">
+                    <img class="tools__img" src="./img/phone.svg" alt="Phone">
 
                     <!-- DISCUSSION BOX WRAPPER -->
                     <div class="discussion-box-wrapper">
@@ -464,6 +503,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

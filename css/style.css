@@ -109,10 +109,70 @@ a {
 /* LOG IN */
 .header__login {
     display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.header__login a {
+    color: #fff;
+    white-space: nowrap;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+.header__select {
+    position: absolute; 
+    /* to position when it's open*/
+    top: 23%;
+    right: 0;
+}
+.nav-mobile__select {
+    margin-top: 37px;
 }
 .select__list {
     display: none;
 }
+.select__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.select__lang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select__lang:not(:last-child) {
+    margin-bottom: 10px;
+}
+.select__img {
+    border-radius: 50%;
+}
+.login-frame {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.select__arrow {
+    width: 0;
+    height: 0;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    transform: rotate(180deg);
+}
+.arrow-active {
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+.select-active {
+    display: block;
+}
+
 
 /* HERO */
 .hero__text {
@@ -629,6 +689,10 @@ a {
         color: #fff;
     }
 
+    .header__login {
+        display: flex;
+    }
+
 
     /* SECTION PLANS */
     .section-plans {
@@ -808,63 +872,7 @@ a {
     .nav-btn {
         display: none;
     }
-    .header__login {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 20%;
-    }
-    .header__login a {
-        color: #fff;
-        white-space: nowrap;
-    }
-
-    .header__select {
-        position: absolute;
-        top: 23%;
-        right: 0;
-        padding: 10px;
-        cursor: pointer;
-    }
-    .select__title {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-    .select__lang {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .select__lang:not(:last-child) {
-        margin-bottom: 10px;
-    }
-    .select__img {
-        border-radius: 50%;
-    }
-    .login-frame {
-        border: 1px solid #fff;
-        border-radius: 7px;
-        transition: all 0.3s ease;
-    }
-    .select__arrow {
-        width: 0;
-        height: 0;
-        border-width: 0 5px 6px 5px;
-        border-color: transparent transparent #fff transparent;
-        border-style: solid;
-        transform: rotate(180deg);
-    }
-    .arrow-active {
-        transform: rotate(0deg);
-        transition: all 0.3s ease;
-    }
-    .select-active {
-        display: block;
-    }
-
+   
   
 
     /* FOOTER */

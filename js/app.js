@@ -77,11 +77,18 @@ btn.addEventListener('click', () => {
 
 
 // SELECT
-$('.header__select')[0].addEventListener('click', () => {
+$('.select')[0].addEventListener('click', () => {
     $('.select__list')[0].classList.toggle('select-active');
-    $('.header__select')[0].classList.toggle('login-frame');
+    $('.select')[0].classList.toggle('login-frame');
     $('.select__arrow')[0].classList.toggle('arrow-active')
 })
+
+$('.select')[1].addEventListener('click', () => {
+    $('.select__list')[1].classList.toggle('select-active');
+    $('.select')[1].classList.toggle('login-frame');
+    $('.select__arrow')[1].classList.toggle('arrow-active')
+})
+
 
 
 
@@ -109,7 +116,6 @@ $('.slider1').owlCarousel({
     slideTransition: 'linear',
     autoplayTimeout: 3000,
     autoplaySpeed: 3000,
-    autoplayHoverPause: true,
     responsive: {
         480: { items: 1.5 },
         600: { items: 2 },
@@ -127,7 +133,6 @@ $('.slider2').owlCarousel({
     slideTransition: 'linear',
     autoplayTimeout: 3000,
     autoplaySpeed: 3000,
-    autoplayHoverPause: true,
     rtl: true,
     responsive: {
         480: { items: 1.5 },

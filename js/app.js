@@ -119,7 +119,9 @@ $('.slider1').owlCarousel({
     responsive: {
         480: { items: 1.5 },
         600: { items: 2 },
-        850: { items: 3 }
+        850: { items: 3 },
+        965: { items: 2.5},
+        1200: { items: 3 }
     }
 });
 
@@ -137,6 +139,8 @@ $('.slider2').owlCarousel({
     responsive: {
         480: { items: 1.5 },
         600: { items: 2 },
-        850: { items: 3 }
+        850: { items: 3 },
+        965: { items: 2.5},
+        1200: { items: 3 }
     }
 });

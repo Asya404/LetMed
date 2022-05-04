@@ -59,6 +59,7 @@ a {
 }
 
 
+
 /* BUTTONS */
 .cta-btn {
     display: inline-block;
@@ -79,6 +80,7 @@ a {
     font-weight: 600;
     font-size: 16px;
 }
+
 
 
 /* HEADER */
@@ -104,6 +106,7 @@ a {
 .header__logo--small {
     display: block;
 }
+
 
 
 /* LOG IN */
@@ -174,6 +177,7 @@ a {
 }
 
 
+
 /* HERO */
 .hero__text {
     font-family: 'Gilroy400';
@@ -207,6 +211,7 @@ a {
     color: #D2D4DF;
     margin-top: 10px;
 }
+
 
 
 /* MOBILE NAVIGATION */
@@ -265,6 +270,7 @@ a {
 }
 
 
+
 /* NAV BUTTON AND OVERLAY */
 .nav-btn {
     z-index: 100000000;
@@ -321,10 +327,12 @@ a {
 }
 
 
+
 /* DESKTOP NAVIGATION */
 .nav {
     display: none;
 }
+
 
 
 /* SECTION PLANS */
@@ -360,16 +368,15 @@ a {
 }
 
 
+
 /* SECTION GOALS */
 .section-goals-desk {
     display: none;
     margin-bottom: 115px;
 }
-
 .section-goals {
     margin-bottom: 58px;
 }
-
 .goals {
     color: #fff;
     border-radius: 22px;
@@ -428,6 +435,7 @@ a {
     gap: 5px;
     font-size: 10px;
 }
+
 
 
 /* SECTION FORM */
@@ -490,6 +498,7 @@ a {
 }
 
 
+
 /* SECTION TREAT */
 .section-treat {
     margin-bottom: 60px;
@@ -520,6 +529,7 @@ a {
     display: block;
     margin-top: 30px;
 }
+
 
 
 /* SECTION QUESTION */
@@ -578,9 +588,11 @@ a {
 }
 
 
+
 /* SECTION FOOTER */
 .footer {
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
+    box-shadow: 0px 4px 24px 0px rgba(47, 60, 126, 0.2);
     border-radius: 20px;
     padding: 33px 15px 22px 15px;
     margin-bottom: 10px;
@@ -693,9 +705,35 @@ a {
         color: #fff;
     }
 
+
+
+    /* NAVIGATION */
     .header__login {
         display: flex;
     }
+    .nav {
+        display: block;
+        width: 50%;
+        font-size: 18px;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .overlay {
+        display: none;
+    }
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link {
+        color: #fff;
+    }
+    .nav-btn {
+        display: none;
+    }
+
 
 
     /* SECTION PLANS */
@@ -721,6 +759,7 @@ a {
     }
 
 
+
     /* SECTION GOALS */
     .section-goals {
         display: none;
@@ -732,6 +771,7 @@ a {
         width: 100%;
         max-width: 1340px;
     }
+
 
 
     /* SECTION FORM */
@@ -772,6 +812,7 @@ a {
     }
 
 
+
     /* SECTION TREAT */
     .section-treat {
         margin-bottom: 120px;
@@ -788,7 +829,7 @@ a {
         flex-wrap: wrap;
         height: 200px;
         margin-bottom: 0;
-        font-size: 26px;
+        font-size: 24px;
         gap: 20px;
     }
     .treat-list li:not(:last-child) {
@@ -818,6 +859,7 @@ a {
         margin-bottom: 70px;
         max-width: 890px;
     }
+
 
 
     /* SECTION QUESTIONS */
@@ -851,31 +893,6 @@ a {
         font-size: 14px;
         line-height: 18.2px;
     }
-
-
-
-    .nav {
-        display: block;
-        width: 50%;
-        font-size: 18px;
-    }
-    .nav-mobile {
-        display: none;
-    }
-    .overlay {
-        display: none;
-    }
-    .nav-list {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-    }
-    .nav-link {
-        color: #fff;
-    }
-    .nav-btn {
-        display: none;
-    }
    
   
 
@@ -904,7 +921,7 @@ a {
         display: initial;
         position: absolute;
         right: 70px;
-        bottom: 78px;
+        bottom: 70px;
     }
     .footer-title {
         font-size: 18px;

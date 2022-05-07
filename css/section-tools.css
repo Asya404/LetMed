@@ -15,9 +15,6 @@
     margin-bottom: 20px;
     display: none;
 }
-.section-tools__subtitle--1 {
-    display: block;
-}
 .tools {
     margin: 0 auto;
     max-width: 350px; 
@@ -55,9 +52,6 @@
 
 
 /* DISCUSSION BOX */
-.discussion-box-wrapper {
-    display: none;
-}
 .discussion-box {
     position: absolute;
     display: flex;
@@ -153,15 +147,16 @@
 .health__img {
     position: relative;
 }
-.health__text {
-    display: none;
-}
 .health__text p {
     margin-bottom: 20px;
 }
 .health__text ul {
+    text-align: left;
     list-style: inside;
     margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 .health__text ul li {
     font-size: 30px;
@@ -176,9 +171,6 @@
 
 
 /* HEALTH BOX */
-.health-box-wrapper {
-   display: none;
-}
 .health-box {
     text-align: left;
     position: absolute;
@@ -247,12 +239,6 @@
 }
 
  /* FOLLOW */
- .follow-box-wrapper {
-    display: none;
- }
- .follow__text {
-    display: none;
- }
  .follow-box {
     position: absolute;
     width: 100%;
@@ -308,14 +294,16 @@
      width: 100% !important;
  }
 
+
+
+
  /* ANIMATIONS ON SCROLL */
 .show {
-    display: block;
+    opacity: 1 !important;
     transition: all 0.3s ease;
 }
 .show-block {
-    display: block;
-    transition: all 0.3s ease;
+    display: block !important;
 }
 .show-sub {
     display: block;
@@ -328,9 +316,15 @@
 .blue-btn {
     color: #fff;
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
 }
-
+.box-wrapper {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.tools__text {
+    display: none;
+}
 
   
 
@@ -351,7 +345,7 @@
         max-width: 100%;
     }
     .section-tools__subtitle {
-        display: none;
+        display: none !important;
     }
     .tools__phone {
         width: 45%;
@@ -409,6 +403,11 @@
         padding: 12px;
     }
 
+    .health__text ul {
+        display: initial;
+        margin: initial;
+        width: initial;
+    }
     .health-box--1 {
         top: 20%;
         left: 6%;
@@ -435,6 +434,7 @@
         font-size: 13px;
         line-height: 17px;
     }
+
     .follow-box {
         max-width: 370px;
     }

@@ -114,8 +114,8 @@ $('.slider1').owlCarousel({
     dots: false,
     autoplay: true,
     slideTransition: 'linear',
-    autoplayTimeout: 3000,
-    autoplaySpeed: 3000,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 4000,
     responsive: {
         480: { items: 1.5 },
         600: { items: 2 },
@@ -133,8 +133,8 @@ $('.slider2').owlCarousel({
     dots: false,
     autoplay: true,
     slideTransition: 'linear',
-    autoplayTimeout: 3000,
-    autoplaySpeed: 3000,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 4000,
     rtl: true,
     responsive: {
         480: { items: 1.5 },

@@ -75,7 +75,7 @@
 .discussion-box__heading, .health-box__heading, .follow-box__heading {
     position: absolute;
     top: 30px;
-    left: 100px;
+    left: 110px;
     font-family: 'Gilroy600';
     font-size: 11.4px;
 }

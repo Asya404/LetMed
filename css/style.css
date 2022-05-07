@@ -114,7 +114,7 @@ a {
     display: none;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    margin-right: 115px;
 }
 .header__login a {
     color: #fff;
@@ -128,7 +128,7 @@ a {
 .header__select {
     position: absolute; 
     /* to position when it's open*/
-    top: 23%;
+    top: 21%;
     right: 0;
 }
 .nav-mobile__select {

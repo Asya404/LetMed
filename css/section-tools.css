@@ -316,11 +316,10 @@
 .blue-btn {
     color: #fff;
     background: linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%), linear-gradient(53.37deg, rgba(5, 133, 225, 0.94) 0%, #374EC6 136.26%);
-    transition: all 0.3s ease-out;
 }
 .box-wrapper {
     opacity: 0;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease;
 }
 .tools__text {
     display: none;

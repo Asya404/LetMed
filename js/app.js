@@ -9,11 +9,11 @@ for(let i=0; i<boxes.length; i++) {
     .setClassToggle(boxes[0], "show")
 	.addTo(controller);  
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
     .setClassToggle(boxes[1], "show")
 	.addTo(controller);  
     
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
     .setClassToggle(boxes[2], "show")
 	.addTo(controller); 
 }
@@ -26,11 +26,11 @@ for(let i=0; i<btns.length; i++) {
     .setClassToggle(btns[0], "blue-btn")
 	.addTo(controller);  
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
     .setClassToggle(btns[1], "blue-btn")
 	.addTo(controller);  
     
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
     .setClassToggle(btns[2], "blue-btn")
 	.addTo(controller); 
 }
@@ -43,11 +43,11 @@ for(let i=0; i<btns.length; i++) {
     .setClassToggle(texts[0], "show-block")
 	.addTo(controller);  
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
     .setClassToggle(texts[1], "show-block")
 	.addTo(controller);  
     
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
     .setClassToggle(texts[2], "show-block")
 	.addTo(controller); 
 }
@@ -60,11 +60,11 @@ for(let i=0; i<btns.length; i++) {
     .setClassToggle(subtitles[0], "show-block")
 	.addTo(controller);  
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 120 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
     .setClassToggle(subtitles[1], "show-block")
 	.addTo(controller);  
     
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
     .setClassToggle(subtitles[2], "show-block")
 	.addTo(controller); 
 }

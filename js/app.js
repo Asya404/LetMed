@@ -89,7 +89,7 @@ questions.addEventListener('click', function (e) {
 
 
 // MOBILE NAV
-const btn = document.querySelector('.nav-btn');
+const btn = document.querySelector('.nav__btn');
 const menu = document.querySelector('.nav-mobile');
 
 btn.addEventListener('click', () => {

@@ -1,0 +1,22 @@
+{
+  "name": "letmed",
+  "version": "1.0.0",
+  "description": "https://asya404.github.io/LetMed/",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asya404/LetMed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asya404/LetMed/issues"
+  },
+  "homepage": "https://github.com/Asya404/LetMed#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

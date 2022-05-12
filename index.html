@@ -13,7 +13,7 @@
 
 <body>
     <div class="row">
-        <section class="section-header">
+        <header class="section-header">
 
             <!-- HEADER -->
             <div class="header">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="nav">
                     <ul class="nav__list">
-                        <li><a class="nav__link" href="#services">Servises</a></li>
+                        <li><a class="nav__link" href="#services">Services</a></li>
                         <li><a class="nav__link" href="#feedback">Feedback</a></li>
                         <li><a class="nav__link" href="#contact">Contact</a></li>
                         <li><a class="nav__link" href="#FAQ">FAQ</a></li>
@@ -52,25 +52,25 @@
                         <img src="./img/logo.svg" width="80" alt="" class="logo" loading="lazy">
                     </div>
                     <ul class="nav-mobile__list">
-                        <li class="nav-mobile__link"><a href="">Log in</a></li>
-                        <li class="nav-mobile__link"><a href="">Home</a></li>
-                        <li class="nav-mobile__link"><a href="">Contact</a></li>
+                        <li><a class="nav-mobile__link" href="login">Log in</a></li>
+                        <li><a class="nav-mobile__link" href="#cooperation">Cooperation</a></li>
+                        <li><a class="nav-mobile__link" href="#contact">Contact</a></li>
                     </ul>
                     <div class="nav-mobile__select select">
                         <div class="select__title">
-                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="lazy">
+                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="34" loading="lazy">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
                         </div>
                         <div class="select__list">
                             <div class="select__lang select__lang--pl">
-                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
+                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="34" loading="lazy">
                                 <p>PL</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="overlay"></div>
+                <div class="nav__overlay"></div>
                 <div class="nav__btn"></div>
             </div>
 
@@ -83,7 +83,7 @@
                     Take control of your health by managing personalized, on-demand treatment plans with licensed
                     healthcare professionals.
                 </p>
-                <a href="#" class="cta-btn">Get therapy</a>
+                <a href="#" class="btn btn--white">Get therapy</a>
 
                 <div class="features">
                     <div class="feature-box">
@@ -102,7 +102,7 @@
                         <p class="feature-box__text">Treatment plans on demand</p>
                     </div>
                 </div>
-        </section>
+            </header>
     </div>
 
 
@@ -185,7 +185,7 @@
 
                     <!-- DISCUSSION BOX WRAPPER -->
                     <div class="discussion-box-wrapper box-wrapper">
-                        <div class="discussion-box__heading">New treatment</div>
+                        <div class="discussion-box__heading">&#60; &nbsp; New treatment</div>
                         <div class="discussion-box discussion-box--1">
                             <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
                                     alt="Customer photo" loading="lazy"></div>
@@ -211,7 +211,7 @@
 
                     <!-- HEALTH BOX WRAPPER -->
                     <div class="health-box-wrapper box-wrapper">
-                        <div class="health-box__heading">General practice care</div>
+                        <div class="health-box__heading">&#60; &nbsp; General practice care</div>
                         <div class="health-box health-box--1">
                             <div class="health-box__img"><img src="./img/health1.svg" width="24" alt="" loading="lazy">
                             </div>
@@ -244,7 +244,7 @@
 
                     <!-- FOLLOW WRAPPER -->
                     <div class="follow-box-wrapper box-wrapper">
-                        <div class="follow-box__heading">Diabetes therapy</div>
+                        <div class="follow-box__heading">&#60; &nbsp; Diabetes therapy</div>
                         <div class="follow-box follow-box--1">
                             <div class="follow-box__text">
                                 <div class="follow-box__subtitle">LetMed care</div>
@@ -272,10 +272,10 @@
 
                 <!-- TOOLS BUTTONS -->
                 <div class="tools__content">
-                    <div class="tools-btns">
-                        <div class="tools-btn tools-btn--1">Discussion</div>
-                        <div class="tools-btn tools-btn--2">Health plan</div>
-                        <div class="tools-btn tools-btn--3">Follow-up</div>
+                    <div class="tools__btns">
+                        <div class="tools__btn tools__btn--1">Discussion</div>
+                        <div class="tools__btn tools__btn--2">Health plan</div>
+                        <div class="tools__btn tools__btn--3">Follow-up</div>
                     </div>
 
                     <!-- DISCUSSION TEXT -->
@@ -307,20 +307,15 @@
                             any time to discuss your issues</p>
                     </div>
 
-                    <a class="btn mt25" href="#">Get therapy</a>
+                    <a class="btn btn--blue mt25" href="#">Get therapy</a>
 
                 </div>
             </div>
     </section>
 
-    <section class="section-goals-desk" id="feedback">
+    <section class="section-goals" id="feedback">
         <div class="row">
-            <img src="./img/goals.jpg" alt="" loading="lazy">
-        </div>
-    </section>
-
-    <section class="section-goals">
-        <div class="row">
+            <img class="section-goals__desk" src="./img/goals.jpg" alt="" loading="lazy">
             <div class="goals">
                 <h2 class="heading-secondary mb10">Reach your health goals with Letmed</h2>
                 <p>At Letmed We know how your care plans are going so you can achieve your medical goals with
@@ -412,7 +407,7 @@
                         <label for="consent">I consent to the processing of my <a class="form__link" href="#">personal
                                 data</a></label>
                     </div>
-                    <div class="btn-wrapper"><a href="#" class="cta-btn form__btn">Contact</a></div>
+                    <div class="btn-wrapper"><a href="#" class="btn form__btn">Contact</a></div>
                 </form>
             </div>
         </div>
@@ -422,7 +417,7 @@
         <div class="row">
             <div class="treat">
                 <h2 class="heading-secondary section-treat__heading mb20">What We Don’t Treat</h2>
-                <p class="treat__p">While our providers are able to treat most common issues, there are conditions that
+                <p class="treat__descr">While our providers are able to treat most common issues, there are conditions that
                     we don’t treat. Please see an in-person doctor or hospital if you experience any of the following:
                 </p>
                 <ul class="treat-list">
@@ -435,10 +430,10 @@
                     <li>Loss of consciousness</li>
                     <li>Lacerations</li>
                 </ul>
-                <p class="treat__text2">Our doctors cannot write prescriptions for controlled substances such as codeine
+                <p class="treat__text">Our doctors cannot write prescriptions for controlled substances such as codeine
                     or oxycodone. Please see your doctor in person if you need a drug that is a controlled substance.
                 </p>
-                <div class="treat__text">
+                <div class="treat__warning">
                     If you think that your health condition is life-threatening or requires urgent medical attention
                     <span class="treat__span">Please call 112</span>
                 </div>
@@ -452,49 +447,64 @@
                 <h2 class="heading-secondary mb30">Frequently asked questions</h2>
                 <div class="question">
                     <div class="question__img"></div>
-                    <p class="question__title">How long does it take to hear back from your doctor?</p>
-                    <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                        healthcare professionals. Every doctor goes through a licensing and background check and
-                        verification process. When you message or chat with a doctor on the Letmed platform, you can see
-                        their resume and medical license.</p>
+                    <div class="question__text">
+                        <p class="question__title">How long does it take to hear back from your doctor?</p>
+                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see
+                            their resume and medical license.</p>
+                    </div>
                 </div>
                 <div class="question">
                     <div class="question__img"></div>
-                    <p class="question__title">Who is Letmed for?</p>
-                    <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                        healthcare professionals. Every doctor goes through a licensing and background check and
-                        verification process. When you message or chat with a doctor on the Letmed platform, you can see
-                        their resume and medical license.</p>
+                    <div class="question__text">
+                        <p class="question__title">Who is Letmed for?</p>
+                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see
+                            their resume and medical license.</p>
+                    </div>
                 </div>
                 <div class="question">
                     <div class="question__img"></div>
-                    <p class="question__title">Who are the health care professionals at Letmed?</p>
-                    <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                        healthcare professionals. Every doctor goes through a licensing and background check and
-                        verification process. When you message or chat with a doctor on the Letmed platform, you can see
-                        their resume and medical license.</p>
+                    <div class="question__text">
+                        <p class="question__title">Who are the health care professionals at Letmed?</p>
+                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see
+                            their resume and medical license.</p>
+                    </div>
                 </div>
                 <div class="question">
                     <div class="question__img"></div>
-                    <p class="question__title">Can I use any pharmacy?</p>
-                    <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                        healthcare professionals. Every doctor goes through a licensing and background check and
-                        verification process. When you message or chat with a doctor on the Letmed platform, you can see
-                        their resume and medical license.</p>
+                    <div class="question__text">
+                        <p class="question__title">Can I use any pharmacy?</p>
+                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see
+                            their resume and medical license.</p>
+                    </div>
                 </div>
                 <div class="question">
                     <div class="question__img"></div>
-                    <p class="question__title">Is my personal information secure?</p>
-                    <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                        healthcare professionals. Every doctor goes through a licensing and background check and
-                        verification process. When you message or chat with a doctor on the Letmed platform, you can see
-                        their resume and medical license.</p>
+                    <div class="question__text">
+                        <p class="question__title">Is my personal information secure?</p>
+                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see
+                            their resume and medical license.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-footer" id="cooperation">
+    <footer class="section-footer">
         <div class="row">
             <div class="footer">
                 <div class="footer__img footer__img--small"><img src="./img/logo.svg" width="80" alt="" loading="lazy">
@@ -503,11 +513,11 @@
                 </div>
                 <div class="footer__links">
                     <ul>
-                        <li><a href="">Servises</a></li>
-                        <li><a href="">Feedback</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Cooperation</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#cooperation">Cooperation</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">
@@ -517,7 +527,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

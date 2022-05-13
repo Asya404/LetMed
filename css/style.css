@@ -624,6 +624,9 @@
     flex-wrap: wrap;
     text-align: left;
     justify-content: space-between; }
+  .footer__contact a {
+    display: block;
+    color: #fff; }
 
 .footer-title {
   width: 100%;

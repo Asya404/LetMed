@@ -371,31 +371,30 @@
     <section class="section-form" id="contact">
         <div class="row-small">
             <div class="form">
-                <h2 class="heading-secondary form__heading">Any more questions?</h2>
-                <p class="form__text">You can ask us a question. Leave your contact information and we will get
-                    back to
-                    you. We will answer you as soon as possible</p>
+                <h2 class="heading-secondary form__heading" data-lang="form-heading">Any more questions?</h2>
+                <p class="form__text" data-lang="form-text">You can ask us a question. Leave your contact information and we will get back to you. We will answer you as soon as possible</p>
                 <form action="">
                     <div class="form-groups">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="Start typing something">
+                            <label for="name" data-lang="form-name">Name</label>
+                            <input type="text" name="name" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                         <div class="form-group">
-                            <label for="tel">Your phone number</label>
-                            <input type="tel" name="tel" placeholder="Start typing something">
+                            <label for="tel" data-lang="form-tel">Your phone number</label>
+                            <input type="tel" name="tel" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                         <div class="form-group">
-                            <label for="e-mail">Your e-mail</label>
-                            <input type="e-mail" name="email" placeholder="Start typing something">
+                            <label for="e-mail" data-lang="form-mail">Your e-mail</label>
+                            <input type="e-mail" name="email" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                     </div>
                     <div class="form__consent">
                         <input type="checkbox" id="consent">
-                        <label for="consent">I consent to the processing of my <a class="form__link" href="#">personal
-                                data</a></label>
+                        <label for="consent">
+                            <p data-lang="form-consent">I consent to the processing of my</p>
+                            <a class="form__link" href="#" data-lang="form-link">personal data</a></label>
                     </div>
-                    <div class="btn-wrapper"><a href="#" class="btn form__btn">Contact</a></div>
+                    <div class="btn-wrapper"><a href="#" class="btn form__btn" data-lang="form-btn">Contact</a></div>
                 </form>
             </div>
         </div>

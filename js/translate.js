@@ -67,7 +67,17 @@ const langObj = {
         'goals-text1': 'Blood glucoze level is normal. Metformin treatment without side effects.',
         'goals-text2': 'Treatment was fine.',
         'goals-text3': 'Treatment plan was excelent.',
-        'goals-text4': 'Treatment was excelent.'
+        'goals-text4': 'Treatment was excelent.',
+        'form-heading': 'Any more questions?',
+        'form-text': 'You can ask us a question. Leave your contact information and we will get back to you. We will answer you as soon as possible',
+        'form-name': 'Name',
+        'form-tel': 'Your phone number',
+        'form-mail': 'Your e-mail',
+        'form-consent': 'I consent to the processing of my',
+        'form-link': 'personal data',
+        'form-btn': 'Contact',
+        'form-placeholder': 'Start typing something'
+
 
 
 
@@ -142,7 +152,16 @@ const langObj = {
         'goals-text1': 'Poziom glukozy we krwi jest normalny. Kuracja metforminą bez skutków ubocznych.',
         'goals-text2': 'Leczenie było w porządku.',
         'goals-text3': 'Plan leczenia był doskonały.',
-        'goals-text4': 'Leczenie było doskonałe.'
+        'goals-text4': 'Leczenie było doskonałe.',
+        'form-heading': 'Napisz do Nas',
+        'form-text': 'Możesz zadać nam pytanie. Zostaw swoje dane kontaktowe, a my skontaktujemy się z Tobą. Odpowiemy Ci tak szybko, jak to możliwe',
+        'form-name': 'Imię',
+        'form-tel': 'Twój numer telefonu',
+        'form-mail': 'Twój e-mail',
+        'form-consent': 'Wyrażam zgodę na przetwarzanie moich',
+        'form-link': 'danych osobowych',
+        'form-btn': 'Wyślij',
+        'form-placeholder': 'Zacznij coś pisać'
 
 
 

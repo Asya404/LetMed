@@ -1,3 +1,23 @@
+import langObj from './translate.js';
+
+document.querySelector('.select__lang--en').addEventListener('click', function() {
+    getTranslate('en')
+});
+document.querySelector('.select__lang--pl').addEventListener('click', function() {
+    getTranslate('pl')
+});
+
+
+function getTranslate (lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+        if(el.dataset.lang) {
+            el.textContent = langObj[lang][el.dataset.lang]
+        }
+    })
+}
+
+
+
 // ANIMATIONS
 const controller = new ScrollMagic.Controller();
 

@@ -76,7 +76,21 @@ const langObj = {
         'form-consent': 'I consent to the processing of my',
         'form-link': 'personal data',
         'form-btn': 'Contact',
-        'form-placeholder': 'Start typing something'
+        'form-placeholder': 'Start typing something',
+        'section-treat-heading': "What We Don’t Treat",
+        'treat-descr': "While our providers are able to treat most common issues, there are conditions that we don’t treat. Please see an in-person doctor or hospital if you experience any of the following:",
+        'treat-li1': 'Traumatic injury to the brain or spinal cord',
+        'treat-li2': 'Chest pain and/or numbness',
+        'treat-li3': 'Severe burns',
+        'treat-li4': 'Ear infections',
+        'treat-li5': 'Vomiting or coughing up blood',
+        'treat-li6': 'Broken bones',
+        'treat-li7': 'Loss of consciousness',
+        'treat-li8': 'Lacerations',
+
+        'treat-text': 'Our doctors cannot write prescriptions for controlled substances such as codeine or oxycodone. Please see your doctor in person if you need a drug that is a controlled substance.',
+        'treat-warning': 'If you think that your health condition is life-threatening or requires urgent medical attention',
+        'treat-span': 'Please call 112'
 
 
 
@@ -161,7 +175,20 @@ const langObj = {
         'form-consent': 'Wyrażam zgodę na przetwarzanie moich',
         'form-link': 'danych osobowych',
         'form-btn': 'Wyślij',
-        'form-placeholder': 'Zacznij coś pisać'
+        'form-placeholder': 'Zacznij coś pisać',
+        'section-treat-heading': "Czego nie leczymy",
+        'treat-descr': "Chociaż nasi dostawcy są w stanie leczyć najczęstsze problemy, istnieją schorzenia, których nie leczymy. Skontaktuj się z lekarzem lub szpitalem, jeśli wystąpi którykolwiek z poniższych objawów:",
+        'treat-li1': 'Urazowe uszkodzenie mózgu lub rdzenia kręgowego',
+        'treat-li2': 'Ból w klatce piersiowej i/lub drętwienie',
+        'treat-li3': 'Poważne oparzenia',
+        'treat-li4': 'Infekcja ucha',
+        'treat-li5': 'Wymioty lub kaszel krwią',
+        'treat-li6': 'Połamane kości',
+        'treat-li7': 'Utrata przytomności',
+        'treat-li8': 'Rany',
+        'treat-text': 'Nasi lekarze nie mogą wypisywać recept na substancje kontrolowane, takie jak kodeina czy oksykodon. Jeśli potrzebujesz leku, który jest substancją kontrolowaną, skontaktuj się z lekarzem osobiście.',
+        'treat-warning': 'Jeśli uważasz, że Twój stan zdrowia zagraża życiu lub wymaga pilnej pomocy medycznej',
+        'treat-span': 'Zadzwoń pod numer 112'
 
 
 

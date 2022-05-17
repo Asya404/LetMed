@@ -1,7 +1,24 @@
 import langObj from './translate.js';
 
+// SELECT
+$('.select')[0].addEventListener('click', () => {
+    $('.select__list')[0].classList.toggle('select-active');
+    $('.select')[0].classList.toggle('login-frame');
+    $('.select__arrow')[0].classList.toggle('arrow-active')
+})
+
+$('.select')[1].addEventListener('click', () => {
+    $('.select__list')[1].classList.toggle('select-active');
+    $('.select')[1].classList.toggle('login-frame');
+    $('.select__arrow')[1].classList.toggle('arrow-active')
+})
+
+
+// Translates to en only if it's open
 document.querySelector('.select__lang--en').addEventListener('click', function () {
-    getTranslate('en')
+    if (this.parentElement.classList.contains('login-frame')) {
+        getTranslate('en')
+    }
 });
 document.querySelector('.select__lang--pl').addEventListener('click', function () {
     getTranslate('pl')
@@ -18,7 +35,7 @@ function getTranslate(lang) {
             el.textContent = ''
         }
 
-        if(lang == 'pl') {
+        if (lang == 'pl') {
             document.querySelector('.hero__heading').style.maxWidth = '850px';
             document.querySelector('.hero__text').style.maxWidth = '630px';
         }
@@ -29,7 +46,6 @@ function getTranslate(lang) {
 
 // ANIMATIONS
 const controller = new ScrollMagic.Controller();
-
 
 const boxes = document.querySelectorAll('.box-wrapper')
 for (let i = 0; i < boxes.length; i++) {
@@ -143,23 +159,6 @@ for (let smoothLink of smoothLinks) {
         btn.classList.remove('open');
     });
 };
-
-
-
-
-
-// SELECT
-$('.select')[0].addEventListener('click', () => {
-    $('.select__list')[0].classList.toggle('select-active');
-    $('.select')[0].classList.toggle('login-frame');
-    $('.select__arrow')[0].classList.toggle('arrow-active')
-})
-
-$('.select')[1].addEventListener('click', () => {
-    $('.select__list')[1].classList.toggle('select-active');
-    $('.select')[1].classList.toggle('login-frame');
-    $('.select__arrow')[1].classList.toggle('arrow-active')
-})
 
 
 

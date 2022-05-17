@@ -26,7 +26,7 @@
     display: none;
     justify-content: space-between;
     align-items: center;
-    margin-right: 115px; }
+    margin-right: 135px; }
     .header__login a {
       color: #fff;
       white-space: nowrap; }
@@ -634,7 +634,7 @@
   margin-bottom: 9px;
   font-size: 22px; }
 
-@media (min-width: 965px) {
+@media (min-width: 1200px) {
   .footer {
     padding: 164px 15px 68px 15px;
     margin-bottom: 50px;

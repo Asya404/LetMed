@@ -17,6 +17,11 @@ function getTranslate(lang) {
             el.placeholder = langObj[lang][el.dataset.lang];
             el.textContent = ''
         }
+
+        if(lang == 'pl') {
+            document.querySelector('.hero__heading').style.maxWidth = '850px';
+            document.querySelector('.hero__text').style.maxWidth = '630px';
+        }
     })
 }
 

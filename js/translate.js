@@ -87,10 +87,22 @@ const langObj = {
         'treat-li6': 'Broken bones',
         'treat-li7': 'Loss of consciousness',
         'treat-li8': 'Lacerations',
-
         'treat-text': 'Our doctors cannot write prescriptions for controlled substances such as codeine or oxycodone. Please see your doctor in person if you need a drug that is a controlled substance.',
         'treat-warning': 'If you think that your health condition is life-threatening or requires urgent medical attention',
-        'treat-span': 'Please call 112'
+        'treat-span': 'Please call 112',
+        'section-questions-heading': 'Frequently asked questions',
+        'question-title1': 'How long does it take to hear back from your doctor?',
+        'question-answer1': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
+        'question-title2': 'Who is Letmed for?',
+        'question-answer2': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
+        'question-title3': 'Who are the health care professionals at Letmed?',
+        'question-answer3': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
+        'question-title4': 'Can I use any pharmacy?',
+        'question-answer4': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
+        'question-title5': 'Is my personal information secure?',
+        'question-answer5': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
+
+
 
 
 
@@ -188,7 +200,20 @@ const langObj = {
         'treat-li8': 'Rany',
         'treat-text': 'Nasi lekarze nie mogą wypisywać recept na substancje kontrolowane, takie jak kodeina czy oksykodon. Jeśli potrzebujesz leku, który jest substancją kontrolowaną, skontaktuj się z lekarzem osobiście.',
         'treat-warning': 'Jeśli uważasz, że Twój stan zdrowia zagraża życiu lub wymaga pilnej pomocy medycznej',
-        'treat-span': 'Zadzwoń pod numer 112'
+        'treat-span': 'Zadzwoń pod numer 112',
+        'section-questions-heading': 'Często Zadawane Pytania',
+        'question-title1': 'Jak długo trzeba czekać na odpowiedź od lekarza?',
+        'question-answer1': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
+        'question-title2': 'Dla kogo jest Letmed?',
+        'question-answer2': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
+        'question-title3': 'Kim są pracownicy służby zdrowia w Letmed?',
+        'question-answer3': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
+        'question-title4': 'Czy mogę korzystać z dowolnej apteki?',
+        'question-answer4': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
+        'question-title5': 'Czy moje dane osobowe są bezpieczne?',
+        'question-answer5': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
+
+
 
 
 

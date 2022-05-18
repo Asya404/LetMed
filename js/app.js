@@ -1,28 +1,34 @@
 import langObj from './translate.js';
 
-// SELECT
-$('.select')[0].addEventListener('click', () => {
-    $('.select__list')[0].classList.toggle('select-active');
-    $('.select')[0].classList.toggle('login-frame');
-    $('.select__arrow')[0].classList.toggle('arrow-active')
-})
 
-$('.select')[1].addEventListener('click', () => {
-    $('.select__list')[1].classList.toggle('select-active');
-    $('.select')[1].classList.toggle('login-frame');
-    $('.select__arrow')[1].classList.toggle('arrow-active')
+const select = document.querySelectorAll('.select');
+const selectEn = document.querySelectorAll('.select__lang--en');
+const selectPl = document.querySelectorAll('.select__lang--pl');
+
+// SELECT ARROW AND FRAME
+select.forEach(el => {
+    el.addEventListener('click', () => {
+        el.classList.toggle('login-frame');
+        el.lastElementChild.classList.toggle('select-active');
+        el.firstElementChild.lastElementChild.classList.toggle('arrow-active')
+    })
 })
 
 
 // Translates to en only if it's open
-document.querySelector('.select__lang--en').addEventListener('click', function () {
-    if (this.parentElement.classList.contains('login-frame')) {
-        getTranslate('en')
-    }
-});
-document.querySelector('.select__lang--pl').addEventListener('click', function () {
-    getTranslate('pl')
-});
+selectEn.forEach(el => {
+    el.addEventListener('click', function () {
+        if (this.parentElement.classList.contains('login-frame')) {
+            getTranslate('en')
+        }
+    });
+})
+
+selectPl.forEach(el => {
+    el.addEventListener('click', function () {
+        getTranslate('pl')
+    });
+})
 
 
 function getTranslate(lang) {
@@ -38,6 +44,9 @@ function getTranslate(lang) {
         if (lang == 'pl') {
             document.querySelector('.hero__heading').style.maxWidth = '850px';
             document.querySelector('.hero__text').style.maxWidth = '630px';
+        } else if (lang == 'en') {
+            document.querySelector('.hero__heading').style.maxWidth = '666px';
+            document.querySelector('.hero__text').style.maxWidth = '482px';
         }
     })
 }

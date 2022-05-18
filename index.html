@@ -33,14 +33,14 @@
                 <div class="header__login">
                     <a href="#">Log in</a>
                     <div class="header__select select">
-                        <div class="select__title">
+                        <div class="select__title select__lang--en">
                             <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="lazy">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
                         </div>
                         <div class="select__list">
                             <div class="select__lang select__lang--pl">
-                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
+                                <img class="select__img select__img--pl" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
                                 <p>PL</p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         <li><a class="nav-mobile__link" href="#contact">Contact</a></li>
                     </ul>
                     <div class="nav-mobile__select select">
-                        <div class="select__title">
+                        <div class="select__title select__lang--en">
                             <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="34" loading="lazy">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
@@ -76,30 +76,30 @@
 
             <!-- HERO -->
             <div class="hero">
-                <h1 class="heading-primary">
+                <h1 class="heading-primary hero__heading" data-lang="hero-heading">
                     Health care<br> that works for You
                 </h1>
-                <p class="hero__text">
+                <p class="hero__text" data-lang="hero-text">
                     Take control of your health by managing personalized, on-demand treatment plans with licensed
                     healthcare professionals.
                 </p>
-                <a href="#" class="btn btn--white">Get therapy</a>
+                <a href="#" class="btn btn--white" data-lang="hero-btn">Get therapy</a>
 
                 <div class="features">
-                    <div class="feature-box">
-                        <div class="feature-box__img"><img src="./img/feature1.svg" alt="Feature 1" loading="lazy">
+                    <div class="feature">
+                        <div class="feature__img"><img src="./img/feature1.svg" alt="Feature 1" loading="lazy">
                         </div>
-                        <p class="feature-box__text">Certified healthcare professionals</p>
+                        <p class="feature__text" data-lang="feature-text1">Certified healthcare professionals</p>
                     </div>
-                    <div class="feature-box">
-                        <div class="feature-box__img"><img src="./img/feature2.svg" alt="Feature 2" loading="lazy">
+                    <div class="feature">
+                        <div class="feature__img"><img src="./img/feature2.svg" alt="Feature 2" loading="lazy">
                         </div>
-                        <p class="feature-box__text">Health care within minutes</p>
+                        <p class="feature__text" data-lang="feature-text2">Health care within minutes</p>
                     </div>
-                    <div class="feature-box">
-                        <div class="feature-box__img"><img src="./img/feature3.svg" alt="Feature 3" loading="lazy">
+                    <div class="feature">
+                        <div class="feature__img"><img src="./img/feature3.svg" alt="Feature 3" loading="lazy">
                         </div>
-                        <p class="feature-box__text">Treatment plans on demand</p>
+                        <p class="feature__text" data-lang="feature-text3">Treatment plans on demand</p>
                     </div>
                 </div>
             </header>
@@ -108,63 +108,63 @@
 
     <section class="section-plans" id="services">
         <div class="row">
-            <h2 class="heading-secondary">Get access to various treatment plans</h2>
+            <h2 class="heading-secondary" data-lang="section-plans-heading">Get access to various treatment plans</h2>
             <div class="plans owl-carousel slider1">
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Prescription refill</h3>
-                        <p class="plan-box__text">Hypertension</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title1">Prescription refill</h3>
+                        <p class="plan__text" data-lang="plan-text1">Hypertension</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Treatment plan</h3>
-                        <p class="plan-box__text">Cough</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title2">Treatment plan</h3>
+                        <p class="plan__text" data-lang="plan-text2">Cough</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">New prescription</h3>
-                        <p class="plan-box__text">Contraception</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title3">New prescription</h3>
+                        <p class="plan__text" data-lang="plan-text3">Contraception</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Ongoing care</h3>
-                        <p class="plan-box__text">Women’s health</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title4">Ongoing care</h3>
+                        <p class="plan__text" data-lang="plan-text4">Women’s health</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
             </div>
             <div class="plans owl-carousel slider2">
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Metformin</h3>
-                        <p class="plan-box__text">Medicates</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title5">Metformin</h3>
+                        <p class="plan__text" data-lang="plan-text5">Medicates</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Health goal</h3>
-                        <p class="plan-box__text">Diabetes control</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title6">Health goal</h3>
+                        <p class="plan__text" data-lang="plan-text6">Diabetes control</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Treatment plan</h3>
-                        <p class="plan-box__text">COVID</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title7">Treatment plan</h3>
+                        <p class="plan__text" data-lang="plan-text7">COVID</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
-                <div class="plan-box">
-                    <div class="plan-box__textcontent">
-                        <h3 class="plan-box__title">Diagnostic tests</h3>
-                        <p class="plan-box__text">Allergy</p>
+                <div class="plan">
+                    <div class="plan__textcontent">
+                        <h3 class="plan__title" data-lang="plan-title8">Diagnostic tests</h3>
+                        <p class="plan__text" data-lang="plan-text8">Allergy</p>
                     </div>
                     <img src="./img/checked.svg" width="36" alt="Checked" loading="lazy">
                 </div>
@@ -175,34 +175,33 @@
 
     <section class="section-tools">
         <div class="row-small">
-            <h2 class="heading-secondary section-tools__heading">All-in-one digital health tools</h2>
-            <span class="section-tools__subtitle section-tools__subtitle--1">Discussion</span>
-            <span class="section-tools__subtitle section-tools__subtitle--2">Health plan</span>
-            <span class="section-tools__subtitle section-tools__subtitle--3">Follow-up</span>
+            <h2 class="heading-secondary section-tools__heading" data-lang="section-tools-heading">All-in-one digital health tools</h2>
+            <span class="section-tools__subtitle section-tools__subtitle--1" data-lang="section-tools-subtitle1">Discussion</span>
+            <span class="section-tools__subtitle section-tools__subtitle--2" data-lang="section-tools-subtitle2">Health plan</span>
+            <span class="section-tools__subtitle section-tools__subtitle--3" data-lang="section-tools-subtitle3">Follow-up</span>
             <div class="tools">
                 <div class="tools__phone">
                     <img class="tools__img" src="./img/phone.svg" alt="Phone" loading="lazy">
 
                     <!-- DISCUSSION BOX WRAPPER -->
                     <div class="discussion-box-wrapper box-wrapper">
-                        <div class="discussion-box__heading">&#60; &nbsp; New treatment</div>
-                        <div class="discussion-box discussion-box--1">
-                            <div class="discussion-box__img"><img src="./img/discussion1.svg" width="28"
+                        <div class="discussion__heading" data-lang="discussion-heading">&#60; &nbsp; New treatment</div>
+                        <div class="discussion discussion--1">
+                            <div class="discussion__img"><img src="./img/discussion1.svg" width="28"
                                     alt="Customer photo" loading="lazy"></div>
-                            <div class="discussion-box__text discussion-box__text--1">
-                                <p>I would also like to add that I am<br> constantly thirsty and feeling
+                            <div class="discussion__text discussion__text--1" data-lang="discussion-text1">
+                                <p>I would also like to add that I am constantly thirsty and feeling
                                     tired</p>
                             </div>
                         </div>
-                        <div class="discussion-box discussion-box--2">
-                            <div class="discussion-box__img discussion-box__img--2"><img src="./img/discussion2.svg"
+                        <div class="discussion discussion--2">
+                            <div class="discussion__img discussion__img--2"><img src="./img/discussion2.svg"
                                     width="40" alt="Customer photo" loading="lazy"></div>
-                            <div class="discussion-box__text discussion-box__text--2">
-                                <p>Based on the information you have provided,
-                                    you will likely benefit from a following prescription-based treatment plan</p>
-                                <div class="discussion-box__text discussion-box__text--3">
-                                    Therapy plan:
-                                    Diabetic
+                            <div class="discussion__text discussion__text--2">
+                                <div class="discussion__p" data-lang="discussion-p">Based on the information you have provided,
+                                    you will likely benefit from a following prescription-based treatment plan</div>
+                                <div class="discussion__p2" data-lang="discussion-p2">
+                                    Therapy plan: Diabetic
                                     <img src="./img/triangle.svg" alt="" width="15" loading="lazy">
                                 </div>
                             </div>
@@ -211,60 +210,60 @@
 
                     <!-- HEALTH BOX WRAPPER -->
                     <div class="health-box-wrapper box-wrapper">
-                        <div class="health-box__heading">&#60; &nbsp; General practice care</div>
-                        <div class="health-box health-box--1">
-                            <div class="health-box__img"><img src="./img/health1.svg" width="24" alt="" loading="lazy">
+                        <div class="health__heading" data-lang="health-heading">&#60; &nbsp; General practice care</div>
+                        <div class="health health--1">
+                            <div class="health__img"><img src="./img/health1.svg" width="24" alt="" loading="lazy">
                             </div>
-                            <div class="health-box__title health-box__title--1">Health tasks</div>
-                            <p class="health-box__text health-box__text--1">Check your blood sugar levels. Reduce the
-                                amount of fatty foods
-                                in
-                                your diet.</p>
+                            <div class="health__title health__title--1" data-lang="health-title1">Health tasks</div>
+                            <p class="health__text health__text--1" data-lang="health-text1">Check your blood sugar levels. Reduce the amount of fatty foods in your diet.</p>
                         </div>
-                        <div class="health-box health-box--2">
-                            <div class="health-box__img"><img src="./img/health3.svg" width="24" alt="" loading="lazy">
+                        <div class="health health--2">
+                            <div class="health__img"><img src="./img/health3.svg" width="24" alt="" loading="lazy">
                             </div>
-                            <div class="health-box__title health-box__title--2">Medications</div>
-                            <div class="health-box__text health-box__text--2">
-                                <p class="health-box__med">Metformin <span>20 tabs</span><span>50mg</span></p>
-                                <p class="health-box__descr">Take 1 tablet by mouth daily for days 1-10, then take 1
+                            <div class="health__title health__title--2" data-lang="health-title2">Medications</div>
+                            <div class="health__text health__text--2">
+                                <div class="health__med">
+                                    <span class="med1" data-lang="med1">Metformin</span>
+                                    <span class="med2">20 tabs</span>
+                                    <span class="med3">50mg</span>
+                                </div>
+                                <p class="health__descr" data-lang="health-descr">Take 1 tablet by mouth daily for days 1-10, then take 1
                                     tablet by mouth twice daily for the rest of treatment , after a meal.</p>
                             </div>
                         </div>
-                        <div class="health-box health-box--3">
-                            <div class="health-box__img"><img src="./img/health2.svg" width="24" alt="" loading="lazy">
+                        <div class="health health--3">
+                            <div class="health__img"><img src="./img/health2.svg" width="24" alt="" loading="lazy">
                             </div>
-                            <div class="health-box__title health-box__title--3">Tests</div>
-                            <div class="health-box__text health-box__text--3">
-                                <p class="health-box__p">Blood test</p>
-                                <p class="health-box__span">Some issues</p>
+                            <div class="health__title health__title--3" data-lang="health-title3">Tests</div>
+                            <div class="health__text health__text--3">
+                                <p class="health__p" data-lang="health-p">Blood test</p>
+                                <p class="health__span" data-lang="health-span">Some issues</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- FOLLOW WRAPPER -->
                     <div class="follow-box-wrapper box-wrapper">
-                        <div class="follow-box__heading">&#60; &nbsp; Diabetes therapy</div>
-                        <div class="follow-box follow-box--1">
-                            <div class="follow-box__text">
-                                <div class="follow-box__subtitle">LetMed care</div>
-                                <div class="follow-box__title">How is your current treatment working for you?</div>
+                        <div class="follow__heading" data-lang="follow-heading">&#60; &nbsp; Diabetes therapy</div>
+                        <div class="follow follow--1">
+                            <div class="follow__text">
+                                <div class="follow__subtitle" data-lang="follow-subtitle">LetMed care</div>
+                                <div class="follow__title" data-lang="follow-title1">How is your current treatment working for you?</div>
                             </div>
-                            <div class="follow-box__answers">
-                                <div class="follow-box__answer">Great</div>
-                                <div class="follow-box__answer">Fine</div>
-                                <div class="follow-box__answer">Doesn't help</div>
+                            <div class="follow__answers">
+                                <div class="follow__answer" data-lang="follow-answer1">Great</div>
+                                <div class="follow__answer" data-lang="follow-answer2">Fine</div>
+                                <div class="follow__answer" data-lang="follow-answer3">Doesn't help</div>
                             </div>
                         </div>
-                        <div class="follow-box follow-box--2">
-                            <div class="follow-box__text">
-                                <div class="follow-box__subtitle">LetMed care</div>
-                                <div class="follow-box__title">Have you experienced any side effects?</div>
+                        <div class="follow follow--2">
+                            <div class="follow__text">
+                                <div class="follow__subtitle" data-lang="follow-subtitle">LetMed care</div>
+                                <div class="follow__title" data-lang="follow-title2">Have you experienced any side effects?</div>
                             </div>
-                            <div class="follow-box__answers">
-                                <div class="follow-box__answer follow-box__answer--wide">I haven’t had side effects
-                                </div>
-                                <div class="follow-box__answer follow-box__answer--wide">I have had side effects.</div>
+                            <div class="follow__answers">
+                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide1">I haven’t had side effects</div>
+                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide2">I have had side effects.</div>
                             </div>
                         </div>
                     </div>
@@ -273,41 +272,35 @@
                 <!-- TOOLS BUTTONS -->
                 <div class="tools__content">
                     <div class="tools__btns">
-                        <div class="tools__btn tools__btn--1">Discussion</div>
-                        <div class="tools__btn tools__btn--2">Health plan</div>
-                        <div class="tools__btn tools__btn--3">Follow-up</div>
+                        <div class="tools__btn tools__btn--1" data-lang="tools-btn1">Discussion</div>
+                        <div class="tools__btn tools__btn--2" data-lang="tools-btn2">Health plan</div>
+                        <div class="tools__btn tools__btn--3" data-lang="tools-btn3">Follow-up</div>
                     </div>
 
                     <!-- DISCUSSION TEXT -->
-                    <div class="tools__text discussion__text">
-                        <p class="mb15">High quality health care available 24/7 , no appointment, waiting rooms or
-                            insurance
-                            needed</p>
-                        <p>Answer a few questions about your health, lifestyle, and family history. So that
-                            the
-                            doctor can understand your needs and create an appropriate treatment plan for you.</p>
+                    <div class="tools__text tools__text--discussion">
+                        <p class="mb15" data-lang="tools-text-discussion1">High quality health care available 24/7 , no appointment, waiting rooms or insurance needed</p>
+                        <p data-lang="tools-text-discussion2">Answer a few questions about your health, lifestyle, and family history. So that the doctor can understand your needs and create an appropriate treatment plan for you.</p>
                     </div>
 
                     <!-- HEALTH TEXT -->
-                    <div class="tools__text health__text">
-                        <p>The medical specialist will assess your symptoms, discuss your treatment plan with you,
-                            prescribe
-                            medication if needed, and can refer you to a specialist or lab.</p>
+                    <div class="tools__text tools__text--health">
+                        <p class="mb20" data-lang="tools-text-health">The medical specialist will assess your symptoms, discuss your treatment plan with you, prescribe medication if needed, and can refer you to a specialist or lab.</p>
                         <ul>
-                            <li><span>E-prescriptions</span></li>
-                            <li><span>Recommendations</span></li>
-                            <li><span>E-refferrals</span></li>
+                            <li><span data-lang="tools-text-span1">E-prescriptions</span></li>
+                            <li><span data-lang="tools-text-span2">Recommendations</span></li>
+                            <li><span data-lang="tools-text-span3">E-refferrals</span></li>
                         </ul>
                     </div>
 
                     <!-- FOLLOW TEXT -->
-                    <div class="tools__text follow__text">
-                        <p>Set personal health goals and monitor your progress. Your healthcare medical
+                    <div class="tools__text tools__text--follow">
+                        <p data-lang="tools-text-follow">Set personal health goals and monitor your progress. Your healthcare medical
                             secialist on the Letmed platform is here to help if treatment is going wrong. Message them
                             any time to discuss your issues</p>
                     </div>
 
-                    <a class="btn btn--blue mt25" href="#">Get therapy</a>
+                    <a class="btn btn--blue mt25" href="#" data-lang="tools-cta">Get therapy</a>
 
                 </div>
             </div>
@@ -316,64 +309,59 @@
     <section class="section-goals" id="feedback">
         <div class="row">
             <img class="section-goals__desk" src="./img/goals.jpg" alt="" loading="lazy">
-            <div class="goals">
-                <h2 class="heading-secondary mb10">Reach your health goals with Letmed</h2>
-                <p>At Letmed We know how your care plans are going so you can achieve your medical goals with
-                    confidence.</p>
-                <div class="goals-box">
-                    <div class="goals-box__img"><img src="./img/goals1.svg" alt="" loading="lazy"></div>
-                    <div class="goals-box__content">
+            <div class="goals-wrapper">
+                <h2 class="heading-secondary mb10" data-lang="section-goals-heading">Reach your health goals with Letmed</h2>
+                <p data-lang="goals-wrapper-text">At Letmed We know how your care plans are going so you can achieve your medical goals with confidence.</p>
+                <div class="goals">
+                    <div class="goals__img"><img src="./img/goals1.svg" alt="" loading="lazy"></div>
+                    <div class="goals__content">
                         <div class="goals-span">
-                            <p class="goals-span__title">Diabetes</p>
-                            <div class="goals-span__span">
+                            <p class="title" data-lang="goals-span-title1">Diabetes</p>
+                            <div class="span">
                                 <img src="./img/checked.svg" width="10" alt="" loading="lazy">
-                                <p>Health goal achieved</p>
+                                <p data-lang="goals-span-span">Health goal achieved</p>
                             </div>
                         </div>
-                        <p class="goals-box__text">Blood glucoze level is normal.
-                            Metformin treatment withou side effects.</p>
+                        <p class="goals__text" data-lang="goals-text1">Blood glucoze level is normal. Metformin treatment without side effects.</p>
                     </div>
                 </div>
-                <div class="goals-box goals-box--reverse">
-                    <div class="goals-box__img"><img src="./img/goals2.svg" alt="" loading="lazy"></div>
-                    <div class="goals-box__content">
+                <div class="goals goals--reverse">
+                    <div class="goals__img"><img src="./img/goals2.svg" alt="" loading="lazy"></div>
+                    <div class="goals__content">
                         <div class="goals-span">
-                            <p class="goals-span__title">Diabetes</p>
-                            <div class="goals-span__span">
+                            <p class="title" data-lang="goals-span-title2">Covid</p>
+                            <div class="span">
                                 <img src="./img/checked.svg" width="10" alt="" loading="lazy">
-                                <p>Health goal achieved</p>
+                                <p data-lang="goals-span-span">Health goal achieved</p>
                             </div>
                         </div>
-                        <p class="goals-box__text">Blood glucoze level is normal.
-                            Metformin treatment withou side effects.</p>
+                        <p class="goals__text" data-lang="goals-text2">Treatment was fine.</p>
                     </div>
                 </div>
-                <div class="goals-box">
-                    <div class="goals-box__img"><img src="./img/goals3.svg" alt="" loading="lazy"></div>
-                    <div class="goals-box__content">
+                <div class="goals">
+                    <div class="goals__img"><img src="./img/goals3.svg" alt="" loading="lazy"></div>
+                    <div class="goals__content">
                         <div class="goals-span">
-                            <p class="goals-span__title">Diabetes</p>
-                            <div class="goals-span__span">
+                            <p class="title" data-lang="goals-span-title3">Flu</p>
+                            <div class="span">
                                 <img src="./img/checked.svg" width="10" alt="" loading="lazy">
-                                <p>Health goal achieved</p>
+                                <p data-lang="goals-span-span">Health goal achieved</p>
                             </div>
                         </div>
-                        <p class="goals-box__text">Blood glucoze level is normal.
-                            Metformin treatment withou side effects.</p>
+                        <p class="goals__text" data-lang="goals-text3">Treatment plan was excelent.</p>
                     </div>
                 </div>
-                <div class="goals-box goals-box--reverse">
-                    <div class="goals-box__img"><img src="./img/goals4.svg" alt="" loading="lazy"></div>
-                    <div class="goals-box__content">
+                <div class="goals goals--reverse">
+                    <div class="goals__img"><img src="./img/goals4.svg" alt="" loading="lazy"></div>
+                    <div class="goals__content">
                         <div class="goals-span">
-                            <p class="goals-span__title">Diabetes</p>
-                            <div class="goals-span__span">
+                            <p class="title" data-lang="goals-span-title4">Contraception</p>
+                            <div class="span">
                                 <img src="./img/checked.svg" width="10" alt="" loading="lazy">
-                                <p>Health goal achieved</p>
+                                <p data-lang="goals-span-span">Health goal achieved</p>
                             </div>
                         </div>
-                        <p class="goals-box__text">Blood glucoze level is normal.
-                            Metformin treatment withou side effects.</p>
+                        <p class="goals__text" data-lang="goals-text4">Treatment was excelent.</p>
                     </div>
                 </div>
             </div>
@@ -383,31 +371,30 @@
     <section class="section-form" id="contact">
         <div class="row-small">
             <div class="form">
-                <h2 class="heading-secondary form__heading">Any more questions?</h2>
-                <p class="form__text">You can ask us a question. Leave your contact information and we will get
-                    back to
-                    you. We will answer you as soon as possible</p>
+                <h2 class="heading-secondary form__heading" data-lang="form-heading">Any more questions?</h2>
+                <p class="form__text" data-lang="form-text">You can ask us a question. Leave your contact information and we will get back to you. We will answer you as soon as possible</p>
                 <form action="">
                     <div class="form-groups">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="Start typing something">
+                            <label for="name" data-lang="form-name">Name</label>
+                            <input type="text" name="name" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                         <div class="form-group">
-                            <label for="tel">Your phone number</label>
-                            <input type="tel" name="tel" placeholder="Start typing something">
+                            <label for="tel" data-lang="form-tel">Your phone number</label>
+                            <input type="tel" name="tel" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                         <div class="form-group">
-                            <label for="e-mail">Your e-mail</label>
-                            <input type="e-mail" name="email" placeholder="Start typing something">
+                            <label for="e-mail" data-lang="form-mail">Your e-mail</label>
+                            <input type="e-mail" name="email" data-lang="form-placeholder" placeholder="Start typing something">
                         </div>
                     </div>
                     <div class="form__consent">
                         <input type="checkbox" id="consent">
-                        <label for="consent">I consent to the processing of my <a class="form__link" href="#">personal
-                                data</a></label>
+                        <label for="consent">
+                            <p data-lang="form-consent">I consent to the processing of my</p>
+                            <a class="form__link" href="#" data-lang="form-link">personal data</a></label>
                     </div>
-                    <div class="btn-wrapper"><a href="#" class="btn form__btn">Contact</a></div>
+                    <div class="btn-wrapper"><a href="#" class="btn form__btn" data-lang="form-btn">Contact</a></div>
                 </form>
             </div>
         </div>
@@ -416,26 +403,26 @@
     <section class="section-treat">
         <div class="row">
             <div class="treat">
-                <h2 class="heading-secondary section-treat__heading mb20">What We Don’t Treat</h2>
-                <p class="treat__descr">While our providers are able to treat most common issues, there are conditions that
+                <h2 class="heading-secondary section-treat__heading mb20" data-lang="section-treat-heading">What We Don’t Treat</h2>
+                <p class="treat__descr" data-lang="treat-descr">While our providers are able to treat most common issues, there are conditions that
                     we don’t treat. Please see an in-person doctor or hospital if you experience any of the following:
                 </p>
                 <ul class="treat-list">
-                    <li>Traumatic injury to the brain or spinal cord</li>
-                    <li>Chest pain and/or numbness</li>
-                    <li>Severe burns</li>
-                    <li>Ear infections</li>
-                    <li>Vomiting or coughing up blood</li>
-                    <li>Broken bones</li>
-                    <li>Loss of consciousness</li>
-                    <li>Lacerations</li>
+                    <li data-lang="treat-li1">Traumatic injury to the brain or spinal cord</li>
+                    <li data-lang="treat-li2">Chest pain and/or numbness</li>
+                    <li data-lang="treat-li3">Severe burns</li>
+                    <li data-lang="treat-li4">Ear infections</li>
+                    <li data-lang="treat-li5">Vomiting or coughing up blood</li>
+                    <li data-lang="treat-li6">Broken bones</li>
+                    <li data-lang="treat-li7">Loss of consciousness</li>
+                    <li data-lang="treat-li8">Lacerations</li>
                 </ul>
-                <p class="treat__text">Our doctors cannot write prescriptions for controlled substances such as codeine
+                <p class="treat__text" data-lang="treat-text">Our doctors cannot write prescriptions for controlled substances such as codeine
                     or oxycodone. Please see your doctor in person if you need a drug that is a controlled substance.
                 </p>
                 <div class="treat__warning">
-                    If you think that your health condition is life-threatening or requires urgent medical attention
-                    <span class="treat__span">Please call 112</span>
+                    <p data-lang="treat-warning">If you think that your health condition is life-threatening or requires urgent medical attention</p>
+                    <span class="treat__span" data-lang="treat-span">Please call 112</span>
                 </div>
             </div>
         </div>
@@ -444,12 +431,21 @@
     <section class="section-questions" id="FAQ">
         <div class="row-small">
             <div class="questions">
-                <h2 class="heading-secondary mb30">Frequently asked questions</h2>
+                <h2 class="heading-secondary mb30" data-lang="section-questions-heading">Frequently asked questions</h2>
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title">How long does it take to hear back from your doctor?</p>
-                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title1">How long does it take to hear back from your doctor?</p>
+                        <p class="question__answer" data-lang="question-answer1">The entire healthcare team on the Letmed platform are licensed
+                            healthcare professionals. Every doctor goes through a licensing and background check and
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question__img"></div>
+                    <div class="question__text">
+                        <p class="question__title" data-lang="question-title2">Who is Letmed for?</p>
+                        <p class="question__answer" data-lang="question-answer2">The entire healthcare team on the Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -459,8 +455,8 @@
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title">Who is Letmed for?</p>
-                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title3">Who are the health care professionals at Letmed?</p>
+                        <p class="question__answer" data-lang="question-answer3">The entire healthcare team on the Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -470,8 +466,8 @@
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title">Who are the health care professionals at Letmed?</p>
-                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title4">Can I use any pharmacy?</p>
+                        <p class="question__answer" data-lang="question-answer4">The entire healthcare team on the Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -481,19 +477,8 @@
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title">Can I use any pharmacy?</p>
-                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
-                            healthcare professionals. Every doctor goes through a licensing and background check and
-                            verification process. When you message or chat with a doctor on the Letmed platform, you can
-                            see
-                            their resume and medical license.</p>
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="question__img"></div>
-                    <div class="question__text">
-                        <p class="question__title">Is my personal information secure?</p>
-                        <p class="question__answer">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title5">Is my personal information secure?</p>
+                        <p class="question__answer" data-lang="question-answer5">The entire healthcare team on the Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -534,7 +519,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>

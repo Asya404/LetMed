@@ -31,6 +31,51 @@
       color: #fff;
       white-space: nowrap; }
 
+.select {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid transparent; }
+  .select__list {
+    display: none; }
+  .select__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px; }
+  .select__lang {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+  .select__lang:not(:last-child) {
+    margin-bottom: 10px; }
+  .select__img {
+    border-radius: 50%; }
+  .select__arrow {
+    width: 0;
+    height: 0;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    transform: rotate(180deg); }
+
+.nav-mobile__select {
+  margin-top: 37px; }
+
+.login-frame {
+  border: 1px solid #fff;
+  border-radius: 7px;
+  transition: all 0.3s ease; }
+
+.arrow-active {
+  transform: rotate(0deg);
+  transition: all 0.3s ease; }
+
+.select-active {
+  display: block; }
+
 @media (min-width: 965px) {
   .section-header {
     padding: 80px 70px 52px 70px; }
@@ -188,49 +233,6 @@
       display: none; }
   .nav-mobile {
     display: none; } }
-
-.select {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px; }
-  .select__list {
-    display: none; }
-  .select__title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px; }
-  .select__lang {
-    display: flex;
-    align-items: center;
-    gap: 10px; }
-  .select__lang:not(:last-child) {
-    margin-bottom: 10px; }
-  .select__img {
-    border-radius: 50%; }
-  .select__arrow {
-    width: 0;
-    height: 0;
-    border-width: 0 5px 6px 5px;
-    border-color: transparent transparent #fff transparent;
-    border-style: solid;
-    transform: rotate(180deg); }
-
-.nav-mobile__select {
-  margin-top: 37px; }
-
-.login-frame {
-  border: 1px solid #fff;
-  border-radius: 7px;
-  transition: all 0.3s ease; }
-
-.arrow-active {
-  transform: rotate(0deg);
-  transition: all 0.3s ease; }
-
-.select-active {
-  display: block; }
 
 .section-plans {
   padding: 40px 0 77px; }
@@ -649,7 +651,7 @@
     .footer__links {
       margin-bottom: 0; }
     .footer__links ul {
-      column-gap: 57px; }
+      column-gap: 110px; }
     .footer__contact {
       display: initial;
       position: absolute;

@@ -101,14 +101,9 @@ const langObj = {
         'question-answer4': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
         'question-title5': 'Is my personal information secure?',
         'question-answer5': 'The entire healthcare team on the Letmed platform are licensed healthcare professionals. Every doctor goes through a licensing and background check and verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.',
-
-
-
-
-
-
-
-        
+        'nav-lang': 'Services',
+        'nav-contact': 'Contact',
+        'nav-cooperation': 'Cooperation'
     },
     'pl': {
         'hero-heading': 'Opieka zdrowotna pracująca dla Ciebie',
@@ -212,12 +207,9 @@ const langObj = {
         'question-answer4': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
         'question-title5': 'Czy moje dane osobowe są bezpieczne?',
         'question-answer5': 'Cały zespół opieki zdrowotnej na platformie Letmed to licencjonowani pracownicy służby zdrowia. Każdy lekarz przechodzi proces licencjonowania i sprawdzania przeszłości oraz weryfikacji. Gdy wysyłasz wiadomość lub czatujesz z lekarzem na platformie Letmed, możesz zobaczyć jego CV i licencję medyczną.',
-
-
-
-
-
-
+        'nav-lang': 'Usługi',
+        'nav-contact': 'Kontakt',
+        'nav-cooperation': 'Współpraca'
     }
 }
 

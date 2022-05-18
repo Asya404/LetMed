@@ -160,8 +160,7 @@ for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(smoothLink.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            // block: 'start'
+            behavior: 'smooth'
         });
         menu.classList.remove('active');
         overlay.classList.remove('active-overlay');

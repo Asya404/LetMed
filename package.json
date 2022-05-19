@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "https://asya404.github.io/LetMed/",
   "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Asya404/LetMed.git"
@@ -17,6 +15,13 @@
   },
   "homepage": "https://github.com/Asya404/LetMed#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.51.0"
   }
 }

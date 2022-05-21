@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -27,7 +25,7 @@
                         <li><a class="nav__link" href="#feedback">Feedback</a></li>
                         <li><a class="nav__link" href="#contact" data-lang="nav-contact">Contact</a></li>
                         <li><a class="nav__link" href="#FAQ">FAQ</a></li>
-                        <li><a class="nav__link" href="#cooperation" data-lang="nav-cooperation">Cooperation</a></li>
+                        <li><a class="nav__link" href="./indexCoop.html" data-lang="nav-cooperation">Cooperation</a></li>
                     </ul>
                 </div>
                 <div class="header__login">
@@ -308,7 +306,13 @@
 
     <section class="section-goals" id="feedback">
         <div class="row">
-            <img class="section-goals__desk" src="./img/goals.jpg" alt="" loading="lazy">
+
+            <picture>
+                <source type="picture/webp" srcset="./img/goals.webp">
+                <img class="section-goals__desk" src="./img/goals.jpg" alt="" loading="lazy">
+            </picture>
+            
+
             <div class="goals-wrapper">
                 <h2 class="heading-secondary mb10" data-lang="section-goals-heading">Reach your health goals with Letmed</h2>
                 <p data-lang="goals-wrapper-text">At Letmed We know how your care plans are going so you can achieve your medical goals with confidence.</p>
@@ -514,12 +518,11 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>
-
 </html>

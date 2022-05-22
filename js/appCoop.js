@@ -1,4 +1,4 @@
-import langObj from './translateCoop.js';
+import {langObjCoop} from './translate.js';
 
 
 const select = document.querySelectorAll('.select');
@@ -34,10 +34,10 @@ selectPl.forEach(el => {
 function getTranslate(lang) {
     document.querySelectorAll('[data-lang]').forEach(el => {
         if (el.dataset.lang) {
-            el.textContent = langObj[lang][el.dataset.lang]
+            el.textContent = langObjCoop[lang][el.dataset.lang]
         }
         if (el.placeholder) {
-            el.placeholder = langObj[lang][el.dataset.lang];
+            el.placeholder = langObjCoop[lang][el.dataset.lang];
             el.textContent = ''
         }
 

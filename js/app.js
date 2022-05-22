@@ -1,4 +1,4 @@
-import {langObj} from './translate.js';
+import { langObj } from './translate.js';
 
 
 const select = document.querySelectorAll('.select');
@@ -53,21 +53,31 @@ function getTranslate(lang) {
 
 
 
+
 // ANIMATIONS
 const controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({
+    triggerElement: '.section-tools',
+    offset: 280,
+    duration: 2100
+})
+    .setPin('.section-tools')
+    .addTo(controller);
+
 
 const boxes = document.querySelectorAll('.box-wrapper')
 for (let i = 0; i < boxes.length; i++) {
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 1000 })
-        .setClassToggle(boxes[0], "hide")
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 200, duration: 700 })
+        .setClassToggle(boxes[0], "show")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 900, duration: 700 })
         .setClassToggle(boxes[1], "show")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1600, duration: 900 })
         .setClassToggle(boxes[2], "show")
         .addTo(controller);
 }
@@ -76,15 +86,15 @@ for (let i = 0; i < boxes.length; i++) {
 const btns = document.querySelectorAll('.tools__btn')
 for (let i = 0; i < btns.length; i++) {
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: -520, duration: 640 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 200, duration: 700 })
         .setClassToggle(btns[0], "blue-btn")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 900, duration: 700 })
         .setClassToggle(btns[1], "blue-btn")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1600, duration: 900 })
         .setClassToggle(btns[2], "blue-btn")
         .addTo(controller);
 }
@@ -93,15 +103,15 @@ for (let i = 0; i < btns.length; i++) {
 const texts = document.querySelectorAll('.tools__text')
 for (let i = 0; i < btns.length; i++) {
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: -120, duration: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 200, duration: 700 })
         .setClassToggle(texts[0], "show-block")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 900, duration: 700 })
         .setClassToggle(texts[1], "show-block")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1600, duration: 900 })
         .setClassToggle(texts[2], "show-block")
         .addTo(controller);
 }
@@ -110,15 +120,15 @@ for (let i = 0; i < btns.length; i++) {
 const subtitles = document.querySelectorAll('.section-tools__subtitle')
 for (let i = 0; i < btns.length; i++) {
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: -520, duration: 640 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 200, duration: 700 })
         .setClassToggle(subtitles[0], "show-block")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 120, duration: 240 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 900, duration: 700 })
         .setClassToggle(subtitles[1], "show-block")
         .addTo(controller);
 
-    new ScrollMagic.Scene({ triggerElement: '.tools', offset: 360 })
+    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1600, duration: 900 })
         .setClassToggle(subtitles[2], "show-block")
         .addTo(controller);
 }

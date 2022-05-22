@@ -1,4 +1,4 @@
-import langObj from './translate.js';
+import {langObj} from './translate.js';
 
 
 const select = document.querySelectorAll('.select');

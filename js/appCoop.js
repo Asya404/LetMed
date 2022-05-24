@@ -1,4 +1,4 @@
-import {langObjCoop} from './translate.js';
+import { langObjCoop } from './translate.js';
 
 
 const select = document.querySelectorAll('.select');
@@ -53,25 +53,23 @@ function getTranslate(lang) {
 
 
 // ANIMATIONS
-var controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller();
+let offset_value = 500
 
-// loop through all elements
-$('.fade-in').each(function() {
-  
-  // build a tween
-  var tween = TweenMax.from($(this), 0.7, {autoAlpha: 0, y: '+=100', x: '0', ease:Linear.easeNone});
+new ScrollMagic.Scene({
+    triggerElement: '.features',
+    offset: 280,
+    duration: 1000,
+})
+    .setPin('.features')
+    .addTo(controller);
 
-  // build a scene
-  var scene = new ScrollMagic.Scene({
-    triggerElement: this,
-	triggerHook: 0.7,
-	offset: 0,
-    reverse: false
-  })
-  .setTween(tween)
-  .addTo(controller);
-  
-});
+const items = document.querySelectorAll('.item')
+for (let i = 0; i < items.length; i++) {
+    new ScrollMagic.Scene({ triggerElement: '.features', offset: i * offset_value, duration: 500 })
+        .setClassToggle(items[i], "show-block")
+        .addTo(controller);
+}
 
 
 

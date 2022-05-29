@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styleCoop.css">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/Gilroy-Light.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-regular.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-medium.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-semibold.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-bold.ttf">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/Gilroy-Light.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-regular.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-medium.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-semibold.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-bold.ttf">
     
     <title>Document</title>
 </head>
@@ -22,8 +22,7 @@
             <!-- HEADER -->
             <div class="header">
                 <div class="logo">
-                    <img class="header__logo" src="./img/logo.svg" width="138" alt="Letmed logo" loading="lazy">
-                    <img class="header__logo--small" src="./img/logo.svg" width="80" alt="Letmed logo" loading="lazy">
+                    <a href="../home/index.html"><img class="header__logo" src="./img/logo.svg" width="80" alt="Letmed logo" loading="eager"></a>
                 </div>
                 <!-- <div class="nav">
                     <ul class="nav__list">
@@ -37,13 +36,13 @@
                     <a href="#">Log in</a>
                     <div class="header__select select">
                         <div class="select__title select__lang--en">
-                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="lazy">
+                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="eager">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
                         </div>
                         <div class="select__list">
                             <div class="select__lang select__lang--pl">
-                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
+                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="eager">
                                 <p>PL</p>
                             </div>
                         </div>
@@ -102,21 +101,21 @@
                 </div>
                 <div class="features__items items">
                     <div class="item item--1 fade-in">
-                        <img class="item__img" src="./img/featureC1.svg" alt="">
+                        <img class="item__img" src="./img/feature1.svg" alt="" loading="eager">
                         <h3 class="item__heading" data-lang="item-heading1">Easy start</h3>
                         <p class="item__text" data-lang='item-text1'>Letmed provide you with everything you need to deliver high-quality
                             virtual patient care. The first step is to fill out the pre-application form so we can learn more about
                             you to find the best potential virtual care job opportunities</p>
                     </div>
                     <div class="item item--2 fade-in">
-                        <img class="item__img" src="./img/featureC2.svg" alt="">
+                        <img class="item__img" src="./img/feature2.svg" alt="" loading="lazy">
                         <h3 class="item__heading" data-lang="item-heading2">Freedom</h3>
                         <p class="item__text" data-lang="item-text2">Our telehealth solution is fully asynchronous , so you decide which patients
                             and when you want to take care of and it's up to you how much time you devote to each patient.
                             Without making an appointment, you work at any free time</p>
                     </div>
                     <div class="item item--3 fade-in">
-                        <img class="item__img" src="./img/featureC3.svg" alt="">
+                        <img class="item__img" src="./img/feature3.svg" alt="" loading="lazy">
                         <h3 class="item__heading" data-lang="item-heading3">Automation</h3>
                         <p class="item__text" data-lang="item-text3">An intelligent medical questionnaire created by doctors collects preliminary
                             patient data and analyzes it to help you in diagnosis and treatment. A personal template creation system helps you spend more time communicating with the patient
@@ -135,7 +134,7 @@
                 your patients with even more convenient and professional care.</p>
             <div class="schedule__wrapper">
                 <div class="schedule__img">
-                    <img src="./img/schedule.jpg" alt="">
+                    <img src="./img/schedule.jpg" alt="" loading="lazy">
                 </div>
                 <div class="schedule__txt">
                     <ul class="schedule__list">
@@ -185,10 +184,7 @@
     <section class="section-footer" id="cooperation">
         <div class="row">
             <div class="footer">
-                <div class="footer__img footer__img--small"><img src="./img/logo.svg" width="80" alt="" loading="lazy">
-                </div>
-                <div class="footer__img footer__img--big"><img src="./img/logo.svg" width="198" alt="" loading="lazy">
-                </div>
+                <a href="../home/index.html"><img class="footer__img" src="./img/logo.svg" width="80" alt="" loading="lazy"></a>
                 <div class="footer__links">
                     <ul>
                         <li><a href="#about" data-lang="nav-services">Services</a></li>  
@@ -206,10 +202,9 @@
         </div>
     </section>
 
-    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script type="module" src="./js/appCoop.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
-
 </html>

@@ -1,4 +1,4 @@
-import { langObjCoop } from './translate.js';
+import { langObj } from './translate.js';
 
 
 const select = document.querySelectorAll('.select');
@@ -34,10 +34,10 @@ selectPl.forEach(el => {
 function getTranslate(lang) {
     document.querySelectorAll('[data-lang]').forEach(el => {
         if (el.dataset.lang) {
-            el.textContent = langObjCoop[lang][el.dataset.lang]
+            el.textContent = langObj[lang][el.dataset.lang]
         }
         if (el.placeholder) {
-            el.placeholder = langObjCoop[lang][el.dataset.lang];
+            el.placeholder = langObj[lang][el.dataset.lang];
             el.textContent = ''
         }
 
@@ -54,22 +54,30 @@ function getTranslate(lang) {
 
 // ANIMATIONS
 const controller = new ScrollMagic.Controller();
-let offset_value = 500
 
 new ScrollMagic.Scene({
-    triggerElement: '.features',
-    offset: 280,
-    duration: 1000,
+    triggerElement: '.features', triggerHook: 0.1, duration: 2100,
 })
     .setPin('.features')
+    // .addIndicators()
     .addTo(controller);
 
 const items = document.querySelectorAll('.item')
-for (let i = 0; i < items.length; i++) {
-    new ScrollMagic.Scene({ triggerElement: '.features', offset: i * offset_value, duration: 500 })
-        .setClassToggle(items[i], "show-block")
-        .addTo(controller);
-}
+
+new ScrollMagic.Scene({ triggerElement: '.features', offset: 0, triggerHook: 1, duration: 1400 })
+    .setClassToggle(items[0], "show-block")
+    // .addIndicators()
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.features', offset: 1400, triggerHook: 1, duration: 700 })
+    .setClassToggle(items[1], "show-block")
+    // .addIndicators()
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.features', offset: 2100, triggerHook: 1, duration: 1400 })
+    .setClassToggle(items[2], "show-block")
+    // .addIndicators()
+    .addTo(controller);
 
 
 

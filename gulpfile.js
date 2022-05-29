@@ -8,15 +8,13 @@ const concat = require('gulp-concat');
 const webp = require('gulp-webp');
 
 const cssFiles = [
-    './sass/sassLetmed/main.scss',
-    './owlcarousel/owl.carousel.min.css',
-    './owlcarousel/owl.theme.default.min.css'
+    './pages/home/sass/main.scss',
+    './pages/home/js/owlcarousel/owl.carousel.min.css',
+    './pages/home/js/owlcarousel/owl.theme.default.min.css'
 ]
 
 const cssFilesCoop = [
-    './sass/sassCoop/main.scss',
-    './owlcarousel/owl.carousel.min.css',
-    './owlcarousel/owl.theme.default.min.css'
+    './pages/cooperation/sass/main.scss'
 ]
 
 async function styles() {
@@ -29,7 +27,7 @@ async function styles() {
             level: 2
         }))
         .pipe(rename('style.css'))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./pages/home/css'));
 }
 
 
@@ -42,8 +40,8 @@ async function stylesCoop() {
             compatibility: 'ie8',
             level: 2
         }))
-        .pipe(rename('styleCoop.css'))
-        .pipe(gulp.dest('./css'));
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('./pages/cooperation/css'));
 }
 
 async function img2Webp() {

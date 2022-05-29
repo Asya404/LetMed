@@ -1,9 +1,10 @@
-import { langObj } from './translate.js';
+import { langObj } from '../js/translate.js';
 
 
 const select = document.querySelectorAll('.select');
 const selectEn = document.querySelectorAll('.select__lang--en');
 const selectPl = document.querySelectorAll('.select__lang--pl');
+
 
 // SELECT ARROW AND FRAME
 select.forEach(el => {
@@ -56,44 +57,79 @@ function getTranslate(lang) {
 
 // ANIMATIONS
 const controller = new ScrollMagic.Controller();
-let offset_value = 500
 
-new ScrollMagic.Scene({
-    triggerElement: '.section-tools',
-    offset: 280,
-    duration: 1000,
-})
+new ScrollMagic.Scene({ triggerElement: '.section-tools', triggerHook: 0.1, duration: 2100, })
     .setPin('.section-tools')
+    // .addIndicators()
     .addTo(controller);
 
 
+// BOXES
 const boxes = document.querySelectorAll('.box-wrapper')
-for (let i = 0; i < boxes.length; i++) {
-    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: i * offset_value, duration: 500 })
-        .setClassToggle(boxes[i], "show")
-        .addTo(controller);
-}
 
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+    .setClassToggle(boxes[0], "show")
+    // .addIndicators()
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+    .setClassToggle(boxes[1], "show")
+    // .addIndicators()
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+    .setClassToggle(boxes[2], "show")
+    // .addIndicators()
+    .addTo(controller);
+
+
+// BTNS
 const btns = document.querySelectorAll('.tools__btn')
-for (let i = 0; i < btns.length; i++) {
-    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: i * offset_value, duration: 500 })
-        .setClassToggle(btns[i], "blue-btn")
-        .addTo(controller);
-}
 
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+    .setClassToggle(btns[0], "blue-btn")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+    .setClassToggle(btns[1], "blue-btn")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+    .setClassToggle(btns[2], "blue-btn")
+    .addTo(controller);
+
+
+// TEXTS
 const texts = document.querySelectorAll('.tools__text')
-for (let i = 0; i < btns.length; i++) {
-    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: i * offset_value, duration: 500 })
-        .setClassToggle(texts[i], "show")
-        .addTo(controller);
-}
 
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+    .setClassToggle(texts[0], "show")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+    .setClassToggle(texts[1], "show")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+    .setClassToggle(texts[2], "show")
+    .addTo(controller);
+
+
+// SUBTITLES
 const subtitles = document.querySelectorAll('.section-tools__subtitle')
-for (let i = 0; i < btns.length; i++) {
-    new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: i * offset_value, duration: 500 })
-        .setClassToggle(subtitles[i], "show")
-        .addTo(controller);
-}
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+    .setClassToggle(subtitles[0], "show")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+    .setClassToggle(subtitles[1], "show")
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+    .setClassToggle(subtitles[2], "show")
+    .addTo(controller);
+
 
 
 
@@ -114,7 +150,7 @@ questions.addEventListener('click', function (e) {
 
 
 
-// MOBILE NAV
+// MOBILE NAV NAD OVERLAY
 const btn = document.querySelector('.nav__btn');
 const menu = document.querySelector('.nav-mobile');
 const overlay = document.querySelector('.nav__overlay');

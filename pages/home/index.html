@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/Gilroy-Light.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-regular.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-medium.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-semibold.ttf">
-    <link rel="preload" crossorigin="anonymous" as="font" href="css/gillroy/gilroy-bold.ttf">
-
-
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/Gilroy-Light.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-regular.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-medium.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-semibold.ttf">
+    <link rel="preload" crossorigin="anonymous" as="font" href="../../fonts/gilroy-bold.ttf">
     <title>Document</title>
 </head>
 
@@ -23,8 +21,7 @@
             <!-- HEADER -->
             <div class="header">
                 <div class="logo">
-                    <img class="header__logo" src="./img/logo.svg" width="138" alt="Letmed logo" loading="lazy">
-                    <img class="header__logo--small" src="./img/logo.svg" width="80" alt="Letmed logo" loading="lazy">
+                    <img class="header__logo" src="./img/logo.svg" width="80" alt="Letmed logo" loading="eager">
                 </div>
                 <div class="nav">
                     <ul class="nav__list">
@@ -32,25 +29,30 @@
                         <li><a class="nav__link" href="#feedback">Feedback</a></li>
                         <li><a class="nav__link" href="#contact" data-lang="nav-contact">Contact</a></li>
                         <li><a class="nav__link" href="#FAQ">FAQ</a></li>
-                        <li><a class="nav__link" href="./indexCoop.html" data-lang="nav-cooperation">Cooperation</a></li>
+                        <li><a class="nav__link" href="../cooperation/index.html" data-lang="nav-cooperation">Cooperation</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="header__login">
                     <a href="#">Log in</a>
+
                     <div class="header__select select">
                         <div class="select__title select__lang--en">
-                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="lazy">
+                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="eager">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
                         </div>
                         <div class="select__list">
                             <div class="select__lang select__lang--pl">
-                                <img class="select__img select__img--pl" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
+                                <img class="select__img select__img--pl" src="./img/lang-pl.svg" alt="Lang" width="25"
+                                    loading="eager">
                                 <p>PL</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
 
                 <div class="nav-mobile">
                     <div class="nav-mobile__top">
@@ -58,7 +60,8 @@
                     </div>
                     <ul class="nav-mobile__list">
                         <li><a class="nav-mobile__link" href="login">Log in</a></li>
-                        <li><a class="nav-mobile__link" href="#cooperation" data-lang="nav-cooperation">Cooperation</a></li>
+                        <li><a class="nav-mobile__link" href="#cooperation" data-lang="nav-cooperation">Cooperation</a>
+                        </li>
                         <li><a class="nav-mobile__link" href="#contact" data-lang="nav-contact">Contact</a></li>
                     </ul>
                     <div class="nav-mobile__select select">
@@ -92,22 +95,22 @@
 
                 <div class="features">
                     <div class="feature">
-                        <div class="feature__img"><img src="./img/feature1.svg" alt="Feature 1" loading="lazy">
+                        <div class="feature__img"><img src="./img/feature1.svg" alt="Feature 1" loading="eager">
                         </div>
                         <p class="feature__text" data-lang="feature-text1">Certified healthcare professionals</p>
                     </div>
                     <div class="feature">
-                        <div class="feature__img"><img src="./img/feature2.svg" alt="Feature 2" loading="lazy">
+                        <div class="feature__img"><img src="./img/feature2.svg" alt="Feature 2" loading="eager">
                         </div>
                         <p class="feature__text" data-lang="feature-text2">Health care within minutes</p>
                     </div>
                     <div class="feature">
-                        <div class="feature__img"><img src="./img/feature3.svg" alt="Feature 3" loading="lazy">
+                        <div class="feature__img"><img src="./img/feature3.svg" alt="Feature 3" loading="eager">
                         </div>
                         <p class="feature__text" data-lang="feature-text3">Treatment plans on demand</p>
                     </div>
                 </div>
-            </header>
+        </header>
     </div>
 
 
@@ -180,10 +183,14 @@
 
     <section class="section-tools">
         <div class="row-small">
-            <h2 class="heading-secondary section-tools__heading" data-lang="section-tools-heading">All-in-one digital health tools</h2>
-            <span class="section-tools__subtitle section-tools__subtitle--1" data-lang="section-tools-subtitle1">Discussion</span>
-            <span class="section-tools__subtitle section-tools__subtitle--2" data-lang="section-tools-subtitle2">Health plan</span>
-            <span class="section-tools__subtitle section-tools__subtitle--3" data-lang="section-tools-subtitle3">Follow-up</span>
+            <h2 class="heading-secondary section-tools__heading" data-lang="section-tools-heading">All-in-one digital
+                health tools</h2>
+            <span class="section-tools__subtitle section-tools__subtitle--1"
+                data-lang="section-tools-subtitle1">Discussion</span>
+            <span class="section-tools__subtitle section-tools__subtitle--2" data-lang="section-tools-subtitle2">Health
+                plan</span>
+            <span class="section-tools__subtitle section-tools__subtitle--3"
+                data-lang="section-tools-subtitle3">Follow-up</span>
             <div class="tools">
                 <div class="tools__phone">
                     <img class="tools__img" src="./img/phone.svg" alt="Phone" loading="lazy">
@@ -200,10 +207,11 @@
                             </div>
                         </div>
                         <div class="discussion discussion--2">
-                            <div class="discussion__img discussion__img--2"><img src="./img/discussion2.svg"
-                                    width="40" alt="Customer photo" loading="lazy"></div>
+                            <div class="discussion__img discussion__img--2"><img src="./img/discussion2.svg" width="40"
+                                    alt="Customer photo" loading="lazy"></div>
                             <div class="discussion__text discussion__text--2">
-                                <div class="discussion__p" data-lang="discussion-p">Based on the information you have provided,
+                                <div class="discussion__p" data-lang="discussion-p">Based on the information you have
+                                    provided,
                                     you will likely benefit from a following prescription-based treatment plan</div>
                                 <div class="discussion__p2" data-lang="discussion-p2">
                                     Therapy plan: Diabetic
@@ -220,7 +228,8 @@
                             <div class="health__img"><img src="./img/health1.svg" width="24" alt="" loading="lazy">
                             </div>
                             <div class="health__title health__title--1" data-lang="health-title1">Health tasks</div>
-                            <p class="health__text health__text--1" data-lang="health-text1">Check your blood sugar levels. Reduce the amount of fatty foods in your diet.</p>
+                            <p class="health__text health__text--1" data-lang="health-text1">Check your blood sugar
+                                levels. Reduce the amount of fatty foods in your diet.</p>
                         </div>
                         <div class="health health--2">
                             <div class="health__img"><img src="./img/health3.svg" width="24" alt="" loading="lazy">
@@ -232,7 +241,8 @@
                                     <span class="med2">20 tabs</span>
                                     <span class="med3">50mg</span>
                                 </div>
-                                <p class="health__descr" data-lang="health-descr">Take 1 tablet by mouth daily for days 1-10, then take 1
+                                <p class="health__descr" data-lang="health-descr">Take 1 tablet by mouth daily for days
+                                    1-10, then take 1
                                     tablet by mouth twice daily for the rest of treatment , after a meal.</p>
                             </div>
                         </div>
@@ -253,7 +263,8 @@
                         <div class="follow follow--1">
                             <div class="follow__text">
                                 <div class="follow__subtitle" data-lang="follow-subtitle">LetMed care</div>
-                                <div class="follow__title" data-lang="follow-title1">How is your current treatment working for you?</div>
+                                <div class="follow__title" data-lang="follow-title1">How is your current treatment
+                                    working for you?</div>
                             </div>
                             <div class="follow__answers">
                                 <div class="follow__answer" data-lang="follow-answer1">Great</div>
@@ -264,11 +275,14 @@
                         <div class="follow follow--2">
                             <div class="follow__text">
                                 <div class="follow__subtitle" data-lang="follow-subtitle">LetMed care</div>
-                                <div class="follow__title" data-lang="follow-title2">Have you experienced any side effects?</div>
+                                <div class="follow__title" data-lang="follow-title2">Have you experienced any side
+                                    effects?</div>
                             </div>
                             <div class="follow__answers">
-                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide1">I haven’t had side effects</div>
-                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide2">I have had side effects.</div>
+                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide1">I
+                                    haven’t had side effects</div>
+                                <div class="follow__answer follow__answer--wide" data-lang="follow-answer-wide2">I have
+                                    had side effects.</div>
                             </div>
                         </div>
                     </div>
@@ -284,13 +298,18 @@
 
                     <!-- DISCUSSION TEXT -->
                     <div class="tools__text tools__text--discussion">
-                        <p class="mb15" data-lang="tools-text-discussion1">High quality health care available 24/7 , no appointment, waiting rooms or insurance needed</p>
-                        <p data-lang="tools-text-discussion2">Answer a few questions about your health, lifestyle, and family history. So that the doctor can understand your needs and create an appropriate treatment plan for you.</p>
+                        <p class="mb15" data-lang="tools-text-discussion1">High quality health care available 24/7 , no
+                            appointment, waiting rooms or insurance needed</p>
+                        <p data-lang="tools-text-discussion2">Answer a few questions about your health, lifestyle, and
+                            family history. So that the doctor can understand your needs and create an appropriate
+                            treatment plan for you.</p>
                     </div>
 
                     <!-- HEALTH TEXT -->
                     <div class="tools__text tools__text--health">
-                        <p class="mb20" data-lang="tools-text-health">The medical specialist will assess your symptoms, discuss your treatment plan with you, prescribe medication if needed, and can refer you to a specialist or lab.</p>
+                        <p class="mb20" data-lang="tools-text-health">The medical specialist will assess your symptoms,
+                            discuss your treatment plan with you, prescribe medication if needed, and can refer you to a
+                            specialist or lab.</p>
                         <ul>
                             <li><span data-lang="tools-text-span1">E-prescriptions</span></li>
                             <li><span data-lang="tools-text-span2">Recommendations</span></li>
@@ -300,7 +319,8 @@
 
                     <!-- FOLLOW TEXT -->
                     <div class="tools__text tools__text--follow">
-                        <p data-lang="tools-text-follow">Set personal health goals and monitor your progress. Your healthcare medical
+                        <p data-lang="tools-text-follow">Set personal health goals and monitor your progress. Your
+                            healthcare medical
                             secialist on the Letmed platform is here to help if treatment is going wrong. Message them
                             any time to discuss your issues</p>
                     </div>
@@ -314,15 +334,13 @@
     <section class="section-goals" id="feedback">
         <div class="row">
 
-            <picture>
-                <source type="picture/webp" srcset="./img/goals.webp">
-                <img class="section-goals__desk" src="./img/goals.jpg" width="1340" height="653" alt="" loading="lazy">
-            </picture>
-            
+            <img class="section-goals__desk" src="./img/goals.jpg" width="1340" height="653" alt="" loading="lazy">
 
             <div class="goals-wrapper">
-                <h2 class="heading-secondary mb10" data-lang="section-goals-heading">Reach your health goals with Letmed</h2>
-                <p data-lang="goals-wrapper-text">At Letmed We know how your care plans are going so you can achieve your medical goals with confidence.</p>
+                <h2 class="heading-secondary mb10" data-lang="section-goals-heading">Reach your health goals with Letmed
+                </h2>
+                <p data-lang="goals-wrapper-text">At Letmed We know how your care plans are going so you can achieve
+                    your medical goals with confidence.</p>
                 <div class="goals">
                     <div class="goals__img"><img src="./img/goals1.svg" alt="" loading="lazy"></div>
                     <div class="goals__content">
@@ -333,7 +351,8 @@
                                 <p data-lang="goals-span-span">Health goal achieved</p>
                             </div>
                         </div>
-                        <p class="goals__text" data-lang="goals-text1">Blood glucoze level is normal. Metformin treatment without side effects.</p>
+                        <p class="goals__text" data-lang="goals-text1">Blood glucoze level is normal. Metformin
+                            treatment without side effects.</p>
                     </div>
                 </div>
                 <div class="goals goals--reverse">
@@ -383,27 +402,32 @@
         <div class="row-small">
             <div class="form">
                 <h2 class="heading-secondary form__heading" data-lang="form-heading">Any more questions?</h2>
-                <p class="form__text" data-lang="form-text">You can ask us a question. Leave your contact information and we will get back to you. We will answer you as soon as possible</p>
+                <p class="form__text" data-lang="form-text">You can ask us a question. Leave your contact information
+                    and we will get back to you. We will answer you as soon as possible</p>
                 <form action="">
                     <div class="form-groups">
                         <div class="form-group">
                             <label for="name" data-lang="form-name">Name</label>
-                            <input type="text" name="name" data-lang="form-placeholder" placeholder="Start typing something">
+                            <input type="text" name="name" data-lang="form-placeholder"
+                                placeholder="Start typing something">
                         </div>
                         <div class="form-group">
                             <label for="tel" data-lang="form-tel">Your phone number</label>
-                            <input type="tel" name="tel" data-lang="form-placeholder" placeholder="Start typing something">
+                            <input type="tel" name="tel" data-lang="form-placeholder"
+                                placeholder="Start typing something">
                         </div>
                         <div class="form-group">
                             <label for="e-mail" data-lang="form-mail">Your e-mail</label>
-                            <input type="e-mail" name="email" data-lang="form-placeholder" placeholder="Start typing something">
+                            <input type="e-mail" name="email" data-lang="form-placeholder"
+                                placeholder="Start typing something">
                         </div>
                     </div>
                     <div class="form__consent">
                         <input type="checkbox" id="consent">
                         <label for="consent">
                             <p data-lang="form-consent">I consent to the processing of my</p>
-                            <a class="form__link" href="#" data-lang="form-link">personal data</a></label>
+                            <a class="form__link" href="#" data-lang="form-link">personal data</a>
+                        </label>
                     </div>
                     <div class="btn-wrapper"><a href="#" class="btn form__btn" data-lang="form-btn">Contact</a></div>
                 </form>
@@ -414,8 +438,10 @@
     <section class="section-treat">
         <div class="row">
             <div class="treat">
-                <h2 class="heading-secondary section-treat__heading mb20" data-lang="section-treat-heading">What We Don’t Treat</h2>
-                <p class="treat__descr" data-lang="treat-descr">While our providers are able to treat most common issues, there are conditions that
+                <h2 class="heading-secondary section-treat__heading mb20" data-lang="section-treat-heading">What We
+                    Don’t Treat</h2>
+                <p class="treat__descr" data-lang="treat-descr">While our providers are able to treat most common
+                    issues, there are conditions that
                     we don’t treat. Please see an in-person doctor or hospital if you experience any of the following:
                 </p>
                 <ul class="treat-list">
@@ -428,11 +454,13 @@
                     <li data-lang="treat-li7">Loss of consciousness</li>
                     <li data-lang="treat-li8">Lacerations</li>
                 </ul>
-                <p class="treat__text" data-lang="treat-text">Our doctors cannot write prescriptions for controlled substances such as codeine
+                <p class="treat__text" data-lang="treat-text">Our doctors cannot write prescriptions for controlled
+                    substances such as codeine
                     or oxycodone. Please see your doctor in person if you need a drug that is a controlled substance.
                 </p>
                 <div class="treat__warning">
-                    <p data-lang="treat-warning">If you think that your health condition is life-threatening or requires urgent medical attention</p>
+                    <p data-lang="treat-warning">If you think that your health condition is life-threatening or requires
+                        urgent medical attention</p>
                     <span class="treat__span" data-lang="treat-span">Please call 112</span>
                 </div>
             </div>
@@ -446,17 +474,21 @@
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title" data-lang="question-title1">How long does it take to hear back from your doctor?</p>
-                        <p class="question__answer" data-lang="question-answer1">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title1">How long does it take to hear back from
+                            your doctor?</p>
+                        <p class="question__answer" data-lang="question-answer1">The entire healthcare team on the
+                            Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
-                            verification process. When you message or chat with a doctor on the Letmed platform, you can see their resume and medical license.</p>
+                            verification process. When you message or chat with a doctor on the Letmed platform, you can
+                            see their resume and medical license.</p>
                     </div>
                 </div>
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
                         <p class="question__title" data-lang="question-title2">Who is Letmed for?</p>
-                        <p class="question__answer" data-lang="question-answer2">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__answer" data-lang="question-answer2">The entire healthcare team on the
+                            Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -466,8 +498,10 @@
                 <div class="question">
                     <div class="question__img"></div>
                     <div class="question__text">
-                        <p class="question__title" data-lang="question-title3">Who are the health care professionals at Letmed?</p>
-                        <p class="question__answer" data-lang="question-answer3">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__title" data-lang="question-title3">Who are the health care professionals at
+                            Letmed?</p>
+                        <p class="question__answer" data-lang="question-answer3">The entire healthcare team on the
+                            Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -478,7 +512,8 @@
                     <div class="question__img"></div>
                     <div class="question__text">
                         <p class="question__title" data-lang="question-title4">Can I use any pharmacy?</p>
-                        <p class="question__answer" data-lang="question-answer4">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__answer" data-lang="question-answer4">The entire healthcare team on the
+                            Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -489,7 +524,8 @@
                     <div class="question__img"></div>
                     <div class="question__text">
                         <p class="question__title" data-lang="question-title5">Is my personal information secure?</p>
-                        <p class="question__answer" data-lang="question-answer5">The entire healthcare team on the Letmed platform are licensed
+                        <p class="question__answer" data-lang="question-answer5">The entire healthcare team on the
+                            Letmed platform are licensed
                             healthcare professionals. Every doctor goes through a licensing and background check and
                             verification process. When you message or chat with a doctor on the Letmed platform, you can
                             see
@@ -503,10 +539,7 @@
     <footer class="section-footer">
         <div class="row">
             <div class="footer">
-                <div class="footer__img footer__img--small"><img src="./img/logo.svg" width="80" alt="" loading="lazy">
-                </div>
-                <div class="footer__img footer__img--big"><img src="./img/logo.svg" width="198" alt="" loading="lazy">
-                </div>
+                <img class="footer__img" src="./img/logo.svg" width="80" alt="" loading="lazy">
                 <div class="footer__links">
                     <ul>
                         <li><a href="#services" data-lang="nav-services">Services</a></li>
@@ -525,10 +558,11 @@
         </div>
     </footer>
 
-    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/owlcarousel/owl.carousel.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>
+
 </html>

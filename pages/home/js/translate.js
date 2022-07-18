@@ -1,11 +1,12 @@
 const langObj = {
     'en': {
-        'hero-heading': ' Health care that works for You',
-        'hero-text': 'Take control of your health by managing personalized, on-demand treatment plans with licensed healthcare professionals.',
-        'hero-btn': 'Get therapy',
-        'feature-text1': 'Certified healthcare professionals',
+        'hero-heading': 'Health plans On-demand',
+        'hero-text': 'Take control of your health with personalized, On-demand medical plans powered by Letmed licensed healthcare professionals and AI engine',
+        'hero-btn': 'Get care',
+        'feature-text1': 'Certified clinicians',
         'feature-text2': 'Health care within minutes',
-        'feature-text3': 'Treatment plans on demand',
+        'feature-text3': 'Follow-up care',
+
         'section-plans-heading': 'Get access to various treatment plans',
         'plan-title1': 'Prescription refill',
         'plan-text1': 'Hypertension',

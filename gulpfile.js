@@ -4,7 +4,6 @@ const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
 
 
 async function styles() {

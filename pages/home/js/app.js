@@ -55,80 +55,80 @@ function getTranslate(lang) {
 
 
 
-// ANIMATIONS
-const controller = new ScrollMagic.Controller();
+// // ANIMATIONS
+// const controller = new ScrollMagic.Controller();
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', triggerHook: 0.1, duration: 2100, })
-    .setPin('.section-tools')
-    // .addIndicators()
-    .addTo(controller);
-
-
-// BOXES
-const boxes = document.querySelectorAll('.box-wrapper')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(boxes[0], "show")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(boxes[1], "show")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(boxes[2], "show")
-    // .addIndicators()
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', triggerHook: 0.1, duration: 2100, })
+//     .setPin('.section-tools')
+//     // .addIndicators()
+//     .addTo(controller);
 
 
-// BTNS
-const btns = document.querySelectorAll('.tools__btn')
+// // BOXES
+// const boxes = document.querySelectorAll('.box-wrapper')
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(btns[0], "blue-btn")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(boxes[0], "show")
+//     // .addIndicators()
+//     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(btns[1], "blue-btn")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+//     .setClassToggle(boxes[1], "show")
+//     // .addIndicators()
+//     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(btns[2], "blue-btn")
-    .addTo(controller);
-
-
-// TEXTS
-const texts = document.querySelectorAll('.tools__text')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(texts[0], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(texts[1], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(texts[2], "show")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(boxes[2], "show")
+//     // .addIndicators()
+//     .addTo(controller);
 
 
-// SUBTITLES
-const subtitles = document.querySelectorAll('.section-tools__subtitle')
+// // BTNS
+// const btns = document.querySelectorAll('.tools__btn')
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(subtitles[0], "show")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(btns[0], "blue-btn")
+//     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(subtitles[1], "show")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+//     .setClassToggle(btns[1], "blue-btn")
+//     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(subtitles[2], "show")
-    .addTo(controller);
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(btns[2], "blue-btn")
+//     .addTo(controller);
+
+
+// // TEXTS
+// const texts = document.querySelectorAll('.tools__text')
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(texts[0], "show")
+//     .addTo(controller);
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+//     .setClassToggle(texts[1], "show")
+//     .addTo(controller);
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(texts[2], "show")
+//     .addTo(controller);
+
+
+// // SUBTITLES
+// const subtitles = document.querySelectorAll('.section-tools__subtitle')
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(subtitles[0], "show")
+//     .addTo(controller);
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
+//     .setClassToggle(subtitles[1], "show")
+//     .addTo(controller);
+
+// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
+//     .setClassToggle(subtitles[2], "show")
+//     .addTo(controller);
 
 
 

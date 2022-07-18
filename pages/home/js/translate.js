@@ -6,7 +6,6 @@ const langObj = {
         'feature-text1': 'Certified clinicians',
         'feature-text2': 'Health care within minutes',
         'feature-text3': 'Follow-up care',
-
         'section-plans-heading': 'Get access to various treatment plans',
         'plan-title1': 'Prescription refill',
         'plan-text1': 'Hypertension',
@@ -24,7 +23,8 @@ const langObj = {
         'plan-text7': 'COVID',
         'plan-title8': 'Diagnostic tests',
         'plan-text8': 'Allergy',
-        'section-tools-heading': 'All-in-one digital health tools',
+
+        'section-tools-heading': 'All-in-one digital health tool',
         'discussion-heading': 'New treatment',
         'discussion-text1': 'I would also like to add that I am constantly thirsty and feeling tired',
         'discussion-p': 'Based on the information you have provided, you will likely benefit from a following prescription-based treatment plan',

@@ -2,8 +2,8 @@ import { langObj } from '../js/translate.js';
 
 
 const select = document.querySelectorAll('.select');
-const selectEn = document.querySelectorAll('.select__lang--en');
-const selectPl = document.querySelectorAll('.select__lang--pl');
+const selectEn = document.querySelector('.select__lang--en');
+const selectPl = document.querySelector('.select__lang--pl');
 
 
 // SELECT ARROW AND FRAME
@@ -16,20 +16,16 @@ select.forEach(el => {
 })
 
 
-// Translates to en only if it's open
-selectEn.forEach(el => {
-    el.addEventListener('click', function () {
-        if (this.parentElement.classList.contains('login-frame')) {
-            getTranslate('en')
-        }
-    });
-})
+// Load index only if it's open
+selectEn.addEventListener('click', function () {
+    if (this.parentElement.classList.contains('login-frame')) {
+        selectEn.href="index.html";
+    }
+});
 
-selectPl.forEach(el => {
-    el.addEventListener('click', function () {
-        getTranslate('pl')
-    });
-})
+selectPl.addEventListener('click', function () {
+    getTranslate('pl')
+});
 
 
 function getTranslate(lang) {
@@ -42,13 +38,13 @@ function getTranslate(lang) {
             el.textContent = ''
         }
 
-        if (lang == 'pl') {
-            document.querySelector('.hero__heading').style.maxWidth = '850px';
-            document.querySelector('.hero__text').style.maxWidth = '630px';
-        } else if (lang == 'en') {
-            document.querySelector('.hero__heading').style.maxWidth = '666px';
-            document.querySelector('.hero__text').style.maxWidth = '482px';
-        }
+        // if (lang == 'pl') {
+        //     document.querySelector('.hero__heading').style.maxWidth = '850px';
+        //     document.querySelector('.hero__text').style.maxWidth = '630px';
+        // } else if (lang == 'en') {
+        //     document.querySelector('.hero__heading').style.maxWidth = '666px';
+        //     document.querySelector('.hero__text').style.maxWidth = '482px';
+        // }
     })
 }
 

@@ -2,8 +2,8 @@ import { langObj } from '../js/translate.js';
 
 
 const select = document.querySelectorAll('.select');
-const selectEn = document.querySelectorAll('.select__lang--en');
-const selectPl = document.querySelectorAll('.select__lang--pl');
+const selectEn = document.querySelector('.select__lang--en');
+const selectPl = document.querySelector('.select__lang--pl');
 
 
 // SELECT ARROW AND FRAME
@@ -16,20 +16,16 @@ select.forEach(el => {
 })
 
 
-// Translates to en only if it's open
-selectEn.forEach(el => {
-    el.addEventListener('click', function () {
-        if (this.parentElement.classList.contains('login-frame')) {
-            getTranslate('en')
-        }
-    });
-})
+// Load index only if it's open
+selectEn.addEventListener('click', function () {
+    if (this.parentElement.classList.contains('login-frame')) {
+        selectEn.href="index.html";
+    }
+});
 
-selectPl.forEach(el => {
-    el.addEventListener('click', function () {
-        getTranslate('pl')
-    });
-})
+selectPl.addEventListener('click', function () {
+    getTranslate('pl')
+});
 
 
 function getTranslate(lang) {
@@ -42,111 +38,31 @@ function getTranslate(lang) {
             el.textContent = ''
         }
 
-        if (lang == 'pl') {
-            document.querySelector('.hero__heading').style.maxWidth = '850px';
-            document.querySelector('.hero__text').style.maxWidth = '630px';
-        } else if (lang == 'en') {
-            document.querySelector('.hero__heading').style.maxWidth = '666px';
-            document.querySelector('.hero__text').style.maxWidth = '482px';
-        }
+        // if (lang == 'pl') {
+        //     document.querySelector('.hero__heading').style.maxWidth = '850px';
+        //     document.querySelector('.hero__text').style.maxWidth = '630px';
+        // } else if (lang == 'en') {
+        //     document.querySelector('.hero__heading').style.maxWidth = '666px';
+        //     document.querySelector('.hero__text').style.maxWidth = '482px';
+        // }
     })
 }
 
 
 
 
-// ANIMATIONS
-const controller = new ScrollMagic.Controller();
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', triggerHook: 0.1, duration: 2100, })
-    .setPin('.section-tools')
-    // .addIndicators()
-    .addTo(controller);
-
-
-// BOXES
-const boxes = document.querySelectorAll('.box-wrapper')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(boxes[0], "show")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(boxes[1], "show")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(boxes[2], "show")
-    // .addIndicators()
-    .addTo(controller);
-
-
-// BTNS
-const btns = document.querySelectorAll('.tools__btn')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(btns[0], "blue-btn")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(btns[1], "blue-btn")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(btns[2], "blue-btn")
-    .addTo(controller);
-
-
-// TEXTS
-const texts = document.querySelectorAll('.tools__text')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(texts[0], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(texts[1], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(texts[2], "show")
-    .addTo(controller);
-
-
-// SUBTITLES
-const subtitles = document.querySelectorAll('.section-tools__subtitle')
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(subtitles[0], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(subtitles[1], "show")
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(subtitles[2], "show")
-    .addTo(controller);
-
-
-
-
-
 // SECTION QUESTIONS
-const questions = document.querySelector('.questions');
+const questions = document.querySelectorAll('.question');
 
-questions.addEventListener('click', function (e) {
-    const active = document.querySelector('.question-active');
-    if (active && active != e.target.closest('.question')) {
-        console.log(active)
-        active.classList.remove('question-active');
-    }
-    if (e.target.closest('.question')) {
-        e.target.closest('.question').classList.toggle('question-active');
-    }
-})
+questions.forEach(question => {
+    question.addEventListener('click', (e) => {
+        if (!question.classList.contains('active')) {
+            questions.forEach(el => el.classList.remove('active'));
+        }
+        question.classList.toggle('active');
+    });
+});
+
 
 
 
@@ -180,42 +96,42 @@ for (let smoothLink of smoothLinks) {
 
 
 
-// CAROUSEL
-$('.slider1').owlCarousel({
-    items: 1,
-    center: true,
-    loop: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    responsive: {
-        480: { items: 1.5 },
-        600: { items: 2 },
-        850: { items: 3 },
-        965: { items: 2.5 },
-        1200: { items: 3 }
-    }
-});
+// // CAROUSEL
+// $('.slider1').owlCarousel({
+//     items: 1,
+//     center: true,
+//     loop: true,
+//     nav: false,
+//     dots: false,
+//     autoplay: true,
+//     slideTransition: 'linear',
+//     autoplayTimeout: 4000,
+//     autoplaySpeed: 4000,
+//     responsive: {
+//         480: { items: 1.5 },
+//         600: { items: 2 },
+//         850: { items: 3 },
+//         965: { items: 2.5 },
+//         1200: { items: 3 }
+//     }
+// });
 
-$('.slider2').owlCarousel({
-    items: 1,
-    center: true,
-    loop: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    rtl: true,
-    responsive: {
-        480: { items: 1.5 },
-        600: { items: 2 },
-        850: { items: 3 },
-        965: { items: 2.5 },
-        1200: { items: 3 }
-    }
-});
+// $('.slider2').owlCarousel({
+//     items: 1,
+//     center: true,
+//     loop: true,
+//     nav: false,
+//     dots: false,
+//     autoplay: true,
+//     slideTransition: 'linear',
+//     autoplayTimeout: 4000,
+//     autoplaySpeed: 4000,
+//     rtl: true,
+//     responsive: {
+//         480: { items: 1.5 },
+//         600: { items: 2 },
+//         850: { items: 3 },
+//         965: { items: 2.5 },
+//         1200: { items: 3 }
+//     }
+// });

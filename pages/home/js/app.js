@@ -55,98 +55,18 @@ function getTranslate(lang) {
 
 
 
-// // ANIMATIONS
-// const controller = new ScrollMagic.Controller();
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', triggerHook: 0.1, duration: 2100, })
-//     .setPin('.section-tools')
-//     // .addIndicators()
-//     .addTo(controller);
-
-
-// // BOXES
-// const boxes = document.querySelectorAll('.box-wrapper')
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(boxes[0], "show")
-//     // .addIndicators()
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-//     .setClassToggle(boxes[1], "show")
-//     // .addIndicators()
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(boxes[2], "show")
-//     // .addIndicators()
-//     .addTo(controller);
-
-
-// // BTNS
-// const btns = document.querySelectorAll('.tools__btn')
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(btns[0], "blue-btn")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-//     .setClassToggle(btns[1], "blue-btn")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(btns[2], "blue-btn")
-//     .addTo(controller);
-
-
-// // TEXTS
-// const texts = document.querySelectorAll('.tools__text')
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(texts[0], "show")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-//     .setClassToggle(texts[1], "show")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(texts[2], "show")
-//     .addTo(controller);
-
-
-// // SUBTITLES
-// const subtitles = document.querySelectorAll('.section-tools__subtitle')
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 0, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(subtitles[0], "show")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 1400, triggerHook: 1, duration: 700 })
-//     .setClassToggle(subtitles[1], "show")
-//     .addTo(controller);
-
-// new ScrollMagic.Scene({ triggerElement: '.section-tools', offset: 2100, triggerHook: 1, duration: 1400 })
-//     .setClassToggle(subtitles[2], "show")
-//     .addTo(controller);
-
-
-
-
-
 // SECTION QUESTIONS
-const questions = document.querySelector('.questions');
+const questions = document.querySelectorAll('.question');
 
-questions.addEventListener('click', function (e) {
-    const active = document.querySelector('.question-active');
-    if (active && active != e.target.closest('.question')) {
-        console.log(active)
-        active.classList.remove('question-active');
-    }
-    if (e.target.closest('.question')) {
-        e.target.closest('.question').classList.toggle('question-active');
-    }
-})
+questions.forEach(question => {
+    question.addEventListener('click', (e) => {
+        if (!question.classList.contains('active')) {
+            questions.forEach(el => el.classList.remove('active'));
+        }
+        question.classList.toggle('active');
+    });
+});
+
 
 
 

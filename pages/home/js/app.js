@@ -180,42 +180,42 @@ for (let smoothLink of smoothLinks) {
 
 
 
-// CAROUSEL
-$('.slider1').owlCarousel({
-    items: 1,
-    center: true,
-    loop: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    responsive: {
-        480: { items: 1.5 },
-        600: { items: 2 },
-        850: { items: 3 },
-        965: { items: 2.5 },
-        1200: { items: 3 }
-    }
-});
+// // CAROUSEL
+// $('.slider1').owlCarousel({
+//     items: 1,
+//     center: true,
+//     loop: true,
+//     nav: false,
+//     dots: false,
+//     autoplay: true,
+//     slideTransition: 'linear',
+//     autoplayTimeout: 4000,
+//     autoplaySpeed: 4000,
+//     responsive: {
+//         480: { items: 1.5 },
+//         600: { items: 2 },
+//         850: { items: 3 },
+//         965: { items: 2.5 },
+//         1200: { items: 3 }
+//     }
+// });
 
-$('.slider2').owlCarousel({
-    items: 1,
-    center: true,
-    loop: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    rtl: true,
-    responsive: {
-        480: { items: 1.5 },
-        600: { items: 2 },
-        850: { items: 3 },
-        965: { items: 2.5 },
-        1200: { items: 3 }
-    }
-});
+// $('.slider2').owlCarousel({
+//     items: 1,
+//     center: true,
+//     loop: true,
+//     nav: false,
+//     dots: false,
+//     autoplay: true,
+//     slideTransition: 'linear',
+//     autoplayTimeout: 4000,
+//     autoplaySpeed: 4000,
+//     rtl: true,
+//     responsive: {
+//         480: { items: 1.5 },
+//         600: { items: 2 },
+//         850: { items: 3 },
+//         965: { items: 2.5 },
+//         1200: { items: 3 }
+//     }
+// });

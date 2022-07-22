@@ -15,6 +15,16 @@ select.forEach(el => {
     })
 })
 
+const mainBtn = document.querySelector('.main-btn');
+mainBtn.classList.remove('active-btn');
+window.onscroll = () => {
+    mainBtn.classList.remove('active-btn');
+    if (window.pageYOffset > 0) {
+        // mainBtn.style.position = "fixed";
+      mainBtn.classList.add('active-btn');
+    }
+}
+
 
 // Load index only if it's open
 selectEn.addEventListener('click', function () {
@@ -56,10 +66,10 @@ const questions = document.querySelectorAll('.question');
 
 questions.forEach(question => {
     question.addEventListener('click', (e) => {
-        if (!question.classList.contains('active')) {
-            questions.forEach(el => el.classList.remove('active'));
+        if (!question.classList.contains('faq-active')) {
+            questions.forEach(el => el.classList.remove('faq-active'));
         }
-        question.classList.toggle('active');
+        question.classList.toggle('faq-active');
     });
 });
 

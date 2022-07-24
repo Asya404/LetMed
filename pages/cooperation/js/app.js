@@ -52,33 +52,6 @@ function getTranslate(lang) {
 
 
 
-// ANIMATIONS
-const controller = new ScrollMagic.Controller();
-
-new ScrollMagic.Scene({
-    triggerElement: '.features', triggerHook: 0.1, duration: 2100,
-})
-    .setPin('.features')
-    // .addIndicators()
-    .addTo(controller);
-
-const items = document.querySelectorAll('.item')
-
-new ScrollMagic.Scene({ triggerElement: '.features', offset: 0, triggerHook: 1, duration: 1400 })
-    .setClassToggle(items[0], "show-block")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.features', offset: 1400, triggerHook: 1, duration: 700 })
-    .setClassToggle(items[1], "show-block")
-    // .addIndicators()
-    .addTo(controller);
-
-new ScrollMagic.Scene({ triggerElement: '.features', offset: 2100, triggerHook: 1, duration: 1400 })
-    .setClassToggle(items[2], "show-block")
-    // .addIndicators()
-    .addTo(controller);
-
 
 
 // MOBILE NAV

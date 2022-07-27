@@ -9,8 +9,6 @@ const selectPl = document.querySelectorAll('.select__lang--pl');
 select.forEach(el => {
     el.addEventListener('click', () => {
         el.classList.toggle('login-frame');
-        el.lastElementChild.classList.toggle('select-active');
-        el.firstElementChild.lastElementChild.classList.toggle('arrow-active')
     })
 })
 
@@ -53,7 +51,7 @@ function getTranslate(lang) {
 
 
 // MOBILE NAV
-const btn = document.querySelector('.nav__btn');
+const btn = document.querySelector('.nav-mobile__btn');
 const menu = document.querySelector('.nav-mobile');
 
 btn.addEventListener('click', () => {

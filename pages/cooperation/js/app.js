@@ -15,11 +15,11 @@ select.forEach(el => {
 })
 
 
-// Translates to en only if it's open
+// Load index only if it's open
 selectEn.forEach(el => {
     el.addEventListener('click', function () {
-        if (this.parentElement.classList.contains('login-frame')) {
-            getTranslate('en')
+        if (el.parentElement.classList.contains('login-frame')) {
+            el.href = "index.html";
         }
     });
 })
@@ -43,8 +43,6 @@ function getTranslate(lang) {
 
         if (lang == 'pl') {
             document.querySelector('.hero__heading').style.maxWidth = '890px';
-        } else if (lang == 'en') {
-            document.querySelector('.hero__heading').style.maxWidth = '766px';
         }
     })
 }

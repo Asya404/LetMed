@@ -26,13 +26,13 @@
                             alt="Letmed logo" loading="eager"></a>
                 </div>
                 <div class="header__login">
-                    <a href="#">Log in</a>
+                    <a class="link" href="#">Log in</a>
                     <div class="header__select select">
-                        <div class="select__title select__lang--en">
+                        <a class="select__title select__lang--en">
                             <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="eager">
                             <p>Eng</p>
                             <span class="select__arrow"></span>
-                        </div>
+                        </a>
                         <div class="select__list">
                             <div class="select__lang select__lang--pl">
                                 <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="eager">
@@ -120,28 +120,60 @@
         </div>
     </section>
 
+
     <section class="schedule">
         <div class="row-small">
-            <h2 class="heading heading-secondary" data-lang="schedule-heading">Your schedule is about to be yours again
-            </h2>
-            <p class="text" data-lang="schedule-text">Letmed White Label solution tailored to your needs will allow you
-                to provide
-                your patients with even more convenient and professional care.</p>
-            <div class="wrapper">
-                <div class="img">
-                    <img src="./img/schedule.svg" alt="" loading="lazy">
+            <div class="tool tool--discussion">
+                <div class="tool__phone--mobile">
+                    <img src="./img/phone-mobile1.png" alt="Phone" loading="lazy">
+                    <div class="discussion-box-wrapper box-wrapper">
+                        <div class="discussion discussion--1">
+                            <div class="discussion__img"><img src="./img/discussion1.png" width="28"
+                                    alt="Customer photo" loading="lazy"></div>
+                            <div class="text text--1" data-lang="discussion-text1">
+                                <span>Dr. doctor</span>
+                                <p>Hello, thanks for visiting LetMed. Based on your medical history, I've made a
+                                    treatment recommendations for you.</p>
+                            </div>
+                        </div>
+                        <div class="discussion discussion--2">
+                            <div class="discussion__img discussion__img--2"><img src="./img/discussion2.png" width="28"
+                                    alt="Customer photo" loading="lazy"></div>
+                            <div class="text text--2">
+                                <div class="discussion__p" data-lang="discussion-p">
+                                    <p>Wow, that's great. Thank you so much!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="txt">
-                    <ul class="list">
-                        <li data-lang="schedule-li1">Fast launch and integration</li>
-                        <li data-lang="schedule-li2">Flexible schedule</li>
-                        <li data-lang="schedule-li3">Custom treatment options</li>
-                        <li data-lang="schedule-li4">Personalized medical templates and tools</li>
-                    </ul>
-                    <a href="#" class="btn btn-blue">Join our medical team</a>
+            </div>
+
+            <div class="schedule-content">
+                <h2 class="heading heading-secondary" data-lang="schedule-heading">Your schedule is about to be yours
+                    again
+                </h2>
+                <p class="text" data-lang="schedule-text">Letmed White Label solution tailored to your needs will allow
+                    you
+                    to provide
+                    your patients with even more convenient and professional care.</p>
+                <div class="wrapper">
+                    <div class="img">
+                        <img src="./img/schedule-mobile.svg" alt="" loading="lazy">
+                    </div>
+                    <div class="txt">
+                        <ul class="list">
+                            <li data-lang="schedule-li2">Flexible schedule</li>
+                            <li data-lang="schedule-li3">Custom treatment options</li>
+                            <li data-lang="schedule-li1">Fast launch and integration</li>
+                            <li data-lang="schedule-li4">Personalized medical templates and tools</li>
+                        </ul>
+                        <a href="#" class="btn btn-blue">Join our medical team</a>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class=" schedule schedule-desk">
@@ -171,10 +203,12 @@
 
                     <div class="treatment">
                         <h3 class="heading">Treatment with ongoing care</h3>
-                        <p class="text1">An open chat about the specific therapy you are giving to your patient. You earn
+                        <p class="text1">An open chat about the specific therapy you are giving to your patient. You
+                            earn
                             even if the patient does not write to you and automatically see updates on the progress of
                             his treatment.</p>
-                        <p class="text2">You can assign multiple ongoing care plans to your patient to provide even more comprehensive
+                        <p class="text2">You can assign multiple ongoing care plans to your patient to provide even more
+                            comprehensive
                             care.</p>
                     </div>
                 </div>
@@ -189,9 +223,8 @@
     <section class="section-form" id="contact">
         <div class="row-small">
             <div class="form">
-                <h2 class="heading-secondary form__heading" data-lang="form-heading">Join to team</h2>
-                <p class="form__text" data-lang="form-text">You can ask us a question. Leave your contact information
-                    and we will get back to you. We will answer you as soon as possible</p>
+                <h2 class="heading-secondary form__heading" data-lang="form-heading">Let's talk</h2>
+                <p class="form__text" data-lang="form-text">If you would like to join Letmed medical team, leave your contact information and we will get back to you as soon as possible</p>
                 <form action="">
                     <div class="form-groups">
                         <div class="form-group">
@@ -232,13 +265,14 @@
                 <div class="footer__links">
                     <ul>
                         <li><a href="#about" data-lang="nav-services">Services</a></li>
+                        <li><a href="#feedback" data-lang="nav-feedback">Feedback</a></li>
                         <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
                         <li><a href="#FAQ">FAQ</a></li>
                         <li><a href="#cooperation" data-lang="nav-cooperation">Cooperation</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">
-                    <h2 class="heading-secondary footer-title" data-lang="nav-contact">Contact</h2>
+                    <h3 class="footer-title" data-lang="nav-contact">Contact</h3>
                     <a class="footer-mail" href="mailto:company@letmed.app">company@letmed.app</a>
                     <a class="footer-tel" href="tel:+48-574-904-216">+48-574-904-216</a>
                 </div>

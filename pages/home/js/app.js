@@ -2,8 +2,8 @@ import { langObj } from '../js/translate.js';
 
 
 const select = document.querySelectorAll('.select');
-const selectEn = document.querySelector('.select__lang--en');
-const selectPl = document.querySelector('.select__lang--pl');
+const selectEn = document.querySelectorAll('.select__lang--en');
+const selectPl = document.querySelectorAll('.select__lang--pl');
 
 
 // SELECT ARROW AND FRAME

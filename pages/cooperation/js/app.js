@@ -58,11 +58,11 @@ window.onscroll = () => {
         el.classList.remove('active-btn')
 
         if (window.innerWidth < 768) {
-            if (window.pageYOffset > 340) {
+            if (window.pageYOffset > 30) {
                 el.classList.add('active-btn');
             }
         } else {
-            if (window.pageYOffset > 680) {
+            if (window.pageYOffset > 360) {
                 el.classList.add('active-btn');
             }
         }

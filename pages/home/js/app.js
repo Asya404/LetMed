@@ -10,31 +10,25 @@ const selectPl = document.querySelectorAll('.select__lang--pl');
 select.forEach(el => {
     el.addEventListener('click', () => {
         el.classList.toggle('login-frame');
-        el.lastElementChild.classList.toggle('select-active');
-        el.firstElementChild.lastElementChild.classList.toggle('arrow-active')
     })
 })
 
-const mainBtn = document.querySelector('.main-btn');
-mainBtn.classList.remove('active-btn');
-window.onscroll = () => {
-    mainBtn.classList.remove('active-btn');
-    if (window.pageYOffset > 0) {
-        // mainBtn.style.position = "fixed";
-      mainBtn.classList.add('active-btn');
-    }
-}
 
 
-// Load index only if it's open
-selectEn.addEventListener('click', function () {
-    if (this.parentElement.classList.contains('login-frame')) {
-        selectEn.href="index.html";
-    }
+// ADD HREF ONLY IF IT'S OPEN
+selectEn.forEach(el => {
+    el.addEventListener('click', function () {
+        if (el.parentElement.classList.contains('login-frame')) {
+            el.href = "index.html";
+        }
+    })
 });
 
-selectPl.addEventListener('click', function () {
-    getTranslate('pl')
+
+selectPl.forEach(el => {
+    el.addEventListener('click', function () {
+        getTranslate('pl')
+    })
 });
 
 
@@ -60,6 +54,17 @@ function getTranslate(lang) {
 
 
 
+// MAIN BTN ON SCROLL
+const mainBtn = document.querySelector('.main-btn');
+mainBtn.classList.remove('active-btn');
+window.onscroll = () => {
+    mainBtn.classList.remove('active-btn');
+    if (window.pageYOffset > 0) {
+        mainBtn.classList.add('active-btn');
+    }
+}
+
+
 
 // SECTION QUESTIONS
 const questions = document.querySelectorAll('.question');
@@ -75,7 +80,6 @@ questions.forEach(question => {
 
 
 
-
 // MOBILE NAV NAD OVERLAY
 const btn = document.querySelector('.nav__btn');
 const menu = document.querySelector('.nav-mobile');
@@ -87,6 +91,7 @@ btn.addEventListener('click', () => {
     menu.classList.toggle('active');
     overlay.classList.toggle('active-overlay');
 })
+
 
 
 // SMOOTH SCROLL MOBILE
@@ -104,9 +109,7 @@ for (let smoothLink of smoothLinks) {
 
 
 
-
-
-// // CAROUSEL
+// CAROUSEL
 $('.slider1').owlCarousel({
     items: 1,
     center: true,

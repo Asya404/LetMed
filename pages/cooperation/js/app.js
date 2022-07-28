@@ -5,6 +5,7 @@ const select = document.querySelectorAll('.select');
 const selectEn = document.querySelectorAll('.select__lang--en');
 const selectPl = document.querySelectorAll('.select__lang--pl');
 
+
 // SELECT ARROW AND FRAME
 select.forEach(el => {
     el.addEventListener('click', () => {
@@ -13,7 +14,8 @@ select.forEach(el => {
 })
 
 
-// Load index only if it's open
+
+// ADD HREF ONLY IF IT'S OPEN
 selectEn.forEach(el => {
     el.addEventListener('click', function () {
         if (el.parentElement.classList.contains('login-frame')) {
@@ -21,6 +23,7 @@ selectEn.forEach(el => {
         }
     });
 })
+
 
 selectPl.forEach(el => {
     el.addEventListener('click', function () {
@@ -47,10 +50,29 @@ function getTranslate(lang) {
 
 
 
+// MAIN BTN ON SCROLL
+const mainBtns = document.querySelectorAll('.main-btn');
+
+window.onscroll = () => {
+    mainBtns.forEach(el => {
+        el.classList.remove('active-btn')
+
+        if (window.innerWidth < 768) {
+            if (window.pageYOffset > 340) {
+                el.classList.add('active-btn');
+            }
+        } else {
+            if (window.pageYOffset > 680) {
+                el.classList.add('active-btn');
+            }
+        }
+    })
+
+}
 
 
 
-// MOBILE NAV
+// MOBILE NAV AND OVERLAY
 const btn = document.querySelector('.nav-mobile__btn');
 const menu = document.querySelector('.nav-mobile');
 
@@ -59,7 +81,6 @@ btn.addEventListener('click', () => {
     menu.classList.toggle('active');
     document.querySelector('.overlay').classList.toggle('active-overlay');
 })
-
 
 
 

@@ -55,14 +55,25 @@ function getTranslate(lang) {
 
 
 // MAIN BTN ON SCROLL
-const mainBtn = document.querySelector('.main-btn');
-mainBtn.classList.remove('active-btn');
+const mainBtns = document.querySelectorAll('.main-btn');
+
 window.onscroll = () => {
-    mainBtn.classList.remove('active-btn');
-    if (window.pageYOffset > 0) {
-        mainBtn.classList.add('active-btn');
-    }
+    mainBtns.forEach(el => {
+        el.classList.remove('active-btn')
+
+        if (window.innerWidth < 768) {
+            if (window.pageYOffset > 580) {
+                el.classList.add('active-btn');
+            }
+        } else {
+            if (window.pageYOffset > 680) {
+                el.classList.add('active-btn');
+            }
+        }
+    })
+
 }
+
 
 
 

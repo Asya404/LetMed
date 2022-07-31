@@ -10,7 +10,7 @@
 <rect x="71.8828" width="258.404" height="664.001" transform="rotate(6.12835 71.8828 0)" fill="url(#pattern1)"/>
 </g>
 <g style="mix-blend-mode:screen">
-<rect x="71.8828" width="258.404" height="664.001" transform="rotate(6.12835 71.8828 0)" fill="url(#pattern2)"/>
+<rect x="71.8828" width="258.404" height="664.001" transform="rotate(6.12835 71.8828 0)" fill="none"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

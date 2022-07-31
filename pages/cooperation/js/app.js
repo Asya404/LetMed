@@ -55,15 +55,18 @@ const mainBtns = document.querySelectorAll('.main-btn');
 
 window.onscroll = () => {
     mainBtns.forEach(el => {
-        el.classList.remove('active-btn')
 
         if (window.innerWidth < 768) {
-            if (window.pageYOffset > 30) {
+            if (window.pageYOffset > 30 && window.pageYOffset < 3000) {
                 el.classList.add('active-btn');
+            } else {
+                el.classList.remove('active-btn');
             }
         } else {
-            if (window.pageYOffset > 360) {
+            if (window.pageYOffset > 360 && window.pageYOffset < 2500) {
                 el.classList.add('active-btn');
+            } else {
+                el.classList.remove('active-btn')
             }
         }
     })

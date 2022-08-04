@@ -21,53 +21,63 @@
         <div class="row">
 
             <!-- HEADER -->
-            <div class="header">
-                <div class="logo">
-                    <a href="../home/index.html"><img class="header__logo" src="./img/logo.svg" width="80"
-                            alt="Letmed logo" loading="eager"></a>
-                </div>
-                <div class="header__login">
-                    <a class="link" href="#">Log in</a>
-                    <div class="header__select select">
-                        <a class="select__title select__lang--en">
-                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="eager">
-                            <p>Eng</p>
-                            <span class="select__arrow"></span>
-                        </a>
-                        <div class="select__list">
-                            <div class="select__lang select__lang--pl">
-                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="eager">
-                                <p>PL</p>
+            <div class="header-wrapper">
+                <div class="header">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="../home/index.html"><img class="header__logo" src="./img/logo.svg" width="80"
+                                    alt="Letmed logo" loading="eager"></a>
+                            <a href="../home/index.html"><img class="logo--sticky" src="./img/logo.svg" width="80"
+                                    alt="Letmed logo" loading="eager"></a>
+                        </div>
+                        <div class="header__login">
+                            <a class="link" href="#">Log in</a>
+                            <div class="header__select select">
+                                <a class="select__title select__lang--en">
+                                    <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25"
+                                        loading="eager">
+                                    <p>Eng</p>
+                                    <span class="select__arrow"></span>
+                                </a>
+                                <div class="select__list">
+                                    <div class="select__lang select__lang--pl">
+                                        <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25"
+                                            loading="eager">
+                                        <p>PL</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="nav-mobile">
-                    <div class="nav-mobile__top">
-                        <img src="./img/logo.svg" width="80" alt="" class="logo" loading="lazy">
-                    </div>
-                    <ul class="nav-mobile__list">
-                        <li class="nav-mobile__link"><a href="#login">Log in</a></li>
-                        <li class="nav-mobile__link"><a href="#home">Home</a></li>
-                        <li class="nav-mobile__link"><a href="#contact" data-lang="nav-contact">Contact</a></li>
-                    </ul>
-                    <div class="nav-mobile__select select">
-                        <div class="select__title select__lang--en">
-                            <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25" loading="lazy">
-                            <p>Eng</p>
-                            <span class="select__arrow"></span>
-                        </div>
-                        <div class="select__list">
-                            <div class="select__lang select__lang--pl">
-                                <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25" loading="lazy">
-                                <p>PL</p>
+                        <div class="nav-mobile">
+                            <div class="nav-mobile__top">
+                                <img src="./img/logo.svg" width="80" alt="" class="logo" loading="lazy">
+                            </div>
+                            <ul class="nav-mobile__list">
+                                <li class="nav-mobile__link"><a href="#login">Log in</a></li>
+                                <li class="nav-mobile__link"><a href="#home">Home</a></li>
+                                <li class="nav-mobile__link"><a href="#contact" data-lang="nav-contact">Contact</a></li>
+                            </ul>
+                            <div class="nav-mobile__select select">
+                                <div class="select__title select__lang--en">
+                                    <img class="select__img" src="./img/lang-eng.svg" alt="Lang" width="25"
+                                        loading="lazy">
+                                    <p>Eng</p>
+                                    <span class="select__arrow"></span>
+                                </div>
+                                <div class="select__list">
+                                    <div class="select__lang select__lang--pl">
+                                        <img class="select__img" src="./img/lang-pl.svg" alt="Lang" width="25"
+                                            loading="lazy">
+                                        <p>PL</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="overlay"></div>
+                        <div class="nav-mobile__btn"></div>
                     </div>
                 </div>
-                <div class="overlay"></div>
-                <div class="nav-mobile__btn"></div>
             </div>
 
             <!-- HERO -->
@@ -80,8 +90,8 @@
                     treatment outcomes.
                 </p>
                 <a href="#" class="btn btn--white">Join our medical team</a>
+            </div>
     </section>
-    </div>
 
     <section class="features" id="about">
         <div class="row-small">

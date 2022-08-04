@@ -50,9 +50,10 @@ function getTranslate(lang) {
 
 
 
-// MAIN BTN ON SCROLL
+// MAIN BTN ON SCROLL AND STICKY NAVIGATION
 const mainBtn = document.querySelector('.main-btn--desk');
 const mainBtnMobile = document.querySelector('.main-btn--mobile');
+const header = document.querySelector('.header');
 
 
 window.onscroll = () => {
@@ -69,6 +70,12 @@ window.onscroll = () => {
         } else {
             mainBtn.classList.remove('active-btn')
         }
+    }
+
+    if (window.pageYOffset > 0) {
+        header.classList.add('active-header');
+    } else {
+        header.classList.remove('active-header');
     }
 }
 

@@ -56,6 +56,7 @@ function getTranslate(lang) {
 
 // MAIN BTN ON SCROLL
 const mainBtn = document.querySelector('.main-btn');
+const header = document.querySelector('.header');
 
 window.onscroll = () => {
 
@@ -72,6 +73,14 @@ window.onscroll = () => {
             mainBtn.classList.remove('active-btn')
         }
     }
+
+    if (window.pageYOffset > 100) {
+        header.classList.add('active-header');
+    } else {
+        header.classList.remove('active-header');
+    }
+
+
 }
 
 

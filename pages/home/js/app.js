@@ -74,7 +74,7 @@ window.onscroll = () => {
         }
     }
 
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 0) {
         header.classList.add('active-header');
     } else {
         header.classList.remove('active-header');

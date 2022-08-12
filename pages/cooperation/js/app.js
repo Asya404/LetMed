@@ -59,13 +59,13 @@ const header = document.querySelector('.header');
 window.onscroll = () => {
 
     if (window.innerWidth < 768) {
-        if (window.pageYOffset > 30 && window.pageYOffset < 3000) {
+        if (window.pageYOffset > 0 && window.pageYOffset < 3000) {
             mainBtnMobile.classList.add('active-btn');
         } else {
             mainBtnMobile.classList.remove('active-btn');
         }
     } else {
-        if (window.pageYOffset > 140 && window.pageYOffset < 2300) {
+        if (window.pageYOffset > 0 && window.pageYOffset < 2300) {
             mainBtn.classList.add('active-btn');
         } else {
             mainBtn.classList.remove('active-btn')

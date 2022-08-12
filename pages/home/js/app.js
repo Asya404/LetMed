@@ -61,7 +61,7 @@ const header = document.querySelector('.header');
 window.onscroll = () => {
 
     if (window.innerWidth < 768) {
-        if (window.pageYOffset > 300 && window.pageYOffset < 4500) {
+        if (window.pageYOffset > 0 && window.pageYOffset < 4500) {
             mainBtn.classList.add('active-btn');
         } else {
             mainBtn.classList.remove('active-btn')

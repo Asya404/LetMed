@@ -67,7 +67,7 @@ window.onscroll = () => {
             mainBtn.classList.remove('active-btn')
         }
     } else {
-        if (window.pageYOffset > 140 && window.pageYOffset < 5000) {
+        if (window.pageYOffset > 0 && window.pageYOffset < 5100) {
             mainBtn.classList.add('active-btn');
         } else {
             mainBtn.classList.remove('active-btn')

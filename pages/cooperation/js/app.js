@@ -51,7 +51,7 @@ function getTranslate(lang) {
 
 
 // MAIN BTN ON SCROLL AND STICKY NAVIGATION
-const mainBtn = document.querySelector('.main-btn--desk');
+const mainBtn = document.querySelector('.main-btn');
 const mainBtnMobile = document.querySelector('.main-btn--mobile');
 const header = document.querySelector('.header');
 

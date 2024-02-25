@@ -1,8 +1,7 @@
-# LetMed
- https://asya404.github.io/LetMed/pages/home/index.html
+# LetMed 🩺📅
 
- This landing page is exclusively dedicated to medical app startup, designed to unite clients and doctors within a single, powerful platform.
+Developed a private medical assistant website that is dedicated to medical app startup, designed to unite clients and doctors within a single, powerful platform.
 
- ![Alt text](pages/home/img/1.png)
+Developed with Html, Css, JavaScript.
 
- ![Alt text](pages/home/img/2.png)
+https://asya404.github.io/LetMed/pages/home/index.html
